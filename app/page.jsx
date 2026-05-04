@@ -48,17 +48,21 @@ export default function CuradoriaRaizLanding() {
 
             {/* IMAGEM */}
 
-            <div className='relative'>
-              <div className='absolute -inset-10 bg-[#D56A44]/10 blur-3xl rounded-full' />
+<div className='relative flex justify-center lg:justify-end'>
+  {/* glow */}
 
-              <div className='relative rounded-[30px] bg-[#EFE8E1] p-4 shadow-[0_35px_80px_rgba(0,0,0,0.28)]'>
-                <img
-                  src='/images/apagao-editorial.webp'
-                  alt='Vinho Apagão'
-                  className='w-full aspect-[1/1] object-cover rounded-[22px]'
-                />
-              </div>
-            </div>
+  <div className='absolute w-[520px] h-[520px] bg-[#D56A44]/18 blur-3xl rounded-full' />
+
+  {/* imagem */}
+
+  <div className='relative'>
+    <img
+      src='/images/apagao-editorial.webp'
+      alt='Vinho Apagão'
+      className='w-[420px] md:w-[560px] object-contain rounded-[18px] shadow-[0_35px_70px_rgba(0,0,0,0.35)]'
+    />
+  </div>
+</div>
           </div>
         </div>
       </section>
