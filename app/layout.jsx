@@ -21,9 +21,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang='pt-BR'>
-      <body
-        className={`${playfair.variable} ${inter.variable} antialiased`}
-      >
+      <body className={`${playfair.variable} ${inter.variable}`}>
+      
         {children}
       </body>
     </html>
