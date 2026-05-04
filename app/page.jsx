@@ -18,15 +18,15 @@ export default function CuradoriaRaizLanding() {
                 Curadoria artesanal · São Paulo
               </p>
 
-              <h1 className='font-serif leading-[0.9] text-[#F8F3EE] mb-8'>
-                <span className='block text-[82px] md:text-[138px]'>
-                  Curadoria
-                </span>
+              <h1 className='font-serif leading-[0.82] text-[#F8F3EE] mb-8'>
+  <span className='block text-[74px] md:text-[122px] tracking-[-0.06em]'>
+    Curadoria
+  </span>
 
-                <span className='block text-[106px] md:text-[168px] -mt-6 md:-mt-10'>
-                  Raiz
-                </span>
-              </h1>
+  <span className='block text-[118px] md:text-[186px] -mt-5 md:-mt-12 tracking-[-0.08em]'>
+    Raiz
+  </span>
+</h1>
 
               <h2 className='text-[#F5EFE9] text-[34px] md:text-[56px] leading-[1.02] max-w-[12ch] font-light tracking-[-0.03em] mb-8'>
                 Alimento com história, entregue por quem escolhe.
