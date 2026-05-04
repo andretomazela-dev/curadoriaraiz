@@ -1,4 +1,3 @@
-
 import './globals.css'
 import { Playfair_Display, Inter } from 'next/font/google'
 
@@ -22,7 +21,6 @@ export default function RootLayout({ children }) {
   return (
     <html lang='pt-BR'>
       <body className={`${playfair.variable} ${inter.variable}`}>
-      
         {children}
       </body>
     </html>
