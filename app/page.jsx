@@ -3,221 +3,63 @@ export default function CuradoriaRaizLanding() {
     'https://wa.me/5511999999999?text=Olá! Quero reservar a edição atual da Curadoria Raiz.'
 
   return (
-    <main
-      style={{
-        background: '#F4F0EA',
-        color: '#2B2724',
-        overflow: 'hidden',
-      }}
-    >
-      {/* GRAIN */}
-      <div
-        style={{
-          position: 'fixed',
-          inset: 0,
-          pointerEvents: 'none',
-          opacity: 0.035,
-          mixBlendMode: 'multiply',
-          backgroundImage:
-            'url("https://grainy-gradients.vercel.app/noise.svg")',
-          zIndex: 999,
-        }}
-      />
-
+    <main className='bg-[#F5F1EB] text-[#2A2522] overflow-hidden'>
       {/* HERO */}
-      <section
-        style={{
-          minHeight: '100vh',
-          position: 'relative',
-          overflow: 'hidden',
-          display: 'flex',
-          alignItems: 'center',
-          background:
-            'linear-gradient(135deg, #6A625D 0%, #5A514D 40%, #473F3A 100%)',
-        }}
-      >
-        {/* GLOW */}
-        <div
-          style={{
-            position: 'absolute',
-            width: '700px',
-            height: '700px',
-            borderRadius: '999px',
-            background: 'rgba(199,102,67,0.16)',
-            filter: 'blur(90px)',
-            right: '-160px',
-            top: '-140px',
-          }}
-        />
+      <section className='relative overflow-hidden'>
+        <div className='absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(170,94,63,0.22),transparent_35%),linear-gradient(135deg,#736861_0%,#514841_100%)]' />
 
-        <div
-          style={{
-            maxWidth: '1380px',
-            margin: '0 auto',
-            width: '100%',
-            padding: '120px 36px',
-            position: 'relative',
-            zIndex: 2,
-          }}
-        >
-          <div
-            style={{
-              display: 'grid',
-              gridTemplateColumns:
-                'repeat(auto-fit, minmax(340px, 1fr))',
-              gap: '90px',
-              alignItems: 'center',
-            }}
-          >
+        <div className='relative max-w-[1440px] mx-auto px-6 md:px-12 lg:px-20 pt-16 md:pt-24 pb-20 md:pb-28'>
+          <div className='grid lg:grid-cols-[1.05fr_1fr] gap-14 items-center'>
             {/* TEXTO */}
-            <div
-              style={{
-                maxWidth: '620px',
-              }}
-            >
-              <p
-                style={{
-                  textTransform: 'uppercase',
-                  letterSpacing: '0.24em',
-                  color: 'rgba(255,255,255,0.62)',
-                  fontSize: '11px',
-                  marginBottom: '26px',
-                }}
-              >
+            <div className='max-w-xl'>
+              <p className='uppercase tracking-[0.32em] text-[10px] md:text-xs text-white/55 mb-6'>
                 Curadoria artesanal · São Paulo
               </p>
 
-              <div
-                style={{
-                  marginBottom: '36px',
-                }}
-              >
-                <h1
-                  style={{
-                    fontFamily: 'Georgia, serif',
-                    fontSize: 'clamp(62px, 7vw, 112px)',
-                    lineHeight: '0.86',
-                    letterSpacing: '-0.08em',
-                    color: '#F7F1E8',
-                    margin: 0,
-                  }}
-                >
+              <h1 className='font-serif text-[#F7F3EE] leading-[0.88] mb-8'>
+                <span className='block text-[4.2rem] md:text-[6.5rem] font-semibold'>
                   Curadoria
-                </h1>
+                </span>
 
-                <h1
-                  style={{
-                    fontFamily: 'Georgia, serif',
-                    fontSize: 'clamp(100px, 12vw, 210px)',
-                    lineHeight: '0.78',
-                    letterSpacing: '-0.1em',
-                    color: '#F7F1E8',
-                    margin: 0,
-                  }}
-                >
+                <span className='block text-[5.3rem] md:text-[7.7rem] -mt-3 md:-mt-5 font-semibold'>
                   Raiz
-                </h1>
-              </div>
+                </span>
+              </h1>
 
-              <p
-                style={{
-                  fontSize: 'clamp(28px, 4vw, 56px)',
-                  lineHeight: '0.98',
-                  color: '#F7F1E8',
-                  fontWeight: 300,
-                  maxWidth: '560px',
-                  marginBottom: '34px',
-                }}
-              >
-                Alimento com história, entregue por quem escolhe.
-              </p>
+              <h2 className='text-[2rem] md:text-[3.3rem] leading-[1.02] text-white font-light tracking-[-0.04em] max-w-[640px] mb-8'>
+                Alimento com história,
+                <br />
+                entregue por quem escolhe.
+              </h2>
 
-              <p
-                style={{
-                  fontSize: '18px',
-                  lineHeight: '2',
-                  color: 'rgba(255,255,255,0.78)',
-                  maxWidth: '500px',
-                  marginBottom: '44px',
-                }}
-              >
+              <p className='text-white/72 text-[15px] md:text-[18px] leading-[1.9] max-w-[520px] mb-10'>
                 Uma seleção mensal de vinho natural, pão de
                 fermentação natural e produtos artesanais
-                escolhidos para desacelerar o ritmo da cidade por
-                algumas horas.
+                escolhidos para desacelerar o ritmo da cidade
+                por algumas horas.
               </p>
 
               <a
                 href={whatsappLink}
                 target='_blank'
-                style={{
-                  display: 'inline-flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  background: '#C76643',
-                  color: '#fff',
-                  padding: '18px 34px',
-                  borderRadius: '999px',
-                  textTransform: 'uppercase',
-                  letterSpacing: '0.08em',
-                  fontSize: '12px',
-                  boxShadow: '0 12px 40px rgba(0,0,0,0.24)',
-                  transition: 'all .3s ease',
-                }}
+                className='inline-flex items-center justify-center bg-[#D16A42] hover:bg-[#BC5B36] transition-all duration-500 hover:scale-[1.03] text-white px-8 py-4 rounded-full text-[11px] tracking-[0.2em] uppercase shadow-[0_10px_30px_rgba(0,0,0,0.18)]'
               >
                 Reservar edição atual
               </a>
             </div>
 
             {/* IMAGEM */}
-            <div
-              style={{
-                position: 'relative',
-                display: 'flex',
-                justifyContent: 'center',
-              }}
-            >
-              <div
-                style={{
-                  position: 'absolute',
-                  width: '420px',
-                  height: '420px',
-                  borderRadius: '999px',
-                  background: 'rgba(199,102,67,0.22)',
-                  filter: 'blur(70px)',
-                  bottom: '0',
-                }}
-              />
+            <div className='relative'>
+              <div className='absolute inset-0 bg-[radial-gradient(circle,rgba(255,255,255,0.08),transparent_70%)] blur-3xl scale-110' />
 
-              <div
-                style={{
-                  position: 'relative',
-                  overflow: 'hidden',
-                  borderRadius: '36px',
-                  boxShadow: '0 40px 80px rgba(0,0,0,0.28)',
-                  transform: 'translateY(-10px)',
-                }}
-              >
+              <div className='relative rounded-[34px] overflow-hidden shadow-[0_40px_120px_rgba(0,0,0,0.28)] border border-white/10'>
                 <img
                   src='/images/apagao-editorial.webp'
-                  alt='Vinho Apagão'
-                  style={{
-                    width: '100%',
-                    maxWidth: '560px',
-                    height: '720px',
-                    objectFit: 'cover',
-                    display: 'block',
-                  }}
+                  alt='Curadoria Raiz'
+                  className='w-full h-[520px] md:h-[720px] object-cover'
                 />
 
-                <div
-                  style={{
-                    position: 'absolute',
-                    inset: 0,
-                    background:
-                      'linear-gradient(to top, rgba(0,0,0,0.16), transparent 40%)',
-                  }}
-                />
+                <div className='absolute inset-0 bg-gradient-to-t from-black/35 via-black/5 to-transparent' />
               </div>
             </div>
           </div>
@@ -225,218 +67,106 @@ export default function CuradoriaRaizLanding() {
       </section>
 
       {/* MANIFESTO */}
-      <section
-        style={{
-          padding: '160px 36px',
-          position: 'relative',
-        }}
-      >
-        <div
-          style={{
-            maxWidth: '1280px',
-            margin: '0 auto',
-            display: 'grid',
-            gridTemplateColumns:
-              'repeat(auto-fit, minmax(320px, 1fr))',
-            gap: '100px',
-            alignItems: 'start',
-          }}
-        >
-          <div>
-            <p
-              style={{
-                fontSize: '11px',
-                letterSpacing: '0.24em',
-                textTransform: 'uppercase',
-                color: '#9D948D',
-                marginBottom: '26px',
-              }}
-            >
-              Manifesto
-            </p>
+      <section className='py-24 md:py-36'>
+        <div className='max-w-[1320px] mx-auto px-6 md:px-12 lg:px-20'>
+          <div className='grid lg:grid-cols-2 gap-20 items-start'>
+            <div>
+              <p className='uppercase tracking-[0.3em] text-[10px] text-[#A59A91] mb-8'>
+                Manifesto
+              </p>
 
-            <h2
-              style={{
-                fontFamily: 'Georgia, serif',
-                fontSize: 'clamp(64px, 9vw, 120px)',
-                lineHeight: '0.9',
-                letterSpacing: '-0.08em',
-                color: '#CFC5BC',
-                margin: 0,
-              }}
-            >
-              Menos
-              <br />
-              pressa,
-              <br />
-              mais
-              <br />
-              repertório.
-            </h2>
-          </div>
+              <h2 className='font-serif text-[4rem] md:text-[7rem] leading-[0.92] tracking-[-0.05em] text-[#D8CEC5]'>
+                Menos
+                <br />
+                pressa,
+                <br />
+                mais
+                <br />
+                repertório.
+              </h2>
+            </div>
 
-          <div
-            style={{
-              maxWidth: '620px',
-            }}
-          >
-            <p
-              style={{
-                fontSize: 'clamp(24px, 3vw, 42px)',
-                lineHeight: '1.6',
-                color: '#2F2A27',
-                marginBottom: '38px',
-                fontWeight: 300,
-              }}
-            >
-              A Curadoria Raiz nasce do desejo de aproximar
-              pequenos produtores do ritmo da cidade.
-            </p>
+            <div className='max-w-[620px] pt-4'>
+              <p className='text-[2rem] md:text-[3rem] leading-[1.32] tracking-[-0.04em] font-light text-[#2E2926] mb-10'>
+                A Curadoria Raiz nasce do desejo de aproximar
+                pequenos produtores do ritmo da cidade.
+              </p>
 
-            <p
-              style={{
-                fontSize: '18px',
-                lineHeight: '2.1',
-                color: '#625A54',
-              }}
-            >
-              Cada edição reúne vinho vivo, pão artesanal e
-              conservas escolhidas manualmente — não apenas pelo
-              sabor, mas pela história, origem e modo de
-              produção.
-              <br />
-              <br />
-              Sem excesso. Sem pressa. Apenas alimento honesto,
-              logística consciente e encontros que fazem sentido.
-            </p>
+              <div className='space-y-8 text-[#655D57] text-[17px] leading-[2]'>
+                <p>
+                  Cada edição reúne vinho vivo, pão artesanal
+                  e conservas escolhidas manualmente — não
+                  apenas pelo sabor, mas pela história, origem
+                  e modo de produção.
+                </p>
+
+                <p>
+                  Sem excesso. Sem pressa. Apenas alimento
+                  honesto, logística consciente e encontros que
+                  fazem sentido.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
       {/* TRIO */}
-      <section
-        style={{
-          padding: '0 36px 160px',
-        }}
-      >
-        <div
-          style={{
-            maxWidth: '1280px',
-            margin: '0 auto',
-          }}
-        >
-          <p
-            style={{
-              fontSize: '11px',
-              letterSpacing: '0.24em',
-              textTransform: 'uppercase',
-              color: '#9D948D',
-              marginBottom: '18px',
-            }}
-          >
+      <section className='pb-28 md:pb-36'>
+        <div className='max-w-[1320px] mx-auto px-6 md:px-12 lg:px-20'>
+          <p className='uppercase tracking-[0.3em] text-[10px] text-[#A59A91] mb-6'>
             Drop #01
           </p>
 
-          <h2
-            style={{
-              fontFamily: 'Georgia, serif',
-              fontSize: 'clamp(58px, 7vw, 96px)',
-              lineHeight: '0.92',
-              letterSpacing: '-0.08em',
-              color: '#D1C7BE',
-              marginBottom: '28px',
-            }}
-          >
+          <h2 className='font-serif text-[3.6rem] md:text-[6rem] leading-[0.95] tracking-[-0.05em] text-[#D4CAC1] mb-8'>
             O Trio da Vez
           </h2>
 
-          <p
-            style={{
-              maxWidth: '720px',
-              fontSize: '18px',
-              lineHeight: '2',
-              color: '#655C55',
-              marginBottom: '72px',
-            }}
-          >
-            Uma combinação pensada para acompanhar o fim da tarde
-            entre Santa Cecília, Higienópolis, Barra Funda, Vila
-            Buarque e Campos Elíseos.
+          <p className='text-[#6B625D] text-[16px] md:text-[18px] leading-[1.9] max-w-[760px] mb-16'>
+            Uma combinação pensada para acompanhar o fim da
+            tarde entre Santa Cecília, Higienópolis, Barra
+            Funda, Vila Buarque e Campos Elíseos.
           </p>
 
-          <div
-            style={{
-              display: 'grid',
-              gridTemplateColumns:
-                'repeat(auto-fit, minmax(280px, 1fr))',
-              gap: '34px',
-            }}
-          >
+          <div className='grid md:grid-cols-3 gap-8'>
             {[
               {
+                image: '/images/apagao-packshot.webp',
                 title: 'Apagão Rosé Natural',
-                image: '/images/apagao-editorial.webp',
                 text: 'Rosé vivo e levemente frutado.',
-                height: '520px',
               },
               {
-                title: 'Sourdough Natural',
                 image: '/images/pao-sourdough.webp',
+                title: 'Sourdough Natural',
                 text: 'Fermentação lenta e miolo vivo.',
-                height: '460px',
               },
               {
-                title: 'Antepasto de Berinjela',
                 image: '/images/antepasto.webp',
+                title: 'Antepasto de Berinjela',
                 text: 'Receita artesanal em pequeno lote.',
-                height: '500px',
               },
             ].map((item, index) => (
-              <div key={index}>
-                <div
-                  style={{
-                    overflow: 'hidden',
-                    borderRadius: '30px',
-                    marginBottom: '26px',
-                    background: '#ECE5DC',
-                    boxShadow:
-                      '0 18px 40px rgba(0,0,0,0.05)',
-                  }}
-                >
+              <div
+                key={index}
+                className='group'
+              >
+                <div className='rounded-[28px] overflow-hidden bg-white shadow-[0_12px_40px_rgba(0,0,0,0.05)] transition-all duration-500 group-hover:-translate-y-2'>
                   <img
                     src={item.image}
                     alt={item.title}
-                    style={{
-                      width: '100%',
-                      height: item.height,
-                      objectFit: 'cover',
-                      transition: 'transform .6s ease',
-                    }}
+                    className='w-full h-[420px] object-cover'
                   />
                 </div>
 
-                <h3
-                  style={{
-                    fontFamily: 'Georgia, serif',
-                    fontSize: '42px',
-                    lineHeight: '0.95',
-                    color: '#2A2522',
-                    marginBottom: '14px',
-                    letterSpacing: '-0.04em',
-                  }}
-                >
-                  {item.title}
-                </h3>
+                <div className='pt-7 px-1'>
+                  <h3 className='font-serif text-[2.2rem] leading-[0.95] tracking-[-0.04em] text-[#2C2724] mb-4'>
+                    {item.title}
+                  </h3>
 
-                <p
-                  style={{
-                    color: '#6A625B',
-                    fontSize: '16px',
-                    lineHeight: '1.9',
-                  }}
-                >
-                  {item.text}
-                </p>
+                  <p className='text-[#766C66] text-[16px] leading-[1.8]'>
+                    {item.text}
+                  </p>
+                </div>
               </div>
             ))}
           </div>
@@ -444,80 +174,32 @@ export default function CuradoriaRaizLanding() {
       </section>
 
       {/* PRODUTOR */}
-      <section
-        style={{
-          position: 'relative',
-          minHeight: '88vh',
-          overflow: 'hidden',
-        }}
-      >
-        <img
-          src='/images/produtor-faccin.webp'
-          alt='Produtor'
-          style={{
-            position: 'absolute',
-            inset: 0,
-            width: '100%',
-            height: '100%',
-            objectFit: 'cover',
-          }}
-        />
+      <section className='relative overflow-hidden'>
+        <div className='absolute inset-0'>
+          <img
+            src='/images/produtor-faccin.webp'
+            alt='Produtor'
+            className='w-full h-full object-cover'
+          />
+        </div>
 
-        <div
-          style={{
-            position: 'absolute',
-            inset: 0,
-            background:
-              'linear-gradient(90deg, rgba(26,32,24,0.58), rgba(0,0,0,0.12))',
-          }}
-        />
+        <div className='absolute inset-0 bg-gradient-to-r from-black/65 via-black/20 to-black/10' />
 
-        <div
-          style={{
-            position: 'relative',
-            zIndex: 2,
-            maxWidth: '1280px',
-            margin: '0 auto',
-            padding: '160px 36px',
-          }}
-        >
-          <div
-            style={{
-              maxWidth: '580px',
-            }}
-          >
-            <p
-              style={{
-                fontSize: '11px',
-                letterSpacing: '0.24em',
-                textTransform: 'uppercase',
-                color: 'rgba(255,255,255,0.66)',
-                marginBottom: '26px',
-              }}
-            >
+        <div className='relative max-w-[1320px] mx-auto px-6 md:px-12 lg:px-20 py-28 md:py-44'>
+          <div className='max-w-[620px]'>
+            <p className='uppercase tracking-[0.3em] text-[10px] text-white/60 mb-8'>
               Pequenos produtores
             </p>
 
-            <h2
-              style={{
-                fontFamily: 'Georgia, serif',
-                fontSize: 'clamp(64px, 8vw, 118px)',
-                lineHeight: '0.9',
-                letterSpacing: '-0.08em',
-                color: '#fff',
-                marginBottom: '34px',
-              }}
-            >
-              Curadoria feita perto de quem produz.
+            <h2 className='font-serif text-white text-[4rem] md:text-[6rem] leading-[0.92] tracking-[-0.05em] mb-10'>
+              Curadoria feita
+              <br />
+              perto de quem
+              <br />
+              produz.
             </h2>
 
-            <p
-              style={{
-                color: 'rgba(255,255,255,0.82)',
-                fontSize: '18px',
-                lineHeight: '2',
-              }}
-            >
+            <p className='text-white/80 text-[17px] md:text-[18px] leading-[2] max-w-[560px]'>
               Cada edição nasce da proximidade com produtores
               independentes, agricultura sustentável e processos
               artesanais reais.
@@ -527,49 +209,17 @@ export default function CuradoriaRaizLanding() {
       </section>
 
       {/* RITUAL */}
-      <section
-        style={{
-          padding: '160px 36px',
-        }}
-      >
-        <div
-          style={{
-            maxWidth: '1280px',
-            margin: '0 auto',
-          }}
-        >
-          <p
-            style={{
-              fontSize: '11px',
-              letterSpacing: '0.24em',
-              textTransform: 'uppercase',
-              color: '#9D948D',
-              marginBottom: '18px',
-            }}
-          >
+      <section className='py-28 md:py-36'>
+        <div className='max-w-[1320px] mx-auto px-6 md:px-12 lg:px-20'>
+          <p className='uppercase tracking-[0.3em] text-[10px] text-[#A59A91] mb-6'>
             Como funciona
           </p>
 
-          <h2
-            style={{
-              fontFamily: 'Georgia, serif',
-              fontSize: 'clamp(58px, 8vw, 96px)',
-              lineHeight: '0.92',
-              color: '#D1C7BE',
-              marginBottom: '84px',
-            }}
-          >
+          <h2 className='font-serif text-[3.8rem] md:text-[6rem] leading-[0.95] tracking-[-0.05em] text-[#D5CBC2] mb-20'>
             O Ritual do Drop
           </h2>
 
-          <div
-            style={{
-              display: 'grid',
-              gridTemplateColumns:
-                'repeat(auto-fit, minmax(260px, 1fr))',
-              gap: '54px',
-            }}
-          >
+          <div className='grid md:grid-cols-3 gap-8'>
             {[
               {
                 number: '01',
@@ -589,40 +239,17 @@ export default function CuradoriaRaizLanding() {
             ].map((item, index) => (
               <div
                 key={index}
-                style={{
-                  paddingTop: '34px',
-                  borderTop: '1px solid rgba(0,0,0,0.08)',
-                }}
+                className='bg-[#EEE7DE] rounded-[28px] p-10 border border-[#E4DBD2]'
               >
-                <p
-                  style={{
-                    fontSize: '12px',
-                    letterSpacing: '0.18em',
-                    color: '#B5ABA2',
-                    marginBottom: '22px',
-                  }}
-                >
+                <span className='text-[11px] tracking-[0.28em] text-[#B5A89E] block mb-8'>
                   {item.number}
-                </p>
+                </span>
 
-                <h3
-                  style={{
-                    fontFamily: 'Georgia, serif',
-                    fontSize: '42px',
-                    color: '#2C2724',
-                    marginBottom: '18px',
-                  }}
-                >
+                <h3 className='font-serif text-[2rem] text-[#2D2724] mb-6'>
                   {item.title}
                 </h3>
 
-                <p
-                  style={{
-                    color: '#655D57',
-                    lineHeight: '2',
-                    fontSize: '16px',
-                  }}
-                >
+                <p className='text-[#6E655F] text-[16px] leading-[1.9]'>
                   {item.text}
                 </p>
               </div>
@@ -632,129 +259,45 @@ export default function CuradoriaRaizLanding() {
       </section>
 
       {/* CTA */}
-      <section
-        style={{
-          padding: '0 36px 130px',
-        }}
-      >
-        <div
-          style={{
-            maxWidth: '1180px',
-            margin: '0 auto',
-            borderRadius: '44px',
-            overflow: 'hidden',
-            background:
-              'linear-gradient(135deg, #1E1917 0%, #2A221F 60%, #3B2822 100%)',
-            padding: '120px 42px',
-            textAlign: 'center',
-            position: 'relative',
-            boxShadow: '0 30px 80px rgba(0,0,0,0.14)',
-          }}
-        >
-          <div
-            style={{
-              position: 'absolute',
-              width: '420px',
-              height: '420px',
-              background: 'rgba(199,102,67,0.12)',
-              filter: 'blur(90px)',
-              borderRadius: '999px',
-              right: '-120px',
-              top: '-120px',
-            }}
-          />
+      <section className='pb-28 md:pb-36'>
+        <div className='max-w-[1320px] mx-auto px-6 md:px-12 lg:px-20'>
+          <div className='relative overflow-hidden rounded-[42px] bg-[linear-gradient(135deg,#1B1715_0%,#2E211D_45%,#4A2D23_100%)] px-8 md:px-20 py-20 md:py-28 text-center shadow-[0_30px_120px_rgba(0,0,0,0.16)]'>
+            <div className='absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(209,106,66,0.28),transparent_35%)]' />
 
-          <div
-            style={{
-              position: 'relative',
-              zIndex: 2,
-            }}
-          >
-            <p
-              style={{
-                fontSize: '11px',
-                letterSpacing: '0.24em',
-                textTransform: 'uppercase',
-                color: 'rgba(255,255,255,0.46)',
-                marginBottom: '22px',
-              }}
-            >
-              Próxima edição
-            </p>
+            <div className='relative'>
+              <p className='uppercase tracking-[0.3em] text-[10px] text-white/40 mb-8'>
+                Próxima edição
+              </p>
 
-            <h2
-              style={{
-                fontFamily: 'Georgia, serif',
-                fontSize: 'clamp(54px, 7vw, 94px)',
-                lineHeight: '0.92',
-                letterSpacing: '-0.06em',
-                color: '#fff',
-                marginBottom: '30px',
-              }}
-            >
-              Reservas abertas
-              <br />
-              para o Drop #01
-            </h2>
+              <h2 className='font-serif text-white text-[3.2rem] md:text-[5.6rem] leading-[0.95] tracking-[-0.05em] mb-10'>
+                Reservas abertas
+                <br />
+                para o Drop #01
+              </h2>
 
-            <p
-              style={{
-                maxWidth: '720px',
-                margin: '0 auto 42px',
-                color: 'rgba(255,255,255,0.72)',
-                lineHeight: '2',
-                fontSize: '17px',
-              }}
-            >
-              Entregas entre sexta e sábado em Santa Cecília,
-              Higienópolis, Vila Buarque, Barra Funda e Campos
-              Elíseos.
-            </p>
+              <p className='text-white/70 text-[17px] leading-[2] max-w-[760px] mx-auto mb-12'>
+                Entregas entre sexta e sábado em Santa Cecília,
+                Higienópolis, Vila Buarque, Barra Funda e
+                Campos Elíseos.
+              </p>
 
-            <a
-              href={whatsappLink}
-              target='_blank'
-              style={{
-                display: 'inline-flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                background: '#C76643',
-                color: '#fff',
-                padding: '18px 34px',
-                borderRadius: '999px',
-                textTransform: 'uppercase',
-                letterSpacing: '0.08em',
-                fontSize: '12px',
-                boxShadow: '0 10px 30px rgba(0,0,0,0.24)',
-              }}
-            >
-              Reservar pelo WhatsApp
-            </a>
+              <a
+                href={whatsappLink}
+                target='_blank'
+                className='inline-flex items-center justify-center bg-[#D16A42] hover:bg-[#BC5B36] transition-all duration-500 hover:scale-[1.03] text-white px-10 py-5 rounded-full text-[11px] tracking-[0.2em] uppercase shadow-[0_10px_30px_rgba(0,0,0,0.22)]'
+              >
+                Reservar pelo WhatsApp
+              </a>
+            </div>
           </div>
         </div>
       </section>
 
       {/* FOOTER */}
-      <footer
-        style={{
-          borderTop: '1px solid rgba(0,0,0,0.06)',
-          padding: '42px 36px',
-        }}
-      >
-        <div
-          style={{
-            maxWidth: '1280px',
-            margin: '0 auto',
-            display: 'flex',
-            justifyContent: 'space-between',
-            flexWrap: 'wrap',
-            gap: '18px',
-            color: '#948B84',
-            fontSize: '13px',
-          }}
-        >
-          <p>Curadoria Raiz · São Paulo</p>
-          <p>Curadoria por André Tomazela</p>
+      <footer className='border-t border-[#E5DDD5] py-8'>
+        <div className='max-w-[1320px] mx-auto px-6 md:px-12 lg:px-20 flex flex-col md:flex-row items-center justify-between gap-4 text-[#9D938B] text-[12px] tracking-wide'>
+          <span>Curadoria Raiz · São Paulo</span>
+          <span>Curadoria por André Tomazela</span>
         </div>
       </footer>
     </main>
