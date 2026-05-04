@@ -5,8 +5,8 @@ export default function CuradoriaRaizLanding() {
   return (
     <main
       style={{
-        background: '#F4F0EA',
-        color: '#2B2724',
+        background: '#F5F1EB',
+        color: '#2A2623',
         overflow: 'hidden',
       }}
     >
@@ -16,10 +16,10 @@ export default function CuradoriaRaizLanding() {
           position: 'fixed',
           inset: 0,
           pointerEvents: 'none',
-          opacity: 0.035,
-          mixBlendMode: 'multiply',
+          opacity: 0.045,
           backgroundImage:
             'url("https://grainy-gradients.vercel.app/noise.svg")',
+          mixBlendMode: 'multiply',
           zIndex: 999,
         }}
       />
@@ -33,20 +33,20 @@ export default function CuradoriaRaizLanding() {
           display: 'flex',
           alignItems: 'center',
           background:
-            'linear-gradient(135deg, #6A625D 0%, #5A514D 40%, #473F3A 100%)',
+            'linear-gradient(135deg, #726760 0%, #645A54 42%, #534944 100%)',
         }}
       >
-        {/* GLOW */}
+        {/* Glow */}
         <div
           style={{
             position: 'absolute',
-            width: '700px',
-            height: '700px',
+            width: '900px',
+            height: '900px',
             borderRadius: '999px',
-            background: 'rgba(199,102,67,0.16)',
-            filter: 'blur(90px)',
-            right: '-160px',
-            top: '-140px',
+            background: 'rgba(199,102,67,0.18)',
+            filter: 'blur(120px)',
+            top: '-320px',
+            right: '-280px',
           }}
         />
 
@@ -55,7 +55,7 @@ export default function CuradoriaRaizLanding() {
             maxWidth: '1380px',
             margin: '0 auto',
             width: '100%',
-            padding: '120px 36px',
+            padding: '120px 32px 100px',
             position: 'relative',
             zIndex: 2,
           }}
@@ -64,12 +64,12 @@ export default function CuradoriaRaizLanding() {
             style={{
               display: 'grid',
               gridTemplateColumns:
-                'repeat(auto-fit, minmax(340px, 1fr))',
-              gap: '90px',
+                'repeat(auto-fit,minmax(320px,1fr))',
               alignItems: 'center',
+              gap: '80px',
             }}
           >
-            {/* TEXTO */}
+            {/* LEFT */}
             <div
               style={{
                 maxWidth: '620px',
@@ -81,7 +81,7 @@ export default function CuradoriaRaizLanding() {
                   letterSpacing: '0.24em',
                   color: 'rgba(255,255,255,0.62)',
                   fontSize: '11px',
-                  marginBottom: '26px',
+                  marginBottom: '32px',
                 }}
               >
                 Curadoria artesanal · São Paulo
@@ -89,16 +89,16 @@ export default function CuradoriaRaizLanding() {
 
               <div
                 style={{
-                  marginBottom: '36px',
+                  marginBottom: '34px',
                 }}
               >
                 <h1
                   style={{
                     fontFamily: 'Georgia, serif',
-                    fontSize: 'clamp(62px, 7vw, 112px)',
-                    lineHeight: '0.86',
-                    letterSpacing: '-0.08em',
-                    color: '#F7F1E8',
+                    fontSize: 'clamp(58px, 6vw, 92px)',
+                    lineHeight: '0.92',
+                    letterSpacing: '-0.07em',
+                    color: '#F8F2EA',
                     margin: 0,
                   }}
                 >
@@ -108,10 +108,10 @@ export default function CuradoriaRaizLanding() {
                 <h1
                   style={{
                     fontFamily: 'Georgia, serif',
-                    fontSize: 'clamp(100px, 12vw, 210px)',
-                    lineHeight: '0.78',
-                    letterSpacing: '-0.1em',
-                    color: '#F7F1E8',
+                    fontSize: 'clamp(92px, 11vw, 190px)',
+                    lineHeight: '0.8',
+                    letterSpacing: '-0.09em',
+                    color: '#F8F2EA',
                     margin: 0,
                   }}
                 >
@@ -121,8 +121,8 @@ export default function CuradoriaRaizLanding() {
 
               <p
                 style={{
-                  fontSize: 'clamp(28px, 4vw, 56px)',
-                  lineHeight: '0.98',
+                  fontSize: 'clamp(28px,4vw,52px)',
+                  lineHeight: '1',
                   color: '#F7F1E8',
                   fontWeight: 300,
                   maxWidth: '560px',
@@ -135,9 +135,9 @@ export default function CuradoriaRaizLanding() {
               <p
                 style={{
                   fontSize: '18px',
-                  lineHeight: '2',
-                  color: 'rgba(255,255,255,0.78)',
-                  maxWidth: '500px',
+                  lineHeight: '1.95',
+                  color: 'rgba(255,255,255,0.74)',
+                  maxWidth: '510px',
                   marginBottom: '44px',
                 }}
               >
@@ -161,41 +161,42 @@ export default function CuradoriaRaizLanding() {
                   textTransform: 'uppercase',
                   letterSpacing: '0.08em',
                   fontSize: '12px',
-                  boxShadow: '0 12px 40px rgba(0,0,0,0.24)',
-                  transition: 'all .3s ease',
+                  boxShadow: '0 14px 40px rgba(0,0,0,0.18)',
+                  transition: 'all .35s ease',
                 }}
               >
                 Reservar edição atual
               </a>
             </div>
 
-            {/* IMAGEM */}
+            {/* RIGHT */}
             <div
               style={{
                 position: 'relative',
                 display: 'flex',
                 justifyContent: 'center',
+                alignItems: 'center',
               }}
             >
               <div
                 style={{
                   position: 'absolute',
-                  width: '420px',
-                  height: '420px',
+                  width: '480px',
+                  height: '480px',
                   borderRadius: '999px',
-                  background: 'rgba(199,102,67,0.22)',
-                  filter: 'blur(70px)',
-                  bottom: '0',
+                  background: 'rgba(199,102,67,0.26)',
+                  filter: 'blur(90px)',
                 }}
               />
 
               <div
                 style={{
                   position: 'relative',
-                  overflow: 'hidden',
                   borderRadius: '36px',
-                  boxShadow: '0 40px 80px rgba(0,0,0,0.28)',
-                  transform: 'translateY(-10px)',
+                  overflow: 'hidden',
+                  boxShadow:
+                    '0 30px 80px rgba(0,0,0,0.26)',
+                  transform: 'translateY(10px)',
                 }}
               >
                 <img
@@ -203,10 +204,9 @@ export default function CuradoriaRaizLanding() {
                   alt='Vinho Apagão'
                   style={{
                     width: '100%',
-                    maxWidth: '560px',
-                    height: '720px',
-                    objectFit: 'cover',
+                    maxWidth: '620px',
                     display: 'block',
+                    objectFit: 'cover',
                   }}
                 />
 
@@ -215,7 +215,7 @@ export default function CuradoriaRaizLanding() {
                     position: 'absolute',
                     inset: 0,
                     background:
-                      'linear-gradient(to top, rgba(0,0,0,0.16), transparent 40%)',
+                      'linear-gradient(to top, rgba(0,0,0,0.22), transparent)',
                   }}
                 />
               </div>
@@ -227,7 +227,7 @@ export default function CuradoriaRaizLanding() {
       {/* MANIFESTO */}
       <section
         style={{
-          padding: '160px 36px',
+          padding: '150px 32px',
           position: 'relative',
         }}
       >
@@ -237,19 +237,22 @@ export default function CuradoriaRaizLanding() {
             margin: '0 auto',
             display: 'grid',
             gridTemplateColumns:
-              'repeat(auto-fit, minmax(320px, 1fr))',
-            gap: '100px',
-            alignItems: 'start',
+              'repeat(auto-fit,minmax(320px,1fr))',
+            gap: '90px',
           }}
         >
-          <div>
+          <div
+            style={{
+              position: 'relative',
+            }}
+          >
             <p
               style={{
                 fontSize: '11px',
                 letterSpacing: '0.24em',
                 textTransform: 'uppercase',
-                color: '#9D948D',
-                marginBottom: '26px',
+                color: '#A79D95',
+                marginBottom: '34px',
               }}
             >
               Manifesto
@@ -258,10 +261,10 @@ export default function CuradoriaRaizLanding() {
             <h2
               style={{
                 fontFamily: 'Georgia, serif',
-                fontSize: 'clamp(64px, 9vw, 120px)',
+                fontSize: 'clamp(72px,8vw,118px)',
                 lineHeight: '0.9',
+                color: '#D8CFC6',
                 letterSpacing: '-0.08em',
-                color: '#CFC5BC',
                 margin: 0,
               }}
             >
@@ -282,10 +285,10 @@ export default function CuradoriaRaizLanding() {
           >
             <p
               style={{
-                fontSize: 'clamp(24px, 3vw, 42px)',
+                fontSize: 'clamp(26px,3vw,40px)',
                 lineHeight: '1.6',
-                color: '#2F2A27',
-                marginBottom: '38px',
+                color: '#312B28',
+                marginBottom: '40px',
                 fontWeight: 300,
               }}
             >
@@ -296,8 +299,8 @@ export default function CuradoriaRaizLanding() {
             <p
               style={{
                 fontSize: '18px',
-                lineHeight: '2.1',
-                color: '#625A54',
+                lineHeight: '2.05',
+                color: '#615852',
               }}
             >
               Cada edição reúne vinho vivo, pão artesanal e
@@ -316,7 +319,7 @@ export default function CuradoriaRaizLanding() {
       {/* TRIO */}
       <section
         style={{
-          padding: '0 36px 160px',
+          padding: '0 32px 150px',
         }}
       >
         <div
@@ -328,10 +331,10 @@ export default function CuradoriaRaizLanding() {
           <p
             style={{
               fontSize: '11px',
-              letterSpacing: '0.24em',
+              letterSpacing: '0.22em',
               textTransform: 'uppercase',
-              color: '#9D948D',
-              marginBottom: '18px',
+              color: '#A79D95',
+              marginBottom: '20px',
             }}
           >
             Drop #01
@@ -340,11 +343,11 @@ export default function CuradoriaRaizLanding() {
           <h2
             style={{
               fontFamily: 'Georgia, serif',
-              fontSize: 'clamp(58px, 7vw, 96px)',
-              lineHeight: '0.92',
-              letterSpacing: '-0.08em',
-              color: '#D1C7BE',
-              marginBottom: '28px',
+              fontSize: 'clamp(60px,7vw,96px)',
+              color: '#D4CBC3',
+              lineHeight: '0.95',
+              letterSpacing: '-0.06em',
+              marginBottom: '26px',
             }}
           >
             O Trio da Vez
@@ -352,11 +355,11 @@ export default function CuradoriaRaizLanding() {
 
           <p
             style={{
-              maxWidth: '720px',
+              maxWidth: '760px',
               fontSize: '18px',
-              lineHeight: '2',
-              color: '#655C55',
-              marginBottom: '72px',
+              lineHeight: '1.95',
+              color: '#615852',
+              marginBottom: '80px',
             }}
           >
             Uma combinação pensada para acompanhar o fim da tarde
@@ -368,7 +371,7 @@ export default function CuradoriaRaizLanding() {
             style={{
               display: 'grid',
               gridTemplateColumns:
-                'repeat(auto-fit, minmax(280px, 1fr))',
+                'repeat(auto-fit,minmax(280px,1fr))',
               gap: '34px',
             }}
           >
@@ -376,20 +379,17 @@ export default function CuradoriaRaizLanding() {
               {
                 title: 'Apagão Rosé Natural',
                 image: '/images/apagao-editorial.webp',
-                text: 'Rosé vivo e levemente frutado.',
-                height: '520px',
+                text: 'Rosé de intervenção mínima da Família Faccin.',
               },
               {
                 title: 'Sourdough Natural',
                 image: '/images/pao-sourdough.webp',
-                text: 'Fermentação lenta e miolo vivo.',
-                height: '460px',
+                text: 'Fermentação lenta e forno artesanal.',
               },
               {
                 title: 'Antepasto de Berinjela',
                 image: '/images/antepasto.webp',
-                text: 'Receita artesanal em pequeno lote.',
-                height: '500px',
+                text: 'Receita artesanal preparada em pequenos lotes.',
               },
             ].map((item, index) => (
               <div key={index}>
@@ -397,10 +397,10 @@ export default function CuradoriaRaizLanding() {
                   style={{
                     overflow: 'hidden',
                     borderRadius: '30px',
-                    marginBottom: '26px',
-                    background: '#ECE5DC',
+                    marginBottom: '24px',
+                    background: '#EEE7DE',
                     boxShadow:
-                      '0 18px 40px rgba(0,0,0,0.05)',
+                      '0 12px 40px rgba(0,0,0,0.04)',
                   }}
                 >
                   <img
@@ -408,7 +408,8 @@ export default function CuradoriaRaizLanding() {
                     alt={item.title}
                     style={{
                       width: '100%',
-                      height: item.height,
+                      height:
+                        index === 1 ? '440px' : '520px',
                       objectFit: 'cover',
                       transition: 'transform .6s ease',
                     }}
@@ -418,9 +419,9 @@ export default function CuradoriaRaizLanding() {
                 <h3
                   style={{
                     fontFamily: 'Georgia, serif',
-                    fontSize: '42px',
+                    fontSize: '44px',
                     lineHeight: '0.95',
-                    color: '#2A2522',
+                    color: '#2C2724',
                     marginBottom: '14px',
                     letterSpacing: '-0.04em',
                   }}
@@ -431,8 +432,9 @@ export default function CuradoriaRaizLanding() {
                 <p
                   style={{
                     color: '#6A625B',
-                    fontSize: '16px',
                     lineHeight: '1.9',
+                    fontSize: '16px',
+                    maxWidth: '90%',
                   }}
                 >
                   {item.text}
@@ -468,7 +470,7 @@ export default function CuradoriaRaizLanding() {
             position: 'absolute',
             inset: 0,
             background:
-              'linear-gradient(90deg, rgba(26,32,24,0.58), rgba(0,0,0,0.12))',
+              'linear-gradient(90deg, rgba(24,30,24,0.58), rgba(24,30,24,0.12))',
           }}
         />
 
@@ -478,12 +480,12 @@ export default function CuradoriaRaizLanding() {
             zIndex: 2,
             maxWidth: '1280px',
             margin: '0 auto',
-            padding: '160px 36px',
+            padding: '160px 32px',
           }}
         >
           <div
             style={{
-              maxWidth: '580px',
+              maxWidth: '600px',
             }}
           >
             <p
@@ -491,8 +493,8 @@ export default function CuradoriaRaizLanding() {
                 fontSize: '11px',
                 letterSpacing: '0.24em',
                 textTransform: 'uppercase',
-                color: 'rgba(255,255,255,0.66)',
-                marginBottom: '26px',
+                color: 'rgba(255,255,255,0.65)',
+                marginBottom: '24px',
               }}
             >
               Pequenos produtores
@@ -501,11 +503,11 @@ export default function CuradoriaRaizLanding() {
             <h2
               style={{
                 fontFamily: 'Georgia, serif',
-                fontSize: 'clamp(64px, 8vw, 118px)',
+                fontSize: 'clamp(60px,8vw,120px)',
                 lineHeight: '0.9',
-                letterSpacing: '-0.08em',
                 color: '#fff',
-                marginBottom: '34px',
+                marginBottom: '30px',
+                letterSpacing: '-0.07em',
               }}
             >
               Curadoria feita perto de quem produz.
@@ -513,9 +515,9 @@ export default function CuradoriaRaizLanding() {
 
             <p
               style={{
-                color: 'rgba(255,255,255,0.82)',
                 fontSize: '18px',
                 lineHeight: '2',
+                color: 'rgba(255,255,255,0.8)',
               }}
             >
               Cada edição nasce da proximidade com produtores
@@ -529,7 +531,7 @@ export default function CuradoriaRaizLanding() {
       {/* RITUAL */}
       <section
         style={{
-          padding: '160px 36px',
+          padding: '150px 32px',
         }}
       >
         <div
@@ -543,8 +545,8 @@ export default function CuradoriaRaizLanding() {
               fontSize: '11px',
               letterSpacing: '0.24em',
               textTransform: 'uppercase',
-              color: '#9D948D',
-              marginBottom: '18px',
+              color: '#A79D95',
+              marginBottom: '20px',
             }}
           >
             Como funciona
@@ -553,10 +555,11 @@ export default function CuradoriaRaizLanding() {
           <h2
             style={{
               fontFamily: 'Georgia, serif',
-              fontSize: 'clamp(58px, 8vw, 96px)',
-              lineHeight: '0.92',
-              color: '#D1C7BE',
-              marginBottom: '84px',
+              fontSize: 'clamp(60px,7vw,96px)',
+              color: '#D4CBC3',
+              lineHeight: '0.95',
+              marginBottom: '80px',
+              letterSpacing: '-0.06em',
             }}
           >
             O Ritual do Drop
@@ -566,23 +569,23 @@ export default function CuradoriaRaizLanding() {
             style={{
               display: 'grid',
               gridTemplateColumns:
-                'repeat(auto-fit, minmax(260px, 1fr))',
-              gap: '54px',
+                'repeat(auto-fit,minmax(260px,1fr))',
+              gap: '40px',
             }}
           >
             {[
               {
-                number: '01',
+                n: '01',
                 title: 'Reserva',
                 text: 'Abrimos poucos pedidos por edição para garantir frescor e evitar desperdício.',
               },
               {
-                number: '02',
+                n: '02',
                 title: 'Preparação',
                 text: 'Tudo é preparado sob ritmo artesanal e entregue no melhor momento.',
               },
               {
-                number: '03',
+                n: '03',
                 title: 'Entrega',
                 text: 'As entregas acontecem entre sexta e sábado em bairros centrais de São Paulo.',
               },
@@ -590,27 +593,27 @@ export default function CuradoriaRaizLanding() {
               <div
                 key={index}
                 style={{
-                  paddingTop: '34px',
-                  borderTop: '1px solid rgba(0,0,0,0.08)',
+                  paddingTop: '24px',
+                  borderTop:
+                    '1px solid rgba(0,0,0,0.08)',
                 }}
               >
                 <p
                   style={{
-                    fontSize: '12px',
-                    letterSpacing: '0.18em',
-                    color: '#B5ABA2',
-                    marginBottom: '22px',
+                    fontSize: '13px',
+                    marginBottom: '18px',
+                    color: '#B0A59B',
                   }}
                 >
-                  {item.number}
+                  {item.n}
                 </p>
 
                 <h3
                   style={{
                     fontFamily: 'Georgia, serif',
                     fontSize: '42px',
-                    color: '#2C2724',
                     marginBottom: '18px',
+                    color: '#2C2724',
                   }}
                 >
                   {item.title}
@@ -618,9 +621,9 @@ export default function CuradoriaRaizLanding() {
 
                 <p
                   style={{
-                    color: '#655D57',
-                    lineHeight: '2',
-                    fontSize: '16px',
+                    lineHeight: '1.95',
+                    color: '#665E58',
+                    maxWidth: '90%',
                   }}
                 >
                   {item.text}
@@ -634,33 +637,34 @@ export default function CuradoriaRaizLanding() {
       {/* CTA */}
       <section
         style={{
-          padding: '0 36px 130px',
+          padding: '0 32px 120px',
         }}
       >
         <div
           style={{
             maxWidth: '1180px',
             margin: '0 auto',
-            borderRadius: '44px',
+            borderRadius: '42px',
             overflow: 'hidden',
             background:
-              'linear-gradient(135deg, #1E1917 0%, #2A221F 60%, #3B2822 100%)',
-            padding: '120px 42px',
+              'linear-gradient(135deg, #1E1917 0%, #2A221E 100%)',
+            padding: '120px 40px',
             textAlign: 'center',
             position: 'relative',
-            boxShadow: '0 30px 80px rgba(0,0,0,0.14)',
+            boxShadow:
+              '0 30px 80px rgba(0,0,0,0.12)',
           }}
         >
           <div
             style={{
               position: 'absolute',
-              width: '420px',
-              height: '420px',
-              background: 'rgba(199,102,67,0.12)',
-              filter: 'blur(90px)',
+              width: '500px',
+              height: '500px',
               borderRadius: '999px',
-              right: '-120px',
-              top: '-120px',
+              background: 'rgba(199,102,67,0.12)',
+              filter: 'blur(100px)',
+              top: '-180px',
+              right: '-180px',
             }}
           />
 
@@ -673,7 +677,7 @@ export default function CuradoriaRaizLanding() {
             <p
               style={{
                 fontSize: '11px',
-                letterSpacing: '0.24em',
+                letterSpacing: '0.22em',
                 textTransform: 'uppercase',
                 color: 'rgba(255,255,255,0.46)',
                 marginBottom: '22px',
@@ -685,11 +689,11 @@ export default function CuradoriaRaizLanding() {
             <h2
               style={{
                 fontFamily: 'Georgia, serif',
-                fontSize: 'clamp(54px, 7vw, 94px)',
-                lineHeight: '0.92',
-                letterSpacing: '-0.06em',
+                fontSize: 'clamp(54px,7vw,96px)',
                 color: '#fff',
-                marginBottom: '30px',
+                lineHeight: '0.92',
+                marginBottom: '28px',
+                letterSpacing: '-0.06em',
               }}
             >
               Reservas abertas
@@ -699,9 +703,9 @@ export default function CuradoriaRaizLanding() {
 
             <p
               style={{
-                maxWidth: '720px',
+                maxWidth: '700px',
                 margin: '0 auto 42px',
-                color: 'rgba(255,255,255,0.72)',
+                color: 'rgba(255,255,255,0.74)',
                 lineHeight: '2',
                 fontSize: '17px',
               }}
@@ -725,7 +729,6 @@ export default function CuradoriaRaizLanding() {
                 textTransform: 'uppercase',
                 letterSpacing: '0.08em',
                 fontSize: '12px',
-                boxShadow: '0 10px 30px rgba(0,0,0,0.24)',
               }}
             >
               Reservar pelo WhatsApp
@@ -738,7 +741,7 @@ export default function CuradoriaRaizLanding() {
       <footer
         style={{
           borderTop: '1px solid rgba(0,0,0,0.06)',
-          padding: '42px 36px',
+          padding: '42px 32px',
         }}
       >
         <div
@@ -749,7 +752,7 @@ export default function CuradoriaRaizLanding() {
             justifyContent: 'space-between',
             flexWrap: 'wrap',
             gap: '18px',
-            color: '#948B84',
+            color: '#8B837D',
             fontSize: '13px',
           }}
         >
