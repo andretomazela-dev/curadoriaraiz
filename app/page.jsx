@@ -5,74 +5,94 @@ export default function CuradoriaRaizLanding() {
   return (
     <main className='bg-[#F6F2EC] text-[#2B2623] overflow-hidden'>
       {/* HERO */}
+<section className="relative overflow-hidden bg-gradient-to-br from-[#7A6A61] via-[#6B5B53] to-[#4B3D37]">
 
-      <section className='relative overflow-hidden bg-gradient-to-br from-[#7B6B63] via-[#6D5E57] to-[#4B3C37]'>
-        {/* glow */}
+  {/* glow */}
+  <div className="absolute inset-0 opacity-30 bg-[radial-gradient(circle_at_top_left,rgba(255,255,255,0.18),transparent_40%)]" />
 
-        <div className='absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(214,117,74,0.22),transparent_35%)]' />
+  {/* grain */}
+  <div className="absolute inset-0 opacity-[0.04] mix-blend-soft-light bg-[url('https://grainy-gradients.vercel.app/noise.svg')]" />
 
-        <div className='relative z-10 max-w-7xl mx-auto px-6 md:px-10 py-14 md:py-24'>
-          <div className='grid lg:grid-cols-2 gap-16 lg:gap-24 items-center'>
-            {/* TEXTO */}
+  <div className="relative max-w-7xl mx-auto px-6 md:px-10 py-20 md:py-28">
 
-            <div className='max-w-xl'>
-              <p className='uppercase tracking-[0.32em] text-[10px] text-white/55 mb-8'>
-                Curadoria artesanal · São Paulo
-              </p>
+    <div className="grid lg:grid-cols-2 gap-14 items-center">
 
-              <h1 className='font-serif text-[#F8F3EE] leading-[0.86] tracking-[-0.07em] mb-10'>
-                <span className='block text-[72px] md:text-[116px]'>
-                  Curadoria
-                </span>
+      {/* TEXTO */}
+      <div className="relative z-10 max-w-xl">
 
-                <span className='block text-[112px] md:text-[182px]'>
-                  Raiz
-                </span>
-              </h1>
+        <p className="uppercase tracking-[0.35em] text-[10px] md:text-xs text-white/55 mb-8">
+          Curadoria artesanal · São Paulo
+        </p>
 
-              <h2 className='text-[#F5EFE9] text-[34px] md:text-[58px] leading-[1] max-w-[11ch] font-light tracking-[-0.04em] mb-8'>
-                Alimento com história, entregue por quem escolhe.
-              </h2>
+        <h1 className="font-serif leading-[0.82] text-[#F8F3EE]">
+          <span className="block text-[64px] md:text-[104px] font-medium">
+            Curadoria
+          </span>
 
-              <p className='text-[#E7DED7] text-[18px] leading-[1.9] max-w-lg mb-10'>
-                Uma seleção mensal de vinho natural, pão de fermentação natural
-                e produtos artesanais escolhidos para desacelerar o ritmo da
-                cidade por algumas horas.
-              </p>
+          <span className="block text-[110px] md:text-[210px] -mt-2 md:-mt-6">
+            Raiz
+          </span>
+        </h1>
 
-              <a
-                href={whatsappLink}
-                target='_blank'
-                className='inline-flex items-center justify-center bg-[#D56A44] hover:bg-[#C45B36] transition-all duration-300 text-white px-8 py-4 rounded-full text-[12px] tracking-[0.18em] uppercase shadow-[0_12px_35px_rgba(0,0,0,0.22)]'
-              >
-                Reservar edição atual
-              </a>
-            </div>
+        <h2 className="mt-8 md:mt-10 text-[40px] md:text-[56px] leading-[0.96] tracking-[-0.04em] text-[#F7F1EC] font-light max-w-lg">
+          Alimento com história, entregue por quem escolhe.
+        </h2>
 
-            {/* IMAGEM */}
+        <p className="mt-8 text-[15px] md:text-[18px] leading-[1.9] text-white/72 max-w-md">
+          Uma seleção mensal de vinho natural, pão de fermentação natural e produtos artesanais escolhidos para desacelerar o ritmo da cidade por algumas horas.
+        </p>
 
-            <div className='relative flex justify-center lg:justify-end'>
-              {/* glow */}
+        <div className="mt-10">
+          <a
+            href={whatsappLink}
+            target="_blank"
+            className="inline-flex items-center justify-center rounded-full bg-[#D66A42] hover:bg-[#BF5934] transition-all duration-300 px-7 py-4 text-[11px] tracking-[0.18em] uppercase text-white shadow-[0_10px_30px_rgba(0,0,0,0.18)] hover:scale-[1.02]"
+          >
+            Reservar edição atual
+          </a>
 
-              <div className='absolute w-[520px] h-[520px] bg-[#D56A44]/20 blur-3xl rounded-full' />
+          <p className="mt-4 text-[12px] text-white/50">
+            Produção limitada · 30 unidades por edição
+          </p>
+        </div>
+      </div>
 
-              {/* imagem */}
+      {/* IMAGEM */}
+      <div className="relative flex justify-center lg:justify-end">
 
-              <div className='relative'>
-                <img
-                  src='/images/apagao-editorial.webp'
-                  alt='Vinho Apagão'
-                  className='w-[420px] md:w-[620px] object-contain rounded-[22px] shadow-[0_40px_90px_rgba(0,0,0,0.38)]'
-                />
+        {/* glow vinho */}
+        <div className="absolute w-[420px] h-[420px] rounded-full bg-[#B24A2B]/20 blur-3xl" />
 
-                {/* overlay premium */}
+        {/* frame premium */}
+        <div className="relative backdrop-blur-md bg-[#F6F0EA]/10 border border-white/12 rounded-[34px] p-4 md:p-5 shadow-[0_30px_80px_rgba(0,0,0,0.35)]">
 
-                <div className='absolute inset-0 rounded-[22px] ring-1 ring-white/10 pointer-events-none' />
-              </div>
-            </div>
+          {/* brilho */}
+          <div className="absolute inset-0 rounded-[34px] bg-gradient-to-br from-white/18 to-transparent pointer-events-none" />
+
+          <div className="relative overflow-visible rounded-[26px]">
+
+            {/* selos */}
+            <img
+              src="/images/selos-apagao.webp"
+              alt=""
+              className="hidden md:block absolute -left-16 top-10 w-24 opacity-90 z-20"
+            />
+
+            {/* imagem */}
+            <img
+              src="/images/apagao-editorial.webp"
+              alt="Vinho Apagão Curadoria Raiz"
+              className="relative z-10 w-full max-w-[560px] object-cover rounded-[22px] shadow-2xl scale-[1.04]"
+            />
           </div>
         </div>
-      </section>
+      </div>
+    </div>
+  </div>
+
+  {/* fade bottom */}
+  <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-b from-transparent to-[#F6F1EB]" />
+</section>
 
       {/* MANIFESTO */}
 
