@@ -5,34 +5,36 @@ export default function Home() {
   return (
     <main className='bg-[#F5F1EB] text-[#2B2623] overflow-hidden'>
       {/* HERO */}
-      <section className='relative overflow-hidden bg-gradient-to-br from-[#756961] via-[#645852] to-[#433834]'>
-        <div className='max-w-7xl mx-auto px-6 md:px-10 py-20 md:py-28'>
+      <section className='relative overflow-hidden bg-gradient-to-br from-[#7A6C63] via-[#675B54] to-[#4A3F3A]'>
+        <div className='absolute inset-0 opacity-30 bg-[radial-gradient(circle_at_top_right,rgba(255,255,255,0.18),transparent_35%)]' />
+
+        <div className='max-w-7xl mx-auto px-6 md:px-10 py-20 md:py-28 relative z-10'>
           <div className='grid lg:grid-cols-2 gap-16 items-center'>
             {/* TEXTO */}
             <div className='max-w-xl'>
-              <p className='uppercase tracking-[0.3em] text-xs text-white/55 mb-8'>
+              <p className='uppercase tracking-[0.35em] text-[10px] text-white/55 mb-8'>
                 Curadoria artesanal · São Paulo
               </p>
 
               <h1
                 style={{ fontFamily: 'var(--font-serif)' }}
-                className='leading-[0.88] text-[#F8F3EE]'
+                className='leading-[0.82] text-[#F8F3EE]'
               >
-                <span className='block text-6xl md:text-8xl'>
+                <span className='block text-6xl md:text-7xl'>
                   Curadoria
                 </span>
 
-                <span className='block text-7xl md:text-9xl -mt-4 md:-mt-7'>
+                <span className='block text-7xl md:text-9xl -mt-3 md:-mt-5'>
                   Raiz
                 </span>
               </h1>
 
-              <p className='mt-10 text-3xl md:text-5xl leading-[0.95] tracking-[-0.04em] text-white max-w-lg'>
+              <p className='mt-10 text-3xl md:text-5xl leading-[0.96] tracking-[-0.04em] text-white max-w-lg'>
                 Alimento com história,
                 entregue por quem escolhe.
               </p>
 
-              <p className='mt-8 text-base leading-[2] text-white/75 max-w-md'>
+              <p className='mt-8 text-base leading-[2] text-white/78 max-w-md'>
                 Uma seleção mensal de vinho natural, pão de
                 fermentação natural e produtos artesanais
                 escolhidos para desacelerar o ritmo da cidade por
@@ -43,7 +45,7 @@ export default function Home() {
                 href={whatsappLink}
                 target='_blank'
                 rel='noopener noreferrer'
-                className='inline-flex mt-12 bg-[#D56A44] hover:bg-[#E17852] text-white rounded-full px-9 py-4 uppercase tracking-[0.2em] text-xs transition-all duration-300'
+                className='inline-flex mt-12 bg-[#D56A44] hover:bg-[#E17852] text-white rounded-full px-9 py-4 uppercase tracking-[0.2em] text-xs transition-all duration-300 hover:scale-[1.02]'
               >
                 Reservar edição atual
               </a>
@@ -51,11 +53,13 @@ export default function Home() {
 
             {/* IMAGEM */}
             <div className='flex justify-center lg:justify-end'>
-              <div className='bg-[#F3EEE8] rounded-3xl p-5 md:p-8 shadow-2xl'>
+              <div className='relative bg-[#F3EEE8]/95 backdrop-blur rounded-[32px] p-4 md:p-6 shadow-[0_30px_80px_rgba(0,0,0,0.35)]'>
+                <div className='absolute inset-0 rounded-[32px] border border-white/30' />
+
                 <img
-                  src='/images/apagao-editorial.webp'
+                  src='/images/apagao-packshot.webp'
                   alt='Vinho Apagão'
-                  className='w-full max-w-[520px] rounded-2xl object-cover'
+                  className='relative z-10 w-full max-w-[520px] rounded-[22px] object-cover'
                 />
               </div>
             </div>
@@ -64,16 +68,18 @@ export default function Home() {
       </section>
 
       {/* MANIFESTO */}
-      <section className='py-28 md:py-36'>
-        <div className='max-w-6xl mx-auto px-6 md:px-10 grid lg:grid-cols-2 gap-20'>
+      <section className='py-28 md:py-36 relative'>
+        <div className='absolute inset-0 opacity-40 bg-[radial-gradient(circle_at_top_left,rgba(213,198,187,0.25),transparent_30%)]' />
+
+        <div className='max-w-6xl mx-auto px-6 md:px-10 grid lg:grid-cols-2 gap-20 relative z-10'>
           <div>
-            <p className='uppercase tracking-[0.3em] text-xs text-[#A89B92] mb-8'>
+            <p className='uppercase tracking-[0.35em] text-[10px] text-[#A89B92] mb-8'>
               Manifesto
             </p>
 
             <h2
               style={{ fontFamily: 'var(--font-serif)' }}
-              className='text-5xl md:text-7xl leading-[0.9] tracking-[-0.05em] text-[#D4CAC1]'
+              className='text-5xl md:text-7xl leading-[0.9] tracking-[-0.05em] text-[#CBBEB4]'
             >
               Menos
               <br />
@@ -109,51 +115,54 @@ export default function Home() {
       {/* TRIO */}
       <section className='pb-28 md:pb-36'>
         <div className='max-w-7xl mx-auto px-6 md:px-10'>
-          <div className='max-w-2xl mb-16'>
-            <p className='uppercase tracking-[0.3em] text-xs text-[#A89B92] mb-6'>
+          <div className='max-w-3xl mb-16'>
+            <p className='uppercase tracking-[0.35em] text-[10px] text-[#A89B92] mb-6'>
               Drop #01
             </p>
 
             <h2
               style={{ fontFamily: 'var(--font-serif)' }}
-              className='text-5xl md:text-7xl leading-[0.95] tracking-[-0.05em] text-[#D4CAC1]'
+              className='text-5xl md:text-7xl leading-[0.95] tracking-[-0.05em] text-[#CBBEB4]'
             >
               O Trio da Vez
             </h2>
 
-            <p className='mt-6 text-[#6A635D] leading-[2]'>
+            <p className='mt-6 text-[#6A635D] leading-[2] max-w-2xl'>
               Uma combinação pensada para acompanhar o fim da
               tarde entre Santa Cecília, Higienópolis, Barra
               Funda, Vila Buarque e Campos Elíseos.
             </p>
           </div>
 
-          <div className='grid md:grid-cols-3 gap-8'>
+          <div className='grid md:grid-cols-3 gap-8 items-start'>
             {/* VINHO */}
-            <div>
-              <div className='rounded-2xl overflow-hidden bg-[#EFE8E1]'>
+            <div className='group'>
+              <div className='rounded-[28px] overflow-hidden bg-[#EFE8E1] shadow-sm transition-all duration-500 group-hover:-translate-y-1 group-hover:shadow-xl'>
                 <img
-                  src='/images/apagao-packshot.webp'
+                  src='/images/apagao-editorial.webp'
                   alt='Apagão Rosé'
                   className='w-full h-[520px] object-cover'
                 />
               </div>
 
-              <h3
-                style={{ fontFamily: 'var(--font-serif)' }}
-                className='text-4xl leading-[0.95] mt-6'
-              >
-                Apagão Rosé Natural
-              </h3>
+              <div className='pt-6 min-h-[150px]'>
+                <h3
+                  style={{ fontFamily: 'var(--font-serif)' }}
+                  className='text-4xl leading-[0.95]'
+                >
+                  Apagão Rosé Natural
+                </h3>
 
-              <p className='mt-4 text-sm leading-[1.9] text-[#746B65]'>
-                Rosé de intervenção mínima da Família Faccin.
-              </p>
+                <p className='mt-4 text-sm leading-[1.9] text-[#746B65]'>
+                  Rosé de intervenção mínima da Família Faccin.
+                  Fresco, vivo e levemente frutado.
+                </p>
+              </div>
             </div>
 
             {/* PÃO */}
-            <div className='md:pt-16'>
-              <div className='rounded-2xl overflow-hidden bg-[#EFE8E1]'>
+            <div className='group md:pt-16'>
+              <div className='rounded-[28px] overflow-hidden bg-[#EFE8E1] shadow-sm transition-all duration-500 group-hover:-translate-y-1 group-hover:shadow-xl'>
                 <img
                   src='/images/pao-sourdough.webp'
                   alt='Pão sourdough'
@@ -161,21 +170,24 @@ export default function Home() {
                 />
               </div>
 
-              <h3
-                style={{ fontFamily: 'var(--font-serif)' }}
-                className='text-3xl leading-[1] mt-6'
-              >
-                Sourdough Natural
-              </h3>
+              <div className='pt-6 min-h-[150px]'>
+                <h3
+                  style={{ fontFamily: 'var(--font-serif)' }}
+                  className='text-3xl leading-[1]'
+                >
+                  Sourdough Natural
+                </h3>
 
-              <p className='mt-4 text-sm leading-[1.9] text-[#746B65]'>
-                Fermentação lenta e forno artesanal.
-              </p>
+                <p className='mt-4 text-sm leading-[1.9] text-[#746B65]'>
+                  Fermentação lenta, casca crocante e forno
+                  artesanal.
+                </p>
+              </div>
             </div>
 
             {/* ANTEPASTO */}
-            <div className='md:pt-8'>
-              <div className='rounded-2xl overflow-hidden bg-[#EFE8E1]'>
+            <div className='group md:pt-8'>
+              <div className='rounded-[28px] overflow-hidden bg-[#EFE8E1] shadow-sm transition-all duration-500 group-hover:-translate-y-1 group-hover:shadow-xl'>
                 <img
                   src='/images/antepasto.webp'
                   alt='Antepasto'
@@ -183,16 +195,19 @@ export default function Home() {
                 />
               </div>
 
-              <h3
-                style={{ fontFamily: 'var(--font-serif)' }}
-                className='text-3xl leading-[0.98] mt-6'
-              >
-                Antepasto de Berinjela
-              </h3>
+              <div className='pt-6 min-h-[150px]'>
+                <h3
+                  style={{ fontFamily: 'var(--font-serif)' }}
+                  className='text-3xl leading-[0.98]'
+                >
+                  Antepasto de Berinjela
+                </h3>
 
-              <p className='mt-4 text-sm leading-[1.9] text-[#746B65]'>
-                Receita artesanal preparada em pequenos lotes.
-              </p>
+                <p className='mt-4 text-sm leading-[1.9] text-[#746B65]'>
+                  Receita artesanal preparada em pequenos lotes,
+                  com ingredientes frescos e sabor intenso.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -206,12 +221,12 @@ export default function Home() {
           className='w-full h-[760px] object-cover'
         />
 
-        <div className='absolute inset-0 bg-black/35' />
+        <div className='absolute inset-0 bg-gradient-to-t from-black/65 via-black/20 to-black/10' />
 
         <div className='absolute inset-0 flex items-end'>
           <div className='max-w-6xl mx-auto px-6 md:px-10 pb-24 w-full'>
             <div className='max-w-2xl'>
-              <p className='uppercase tracking-[0.3em] text-xs text-white/60 mb-8'>
+              <p className='uppercase tracking-[0.35em] text-[10px] text-white/60 mb-8'>
                 Pequenos produtores
               </p>
 
@@ -235,18 +250,18 @@ export default function Home() {
       {/* RITUAL */}
       <section className='py-28 md:py-36'>
         <div className='max-w-6xl mx-auto px-6 md:px-10'>
-          <p className='uppercase tracking-[0.3em] text-xs text-[#A89B92] mb-6'>
+          <p className='uppercase tracking-[0.35em] text-[10px] text-[#A89B92] mb-6'>
             Como funciona
           </p>
 
           <h2
             style={{ fontFamily: 'var(--font-serif)' }}
-            className='text-5xl md:text-7xl leading-[0.95] tracking-[-0.05em] text-[#D4CAC1] mb-20'
+            className='text-5xl md:text-7xl leading-[0.95] tracking-[-0.05em] text-[#CBBEB4] mb-20'
           >
             O Ritual do Drop
           </h2>
 
-          <div className='grid md:grid-cols-3 gap-8'>
+          <div className='grid md:grid-cols-3 gap-10'>
             <div className='border-t border-[#DDD4CB] pt-8'>
               <p className='text-[#B5AAA0] mb-6'>01</p>
 
@@ -258,8 +273,9 @@ export default function Home() {
               </h3>
 
               <p className='mt-4 text-[#6E6660] leading-[1.9]'>
-                Abrimos poucos pedidos por edição para garantir
-                frescor.
+                Abrimos apenas 30 unidades por edição para
+                garantir frescor, exclusividade e evitar
+                desperdício.
               </p>
             </div>
 
@@ -301,32 +317,40 @@ export default function Home() {
       {/* CTA */}
       <section className='pb-24 md:pb-32'>
         <div className='max-w-6xl mx-auto px-6 md:px-10'>
-          <div className='rounded-3xl bg-gradient-to-br from-[#1A1413] via-[#241A18] to-[#3A2721] px-8 md:px-16 py-20 md:py-24 text-center'>
-            <p className='uppercase tracking-[0.3em] text-xs text-white/45 mb-8'>
-              Próxima edição
-            </p>
+          <div className='relative overflow-hidden rounded-[40px] bg-gradient-to-br from-[#1A1413] via-[#241A18] to-[#4A2E24] px-8 md:px-16 py-20 md:py-24 text-center shadow-[0_25px_80px_rgba(0,0,0,0.18)]'>
+            <div className='absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_top_right,rgba(255,255,255,0.2),transparent_30%)]' />
 
-            <h2
-              style={{ fontFamily: 'var(--font-serif)' }}
-              className='text-5xl md:text-7xl leading-[0.92] tracking-[-0.05em] text-[#F8F3EE] max-w-4xl mx-auto'
-            >
-              Reservas abertas para o Drop #01
-            </h2>
+            <div className='relative z-10'>
+              <p className='uppercase tracking-[0.35em] text-[10px] text-white/45 mb-8'>
+                Próxima edição
+              </p>
 
-            <p className='mt-8 text-white/70 leading-[2] max-w-2xl mx-auto'>
-              Entregas entre sexta e sábado em Santa Cecília,
-              Higienópolis, Vila Buarque, Barra Funda e Campos
-              Elíseos.
-            </p>
+              <h2
+                style={{ fontFamily: 'var(--font-serif)' }}
+                className='text-5xl md:text-7xl leading-[0.92] tracking-[-0.05em] text-[#F8F3EE] max-w-4xl mx-auto'
+              >
+                Reservas abertas para o Drop #01
+              </h2>
 
-            <a
-              href={whatsappLink}
-              target='_blank'
-              rel='noopener noreferrer'
-              className='inline-flex mt-12 bg-[#D56A44] hover:bg-[#E17852] text-white rounded-full px-10 py-4 uppercase tracking-[0.2em] text-xs'
-            >
-              Reservar pelo WhatsApp
-            </a>
+              <p className='mt-8 text-white/72 leading-[2] max-w-2xl mx-auto'>
+                Entregas entre sexta e sábado em Santa Cecília,
+                Higienópolis, Vila Buarque, Barra Funda e Campos
+                Elíseos.
+              </p>
+
+              <a
+                href={whatsappLink}
+                target='_blank'
+                rel='noopener noreferrer'
+                className='inline-flex mt-12 bg-[#D56A44] hover:bg-[#E17852] text-white rounded-full px-10 py-4 uppercase tracking-[0.2em] text-xs transition-all duration-300 hover:scale-[1.03]'
+              >
+                Reservar meu Drop
+              </a>
+
+              <p className='mt-5 text-xs text-white/45 tracking-wide'>
+                Pagamento em até 2x disponível via link.
+              </p>
+            </div>
           </div>
         </div>
       </section>
