@@ -25,14 +25,14 @@ export default function CuradoriaRaizLanding() {
         </p>
 
         <h1 className="font-serif leading-[0.82] text-[#F8F3EE]">
-          <span className="block text-[64px] md:text-[104px] font-medium">
-            Curadoria
-          </span>
+  <span className="block text-[58px] md:text-[92px] font-medium">
+    Curadoria
+  </span>
 
-          <span className="block text-[110px] md:text-[210px] -mt-2 md:-mt-6">
-            Raiz
-          </span>
-        </h1>
+  <span className="block text-[108px] md:text-[198px] -mt-1 md:-mt-3 ml-1 md:ml-2">
+    Raiz
+  </span>
+</h1>
 
         <h2 className="mt-8 md:mt-10 text-[40px] md:text-[56px] leading-[0.96] tracking-[-0.04em] text-[#F7F1EC] font-light max-w-lg">
           Alimento com história, entregue por quem escolhe.
