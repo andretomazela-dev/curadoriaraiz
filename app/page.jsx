@@ -6,106 +6,96 @@ export default function CuradoriaRaizLanding() {
 
   return (
     <main className='bg-[#F6F2EC] text-[#2B2623] overflow-hidden'>
-      {/* HERO */}
+     {/* HERO */}
 
-      <section className='relative overflow-hidden bg-gradient-to-br from-[#7A6A61] via-[#5C4A43] to-[#241714]'>
-        {/* glow */}
-        <div className='absolute inset-0 opacity-30 bg-[radial-gradient(circle_at_top_left,rgba(255,255,255,0.18),transparent_40%)]' />
+<section className='relative overflow-hidden bg-gradient-to-br from-[#7B6A63] via-[#5E4A43] to-[#1B1411]'>
+  {/* glow */}
+  <div className='absolute inset-0 opacity-30 bg-[radial-gradient(circle_at_top_left,rgba(255,255,255,0.14),transparent_42%)]' />
 
-        {/* grain */}
-        <div className="absolute inset-0 opacity-[0.04] mix-blend-soft-light bg-[url('https://grainy-gradients.vercel.app/noise.svg')]" />
+  {/* grain */}
+  <div className="absolute inset-0 opacity-[0.04] mix-blend-soft-light bg-[url('https://grainy-gradients.vercel.app/noise.svg')]" />
 
-        {/* vinho glow */}
-        <div className='absolute right-0 top-0 w-[700px] h-[700px] bg-[#A33E2F]/20 blur-3xl rounded-full' />
+  {/* glow vinho */}
+  <div className='absolute right-0 top-0 w-[700px] h-[700px] bg-[#A33E2F]/20 blur-3xl rounded-full' />
 
-        <div className='relative max-w-7xl mx-auto px-6 md:px-10 py-20 md:py-28'>
-          <div className='grid lg:grid-cols-2 gap-14 items-center'>
-            {/* TEXTO */}
+  <div className='relative max-w-7xl mx-auto px-6 md:px-10 py-20 md:py-28'>
+    <div className='grid lg:grid-cols-2 gap-14 items-center'>
+      {/* TEXTO */}
 
-            <div className='relative z-10 max-w-xl'>
-              <p className='uppercase tracking-[0.35em] text-[10px] md:text-xs text-white/55 mb-10'>
-                Curadoria artesanal · São Paulo
-              </p>
+      <div className='relative z-10 max-w-xl'>
+        <p className='uppercase tracking-[0.35em] text-[10px] md:text-xs text-white/55 mb-10'>
+          Curadoria artesanal · São Paulo
+        </p>
 
-              {/* NOVO LOGO */}
+        {/* NOVO LOGO */}
 
-              <div className='mb-12 md:mb-14'>
-                <Image
-                  src='/branding/02_principal_escuro.svg'
-                  alt='Curadoria Raiz'
-                  width={620}
-                  height={260}
-                  priority
-                  className='w-[240px] md:w-[360px] lg:w-[420px] h-auto drop-shadow-[0_10px_30px_rgba(0,0,0,0.25)]'
-                />
-              </div>
-
-              {/* HEADLINE */}
-
-              <h2 className='text-[40px] md:text-[60px] leading-[0.94] tracking-[-0.05em] text-[#F7F1EC] font-light max-w-lg'>
-                Alimento com história, entregue por quem escolhe.
-              </h2>
-
-              <p className='mt-8 text-[15px] md:text-[18px] leading-[1.9] text-white/72 max-w-md'>
-                Uma seleção mensal de vinho natural, pão de fermentação
-                natural e produtos artesanais escolhidos para desacelerar o
-                ritmo da cidade por algumas horas.
-              </p>
-
-              <div className='mt-10 flex flex-wrap items-center gap-4'>
-                <a
-                  href={whatsappLink}
-                  target='_blank'
-                  className='inline-flex items-center justify-center rounded-full bg-[#D66A42] hover:bg-[#BF5934] transition-all duration-300 px-7 py-4 text-[11px] tracking-[0.18em] uppercase text-white shadow-[0_10px_30px_rgba(0,0,0,0.18)] hover:scale-[1.02]'
-                >
-                  Reservar edição atual
-                </a>
-
-                <a
-                  href='#manifesto'
-                  className='inline-flex items-center justify-center rounded-full border border-white/16 backdrop-blur-sm bg-white/5 hover:bg-white/10 transition-all duration-300 px-7 py-4 text-[11px] tracking-[0.18em] uppercase text-white/85'
-                >
-                  Conhecer o manifesto
-                </a>
-              </div>
-
-              <p className='mt-5 text-[12px] text-white/50'>
-                Produção limitada · 30 unidades por edição
-              </p>
-            </div>
-
-            {/* IMAGEM */}
-
-            <div className='relative flex justify-center lg:justify-end'>
-              {/* glow vinho */}
-
-              <div className='absolute w-[420px] h-[420px] rounded-full bg-[#B24A2B]/20 blur-3xl' />
-
-              {/* frame premium */}
-
-              <div className='relative backdrop-blur-md bg-[#F6F0EA]/10 border border-white/12 rounded-[34px] p-4 md:p-5 shadow-[0_30px_80px_rgba(0,0,0,0.35)]'>
-                {/* brilho */}
-
-                <div className='absolute inset-0 rounded-[34px] bg-gradient-to-br from-white/18 to-transparent pointer-events-none' />
-
-                <div className='relative overflow-visible rounded-[26px]'>
-                  {/* imagem */}
-
-                  <img
-                    src='/images/apagao-editorial.webp'
-                    alt='Vinho Apagão Curadoria Raiz'
-                    className='relative z-10 w-full max-w-[560px] object-cover rounded-[22px] shadow-2xl scale-[1.04]'
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
+        <div className='mb-12 md:mb-14'>
+          <Image
+            src='/branding/02_principal_escuro.svg'
+            alt='Curadoria Raiz'
+            width={900}
+            height={320}
+            priority
+            className='w-[340px] md:w-[520px] lg:w-[640px] h-auto drop-shadow-[0_18px_40px_rgba(0,0,0,0.28)]'
+          />
         </div>
 
-        {/* fade */}
+        {/* HEADLINE */}
 
-        <div className='absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-b from-transparent to-[#F6F1EB]' />
-      </section>
+        <h2 className='text-[46px] md:text-[72px] leading-[0.94] tracking-[-0.05em] text-[#F7F1EC] font-light max-w-[12ch]'>
+          Alimento com história, entregue por quem escolhe.
+        </h2>
+
+        <p className='mt-8 text-[15px] md:text-[18px] leading-[1.9] text-white/72 max-w-md'>
+          Uma seleção mensal de vinho natural, pão de fermentação
+          natural e produtos artesanais escolhidos para desacelerar o
+          ritmo da cidade por algumas horas.
+        </p>
+
+        <div className='mt-10 flex flex-wrap items-center gap-4'>
+          <a
+            href={whatsappLink}
+            target='_blank'
+            className='inline-flex items-center justify-center rounded-full bg-[#D66A42] hover:bg-[#BF5934] transition-all duration-300 px-7 py-4 text-[11px] tracking-[0.18em] uppercase text-white shadow-[0_10px_30px_rgba(0,0,0,0.18)] hover:scale-[1.02]'
+          >
+            Reservar edição atual
+          </a>
+
+          <a
+            href='#manifesto'
+            className='inline-flex items-center justify-center rounded-full border border-white/16 backdrop-blur-sm bg-white/5 hover:bg-white/10 transition-all duration-300 px-7 py-4 text-[11px] tracking-[0.18em] uppercase text-white/85'
+          >
+            Conhecer o manifesto
+          </a>
+        </div>
+
+        <p className='mt-5 text-[12px] text-white/50'>
+          Produção limitada · 30 unidades por edição
+        </p>
+      </div>
+
+      {/* IMAGEM */}
+
+      <div className='relative flex justify-center lg:justify-end'>
+        {/* glow */}
+
+        <div className='absolute w-[480px] h-[480px] rounded-full bg-[#B24A2B]/20 blur-3xl' />
+
+        {/* imagem */}
+
+        <img
+          src='/images/apagao-editorial.webp'
+          alt='Vinho Apagão Curadoria Raiz'
+          className='relative z-10 w-full max-w-[620px] object-cover rounded-[28px] shadow-[0_40px_90px_rgba(0,0,0,0.35)]'
+        />
+      </div>
+    </div>
+  </div>
+
+  {/* fade */}
+
+  <div className='absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-b from-transparent to-[#F6F1EB]' />
+</section>
 
       {/* MANIFESTO */}
 
