@@ -7,67 +7,47 @@ export default function Home() {
     {/* HERO */}
 <section className="relative min-h-screen overflow-hidden bg-[#1A0C06] text-[#F7F1EB]">
 
-  {/* HERO IMAGE */}
-  <div className="absolute inset-0">
+  {/* COLUNA DIREITA — imagem */}
+  <div className="absolute inset-y-0 right-0 w-[55%] sm:w-[52%] lg:w-[56%] xl:w-[58%]">
 
     <Image
       src="/images/curadoria-raiz-hero-composicao.png"
-      alt="Curadoria Raiz"
+      alt="Apagão Rosé Natural, Sourdough e Antepasto de Berinjela"
       fill
       priority
-      className="
-  object-cover
-  object-[40%_center]
-  sm:object-[38%_center]
-  lg:object-[42%_center]
-  xl:object-[40%_center]
-"
+      className="object-cover object-[30%_center]"
     />
 
-    {/* cinematic overlay */}
-    <div className="absolute inset-0 bg-black/30" />
+    {/* fade esquerdo — integra imagem ao fundo escuro */}
+    <div className="absolute inset-0 bg-[linear-gradient(to_right,#1A0C06_0%,rgba(26,12,6,0.55)_28%,rgba(26,12,6,0.10)_58%,transparent_80%)]" />
 
-    {/* readability overlay */}
-    <div
-      className="
-        absolute
-        inset-0
-        bg-[linear-gradient(to_right,rgba(16,8,6,0.88)_0%,rgba(16,8,6,0.72)_34%,rgba(16,8,6,0.28)_58%,transparent_78%)]
-      "
-    />
+    {/* fade inferior — integra à transição da página */}
+    <div className="absolute inset-x-0 bottom-0 h-[40%] bg-gradient-to-t from-[#1A0C06] to-transparent" />
 
-    {/* warm glow */}
-    <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(140,48,24,0.22),transparent_38%)]" />
-
-    {/* texture */}
-    <div className="absolute inset-0 opacity-[0.045] bg-[url('/images/noise.png')]" />
+    {/* warm glow no topo direito */}
+    <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(140,48,24,0.18),transparent_42%)]" />
   </div>
 
-  {/* CONTENT */}
-  <div className="relative z-10 mx-auto flex min-h-screen max-w-[1440px] items-center px-6 py-12 sm:px-8 lg:px-12">
+  {/* COLUNA ESQUERDA — conteúdo */}
+  <div className="relative z-10 mx-auto flex min-h-screen max-w-[1440px] items-center px-6 py-20 sm:px-10 lg:px-16">
 
-    <div className="max-w-[680px]">
-
-      {/* EYEBROW */}
-      <div className="mb-10">
-        <span className="text-[10px] uppercase tracking-[0.34em] text-[#E5D5CA]/85">
-          Curadoria artesanal · São Paulo
-        </span>
-      </div>
+    <div className="w-full max-w-[520px] lg:max-w-[580px] xl:max-w-[620px]">
 
       {/* LOGO */}
       <div className="mb-10">
-
         <Image
-         src="/branding/transparentes/01_principal_claro.png"
-width={480}
-height={220}
-className="
-  w-[200px]
-  sm:w-[260px]
-  lg:w-[320px]
-  xl:w-[360px]
-              object-contain
+          src="/branding/transparentes/01_principal_claro.png"
+          alt="Curadoria Raiz"
+          width={480}
+          height={220}
+          priority
+          className="
+            h-auto
+            w-[180px]
+            sm:w-[220px]
+            lg:w-[270px]
+            xl:w-[300px]
+            object-contain
           "
         />
       </div>
@@ -75,29 +55,39 @@ className="
       {/* HEADLINE */}
       <h1
         className="
-          max-w-[640px]
           font-serif
-          text-[3.8rem]
+          text-[3.2rem]
           font-normal
-          leading-[0.92]
+          leading-[0.93]
           tracking-[-0.03em]
           text-[#F8F3EE]
-          sm:text-[4.8rem]
-          lg:text-[6.2rem]
+          sm:text-[4rem]
+          lg:text-[5rem]
+          xl:text-[5.6rem]
         "
       >
-        Comida, vinho e pequenos produtores em ritmo humano.
+        Comida,
+        <br />
+        vinho e
+        <br />
+        pequenos
+        <br />
+        produtores
+        <br />
+        em ritmo
+        <br />
+        humano.
       </h1>
 
       {/* SUBTEXT */}
       <p
         className="
           mt-8
-          max-w-[520px]
-          text-[15px]
+          max-w-[420px]
+          text-[14px]
           leading-[1.95]
-          text-[#E2D2C8]
-          sm:text-[16px]
+          text-[#C8B8AE]
+          sm:text-[15px]
         "
       >
         Uma seleção mensal de vinho natural, pão de fermentação lenta
@@ -130,13 +120,13 @@ className="
           className="
             rounded-full
             border
-            border-[#8C6557]
+            border-[#6B4438]
             px-8
             py-4
             text-[10px]
             uppercase
             tracking-[0.28em]
-            text-[#F3E7E0]
+            text-[#D8C8BE]
             transition-all
             duration-300
             hover:bg-white/5
@@ -147,17 +137,19 @@ className="
       </div>
 
       {/* FOOTNOTE */}
-      <div className="mt-10 text-[9px] uppercase tracking-[0.32em] text-[#C29B8D]">
+      <div className="mt-10 text-[9px] uppercase tracking-[0.32em] text-[#7A5A4A]">
         Produção limitada · 30 unidades por edição
       </div>
+
     </div>
   </div>
 
-  {/* SMOOTH TRANSITION */}
-  <div className="pointer-events-none absolute bottom-0 left-0 right-0 h-[260px]">
-    <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#6E2F1B]/18 to-[#F3EEE8]" />
-    <div className="absolute inset-0 backdrop-blur-[12px]" />
+  {/* SMOOTH TRANSITION — bottom */}
+  <div className="pointer-events-none absolute bottom-0 left-0 right-0 h-[220px]">
+    <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#1A0C06]/40 to-[#F3EEE8]" />
+    <div className="absolute inset-0 backdrop-blur-[8px]" />
   </div>
+
 </section>
 
       {/* MANIFESTO */}
