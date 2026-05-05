@@ -22,14 +22,19 @@ export default function Home() {
             fill
             priority
             className="
-              object-cover
-              object-right-bottom
-              opacity-[0.92]
-            "
+  object-cover
+
+  object-[72%_bottom]
+  sm:object-[78%_bottom]
+  md:object-[82%_bottom]
+  lg:object-right-bottom
+
+  opacity-[0.90]
+"
           />
 
           {/* cinematic overlay */}
-          <div className="absolute inset-0 bg-gradient-to-r from-[#1A0C06]/92 via-[#1A0C06]/58 to-black/42" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#1A0C06]/96 via-[#1A0C06]/72 to-black/34" />
 
           {/* right darkening */}
           <div className="absolute inset-0 bg-gradient-to-r from-black/10 via-transparent to-black/35" />
