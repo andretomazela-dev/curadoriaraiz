@@ -157,7 +157,19 @@ export default function Home() {
         </div>
 
         {/* smoother transition */}
-        <div className="absolute bottom-0 left-0 right-0 h-48 bg-gradient-to-b from-transparent via-[#5A2417]/20 to-[#F3EEE8]" />
+        <div
+  className="
+    absolute
+    bottom-0
+    left-0
+    right-0
+    h-[220px]
+    bg-gradient-to-b
+    from-transparent
+    via-[#6B2B18]/8
+    to-[#F3EEE8]
+  "
+/>
       </section>
 
       {/* MANIFESTO */}
