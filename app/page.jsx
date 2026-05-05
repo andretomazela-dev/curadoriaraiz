@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <main className="overflow-hidden bg-[#F3EEE8] text-[#3E241D]">
 
-    {/* HERO */}
+   {/* HERO */}
 <section className="relative min-h-screen overflow-hidden bg-[#1A0C06] text-[#F7F1EB]">
 
   {/* COLUNA DIREITA — imagem */}
@@ -15,17 +15,17 @@ export default function Home() {
       alt="Apagão Rosé Natural, Sourdough e Antepasto de Berinjela"
       fill
       priority
-      className="object-cover object-[15%_center]"
+      className="object-cover object-[85%_center]"
     />
 
-    {/* fade esquerdo */}
-    <div className="absolute inset-0 bg-[linear-gradient(to_right,#1A0C06_0%,rgba(26,12,6,0.60)_22%,rgba(26,12,6,0.08)_55%,transparent_75%)]" />
+    {/* fade esquerdo — integra ao fundo escuro */}
+    <div className="absolute inset-0 bg-[linear-gradient(to_right,#1A0C06_0%,rgba(26,12,6,0.75)_18%,rgba(26,12,6,0.15)_48%,transparent_72%)]" />
 
-    {/* fade inferior */}
-    <div className="absolute inset-x-0 bottom-0 h-[38%] bg-gradient-to-t from-[#1A0C06] to-transparent" />
+    {/* fade inferior — suave, sem blur */}
+    <div className="absolute inset-x-0 bottom-0 h-[50%] bg-gradient-to-t from-[#1A0C06]/90 via-[#1A0C06]/30 to-transparent" />
 
     {/* warm glow */}
-    <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(140,48,24,0.18),transparent_42%)]" />
+    <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(140,48,24,0.15),transparent_45%)]" />
   </div>
 
   {/* COLUNA ESQUERDA — conteúdo */}
@@ -33,7 +33,7 @@ export default function Home() {
 
     <div className="w-full max-w-[520px] lg:max-w-[560px]">
 
-      {/* LOGO — maior e com presença */}
+      {/* LOGO */}
       <div className="mb-10">
         <Image
           src="/branding/transparentes/01_principal_claro.png"
@@ -143,10 +143,9 @@ export default function Home() {
     </div>
   </div>
 
-  {/* SMOOTH TRANSITION — bottom */}
-  <div className="pointer-events-none absolute bottom-0 left-0 right-0 h-[220px]">
-    <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#1A0C06]/40 to-[#F3EEE8]" />
-    <div className="absolute inset-0 backdrop-blur-[8px]" />
+  {/* TRANSIÇÃO INFERIOR — suave, sem blur */}
+  <div className="pointer-events-none absolute bottom-0 left-0 right-0 h-[320px]">
+    <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#2A1208]/20 to-[#F3EEE8]" />
   </div>
 
 </section>
