@@ -7,46 +7,122 @@ export default function Home() {
    {/* HERO */}
 <section className="relative min-h-screen overflow-hidden bg-[#1A0C06] text-[#F7F1EB]">
 
-  {/* COLUNA DIREITA — imagem */}
-  <div className="absolute inset-y-0 right-0 w-[55%] sm:w-[52%] lg:w-[56%] xl:w-[58%]">
+  {/* BACKGROUND IMAGE */}
+  <div className="absolute inset-0">
 
-    <Image
-      src="/images/curadoria-raiz-hero-composicao.png"
-      alt="Apagão Rosé Natural, Sourdough e Antepasto de Berinjela"
-      fill
-      priority
-      className="object-cover object-[85%_center]"
+    {/* DESKTOP */}
+    <div className="hidden md:block absolute inset-0">
+      <Image
+        src="/images/curadoria-raiz-hero-composicao.png"
+        alt="Curadoria Raiz"
+        fill
+        priority
+        className="
+          object-cover
+          object-[72%_center]
+        "
+      />
+    </div>
+
+    {/* MOBILE */}
+    <div className="md:hidden absolute inset-0">
+      <Image
+        src="/images/curadoria-raiz-hero-composicao-vertical.png"
+        alt="Curadoria Raiz"
+        fill
+        priority
+        className="
+          object-cover
+          object-center
+        "
+      />
+    </div>
+
+    {/* OVERLAY LEFT */}
+    <div
+      className="
+        absolute
+        inset-0
+        bg-[linear-gradient(to_right,rgba(16,8,6,0.94)_0%,rgba(16,8,6,0.82)_28%,rgba(16,8,6,0.42)_54%,transparent_78%)]
+      "
     />
 
-    {/* fade esquerdo — integra ao fundo escuro */}
-    <div className="absolute inset-0 bg-[linear-gradient(to_right,#1A0C06_0%,rgba(26,12,6,0.75)_18%,rgba(26,12,6,0.15)_48%,transparent_72%)]" />
+    {/* MOBILE OVERLAY */}
+    <div
+      className="
+        absolute
+        inset-0
+        md:hidden
+        bg-[linear-gradient(to_bottom,rgba(16,8,6,0.88)_0%,rgba(16,8,6,0.60)_38%,rgba(16,8,6,0.82)_100%)]
+      "
+    />
 
-    {/* fade inferior — suave, sem blur */}
-    <div className="absolute inset-x-0 bottom-0 h-[50%] bg-gradient-to-t from-[#1A0C06]/90 via-[#1A0C06]/30 to-transparent" />
+    {/* CINEMATIC SHADOW */}
+    <div className="absolute inset-0 bg-black/20" />
 
-    {/* warm glow */}
-    <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(140,48,24,0.15),transparent_45%)]" />
+    {/* WARM GLOW */}
+    <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(125,40,18,0.18),transparent_42%)]" />
+
+    {/* NOISE */}
+    <div className="absolute inset-0 opacity-[0.045] bg-[url('/images/noise.png')]" />
   </div>
 
-  {/* COLUNA ESQUERDA — conteúdo */}
-  <div className="relative z-10 mx-auto flex min-h-screen max-w-[1440px] items-center px-6 py-20 sm:px-10 lg:px-16">
+  {/* CONTENT */}
+  <div
+    className="
+      relative
+      z-10
+      mx-auto
+      flex
+      min-h-screen
+      max-w-[1440px]
+      items-center
+      px-6
+      py-16
+      sm:px-8
+      lg:px-14
+    "
+  >
 
-    <div className="w-full max-w-[520px] lg:max-w-[560px]">
+    <div
+      className="
+        w-full
+        max-w-[560px]
+        pt-12
+        md:pt-0
+      "
+    >
+
+      {/* EYEBROW */}
+      <div className="mb-10">
+        <span
+          className="
+            text-[10px]
+            uppercase
+            tracking-[0.34em]
+            text-[#E3D4C8]/80
+          "
+        >
+          Curadoria artesanal · São Paulo
+        </span>
+      </div>
 
       {/* LOGO */}
       <div className="mb-10">
+
         <Image
-          src="/branding/transparentes/01_principal_claro.png"
+          src="/branding/transparentes/07_vertical.png"
           alt="Curadoria Raiz"
-          width={480}
-          height={220}
+          width={980}
+          height={980}
           priority
           className="
             h-auto
-            w-[260px]
-            sm:w-[320px]
-            lg:w-[380px]
-            xl:w-[420px]
+            w-[320px]
+            sm:w-[440px]
+            lg:w-[760px]
+            xl:w-[840px]
+            max-w-none
             object-contain
           "
         />
@@ -55,39 +131,30 @@ export default function Home() {
       {/* HEADLINE */}
       <h1
         className="
+          max-w-[620px]
           font-serif
-          text-[3.2rem]
+          text-[3.3rem]
           font-normal
-          leading-[0.93]
+          leading-[0.92]
           tracking-[-0.03em]
           text-[#F8F3EE]
-          sm:text-[4rem]
-          lg:text-[5rem]
-          xl:text-[5.4rem]
+          sm:text-[4.6rem]
+          lg:text-[5.8rem]
+          xl:text-[6.4rem]
         "
       >
-        Comida,
-        <br />
-        vinho e
-        <br />
-        pequenos
-        <br />
-        produtores
-        <br />
-        em ritmo
-        <br />
-        humano.
+        Comida, vinho e pequenos produtores em ritmo humano.
       </h1>
 
       {/* SUBTEXT */}
       <p
         className="
           mt-8
-          max-w-[400px]
-          text-[14px]
+          max-w-[470px]
+          text-[15px]
           leading-[1.95]
-          text-[#C8B8AE]
-          sm:text-[15px]
+          text-[#D8C9BE]
+          sm:text-[16px]
         "
       >
         Uma seleção mensal de vinho natural, pão de fermentação lenta
@@ -97,10 +164,11 @@ export default function Home() {
 
       {/* BUTTONS */}
       <div className="mt-10 flex flex-wrap gap-4">
+
         <button
           className="
             rounded-full
-            bg-[#C85F39]
+            bg-[#C96039]
             px-8
             py-4
             text-[10px]
@@ -109,7 +177,7 @@ export default function Home() {
             text-white
             transition-all
             duration-300
-            hover:bg-[#D46B45]
+            hover:bg-[#D56D46]
           "
         >
           Reservar edição atual
@@ -119,13 +187,13 @@ export default function Home() {
           className="
             rounded-full
             border
-            border-[#6B4438]
+            border-[#7A5648]
             px-8
             py-4
             text-[10px]
             uppercase
             tracking-[0.28em]
-            text-[#D8C8BE]
+            text-[#F0E5DE]
             transition-all
             duration-300
             hover:bg-white/5
@@ -136,18 +204,34 @@ export default function Home() {
       </div>
 
       {/* FOOTNOTE */}
-      <div className="mt-10 text-[9px] uppercase tracking-[0.32em] text-[#7A5A4A]">
+      <div
+        className="
+          mt-10
+          text-[9px]
+          uppercase
+          tracking-[0.32em]
+          text-[#B08879]
+        "
+      >
         Produção limitada · 30 unidades por edição
       </div>
-
     </div>
   </div>
 
-  {/* TRANSIÇÃO INFERIOR — suave, sem blur */}
-  <div className="pointer-events-none absolute bottom-0 left-0 right-0 h-[320px]">
-    <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#2A1208]/20 to-[#F3EEE8]" />
-  </div>
+  {/* TRANSITION */}
+  <div className="pointer-events-none absolute bottom-0 left-0 right-0 h-[260px]">
 
+    <div
+      className="
+        absolute
+        inset-0
+        bg-gradient-to-b
+        from-transparent
+        via-[#4B1E10]/12
+        to-[#F3EEE8]
+      "
+    />
+  </div>
 </section>
 
       {/* MANIFESTO */}
