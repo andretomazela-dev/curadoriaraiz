@@ -16,12 +16,12 @@ export default function Home() {
       fill
       priority
       className="
-        object-cover
-        object-[72%_center]
-        sm:object-[68%_center]
-        lg:object-[72%_center]
-        xl:object-[78%_center]
-      "
+  object-cover
+  object-[40%_center]
+  sm:object-[38%_center]
+  lg:object-[42%_center]
+  xl:object-[40%_center]
+"
     />
 
     {/* cinematic overlay */}
@@ -59,18 +59,15 @@ export default function Home() {
       <div className="mb-10">
 
         <Image
-          src="/branding/transparentes/07_vertical.png"
-          alt="Curadoria Raiz"
-          width={760}
-          height={760}
-          priority
-          className="
-            h-auto
-            w-[320px]
-            sm:w-[420px]
-            lg:w-[620px]
-            xl:w-[760px]
-            object-contain
+         src="/branding/transparentes/01_principal_claro.png"
+width={480}
+height={220}
+className="
+  w-[200px]
+  sm:w-[260px]
+  lg:w-[320px]
+  xl:w-[360px]
+              object-contain
           "
         />
       </div>
