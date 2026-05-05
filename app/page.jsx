@@ -15,7 +15,7 @@ export default function Home() {
         {/* glow */}
         <div className="absolute right-[14%] top-[24%] h-[460px] w-[460px] rounded-full bg-[#A43D1F]/20 blur-[140px]" />
 
-        <div className="relative z-10 mx-auto max-w-[1400px] px-8 pt-10 pb-24">
+        <div className="relative z-10 mx-auto max-w-[1400px] px-6 sm:px-8 pt-10 pb-24">
 
           {/* top label */}
           <div className="mb-20">
@@ -27,35 +27,38 @@ export default function Home() {
           <div className="grid lg:grid-cols-2 gap-20 items-center">
 
             {/* LEFT */}
-            <div className="max-w-[560px]">
+            <div className="max-w-[620px]">
 
               {/* LOGO */}
-              <div className="mb-2">
+              <div className="mb-8">
                 <Image
-  src="/branding/transparentes/07_vertical.png"
-  alt="Curadoria Raiz"
-  width={520}
-  height={520}
-  priority
-  className="
-    w-[320px]
-    lg:w-[460px]
-    xl:w-[520px]
-    h-auto
-    object-contain
-  "
-/>
+                  src="/branding/transparentes/07_vertical.png"
+                  alt="Curadoria Raiz"
+                  width={640}
+                  height={640}
+                  priority
+                  className="
+                    w-[380px]
+                    sm:w-[440px]
+                    lg:w-[560px]
+                    xl:w-[640px]
+                    h-auto
+                    object-contain
+                  "
+                />
               </div>
 
               {/* TITLE */}
               <h1
                 className="
                   font-serif
-                  text-[4.6rem]
-                  leading-[0.88]
-                  tracking-[-0.06em]
+                  text-[4.2rem]
+                  sm:text-[5rem]
+                  lg:text-[6.2rem]
+                  leading-[0.94]
+                  tracking-[-0.04em]
                   text-[#F5EEE8]
-                  max-w-[520px]
+                  max-w-[620px]
                 "
               >
                 Comida, vinho e pequenos produtores em ritmo humano.
@@ -137,8 +140,12 @@ export default function Home() {
                   width={640}
                   height={760}
                   className="
-                    w-[520px]
-                    h-[620px]
+                    w-[360px]
+                    sm:w-[460px]
+                    lg:w-[520px]
+                    h-[460px]
+                    sm:h-[560px]
+                    lg:h-[620px]
                     object-cover
                     rounded-[26px]
                   "
@@ -153,10 +160,10 @@ export default function Home() {
       </section>
 
       {/* MANIFESTO */}
-      <section className="py-36">
-        <div className="mx-auto max-w-[1320px] px-8">
+      <section className="py-28 lg:py-36">
+        <div className="mx-auto max-w-[1320px] px-6 sm:px-8">
 
-          <div className="grid lg:grid-cols-2 gap-28 items-start">
+          <div className="grid lg:grid-cols-2 gap-20 lg:gap-28 items-start">
 
             {/* LEFT */}
             <div>
@@ -168,9 +175,11 @@ export default function Home() {
                 className="
                   mt-10
                   font-serif
-                  text-[6.4rem]
-                  leading-[0.9]
-                  tracking-[-0.06em]
+                  text-[3.8rem]
+                  sm:text-[5rem]
+                  lg:text-[6.4rem]
+                  leading-[0.94]
+                  tracking-[-0.04em]
                   text-[#D7CAC0]
                 "
               >
@@ -185,14 +194,16 @@ export default function Home() {
             </div>
 
             {/* RIGHT */}
-            <div className="max-w-[560px]">
+            <div className="max-w-[620px]">
 
               <h3
                 className="
                   font-serif
-                  text-[4rem]
-                  leading-[0.96]
-                  tracking-[-0.05em]
+                  text-[2.6rem]
+                  sm:text-[3.2rem]
+                  lg:text-[4rem]
+                  leading-[0.98]
+                  tracking-[-0.04em]
                   text-[#4A2A22]
                 "
               >
@@ -218,8 +229,8 @@ export default function Home() {
       </section>
 
       {/* PRODUCTS */}
-      <section className="pb-36">
-        <div className="mx-auto max-w-[1320px] px-8">
+      <section className="pb-28 lg:pb-36">
+        <div className="mx-auto max-w-[1320px] px-6 sm:px-8">
 
           <div className="mb-16">
             <span className="text-[10px] uppercase tracking-[0.38em] text-[#CBBCAF]">
@@ -230,9 +241,11 @@ export default function Home() {
               className="
                 mt-5
                 font-serif
-                text-[5rem]
-                leading-[0.94]
-                tracking-[-0.05em]
+                text-[3.2rem]
+                sm:text-[4rem]
+                lg:text-[5rem]
+                leading-[0.96]
+                tracking-[-0.04em]
                 text-[#D3C4B9]
               "
             >
@@ -245,9 +258,8 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-3 gap-10">
+          <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
 
-            {/* CARD */}
             {[
               {
                 image: "/images/apagao-packshot.webp",
@@ -288,9 +300,10 @@ export default function Home() {
                   className="
                     mt-7
                     font-serif
-                    text-[2.2rem]
+                    text-[2rem]
+                    sm:text-[2.2rem]
                     leading-[1]
-                    tracking-[-0.04em]
+                    tracking-[-0.03em]
                     text-[#3C241E]
                   "
                 >
@@ -307,7 +320,7 @@ export default function Home() {
       </section>
 
       {/* PRODUCER BANNER */}
-      <section className="relative h-[760px] overflow-hidden">
+      <section className="relative h-[720px] overflow-hidden">
 
         <Image
           src="/images/produtor-faccin.webp"
@@ -318,12 +331,12 @@ export default function Home() {
 
         <div className="absolute inset-0 bg-black/45" />
 
-        <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/20 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/75 via-black/25 to-transparent" />
 
         <div className="relative z-10 flex h-full items-center">
-          <div className="mx-auto w-full max-w-[1320px] px-8">
+          <div className="mx-auto w-full max-w-[1320px] px-6 sm:px-8">
 
-            <div className="max-w-[560px]">
+            <div className="max-w-[620px]">
 
               <span className="text-[10px] uppercase tracking-[0.38em] text-[#E9D9CF]/80">
                 Pequenos produtores
@@ -333,9 +346,11 @@ export default function Home() {
                 className="
                   mt-8
                   font-serif
-                  text-[5.4rem]
-                  leading-[0.92]
-                  tracking-[-0.06em]
+                  text-[3.4rem]
+                  sm:text-[4.4rem]
+                  lg:text-[5.4rem]
+                  leading-[0.94]
+                  tracking-[-0.04em]
                   text-white
                 "
               >
@@ -352,8 +367,8 @@ export default function Home() {
       </section>
 
       {/* CTA */}
-      <section className="py-40">
-        <div className="mx-auto max-w-[1320px] px-8">
+      <section className="py-28 lg:py-40">
+        <div className="mx-auto max-w-[1320px] px-6 sm:px-8">
 
           <div
             className="
@@ -361,8 +376,10 @@ export default function Home() {
               overflow-hidden
               rounded-[42px]
               bg-[#1E0F0B]
-              px-10
-              py-28
+              px-6
+              sm:px-10
+              py-20
+              lg:py-28
               text-center
             "
           >
@@ -385,9 +402,11 @@ export default function Home() {
                   mt-8
                   max-w-[720px]
                   font-serif
-                  text-[5rem]
-                  leading-[0.92]
-                  tracking-[-0.06em]
+                  text-[3.2rem]
+                  sm:text-[4.2rem]
+                  lg:text-[5rem]
+                  leading-[0.94]
+                  tracking-[-0.04em]
                   text-[#F8F2EC]
                 "
               >
@@ -429,21 +448,26 @@ export default function Home() {
 
       {/* FOOTER */}
       <footer className="border-t border-[#E4D9D0] py-14">
-        <div className="mx-auto flex max-w-[1320px] items-center justify-between px-8">
+        <div className="mx-auto flex flex-col gap-8 lg:flex-row items-center justify-between max-w-[1320px] px-6 sm:px-8">
 
           <Image
             src="/branding/transparentes/05_horizontal_claro.svg"
             alt="Curadoria Raiz"
-            width={240}
-            height={70}
-            className="h-auto w-[180px]"
+            width={320}
+            height={90}
+            className="
+              h-auto
+              w-[170px]
+              sm:w-[220px]
+              lg:w-[280px]
+            "
           />
 
-          <span className="text-[10px] uppercase tracking-[0.34em] text-[#B2A197]">
+          <span className="text-[10px] uppercase tracking-[0.34em] text-[#B2A197] text-center">
             Curadoria artesanal · São Paulo
           </span>
 
-          <span className="text-[10px] uppercase tracking-[0.28em] text-[#B7A69C]">
+          <span className="text-[10px] uppercase tracking-[0.28em] text-[#B7A69C] text-center">
             © 2026 Curadoria Raiz
           </span>
         </div>
