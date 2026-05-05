@@ -25,17 +25,17 @@ export default function CuradoriaRaizLanding() {
 
       {/* HERO */}
 
-      <section className='relative min-h-screen overflow-hidden bg-[#6A4B3D] flex items-center pt-20'>
+      <section className='relative overflow-hidden bg-[#6A4B3D]'>
 
-        {/* glow */}
+        {/* background glow */}
 
-        <div className='absolute right-[-120px] top-1/2 -translate-y-1/2 w-[720px] h-[720px] bg-[#A13F2D]/20 blur-[140px] rounded-full opacity-80' />
+        <div className='absolute right-[-180px] top-[10%] w-[720px] h-[720px] bg-[#A13F2D]/20 blur-[140px] rounded-full opacity-80' />
 
-        {/* texture */}
+        {/* subtle texture */}
 
-        <div className='absolute inset-0 opacity-[0.04] mix-blend-soft-light bg-[url("https://grainy-gradients.vercel.app/noise.svg")]' />
+        <div className='absolute inset-0 opacity-[0.04] bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:22px_22px]' />
 
-        <div className='relative z-10 max-w-7xl mx-auto px-6 md:px-10 py-24 md:py-32 grid lg:grid-cols-2 gap-16 items-end'>
+        <div className='relative z-10 max-w-7xl mx-auto px-6 md:px-10 pt-32 md:pt-40 pb-24 md:pb-28 grid lg:grid-cols-2 gap-16 items-center'>
 
           {/* LEFT */}
 
@@ -44,19 +44,16 @@ export default function CuradoriaRaizLanding() {
             {/* LOGO */}
 
             <div className='mb-10'>
-              <Image
+              <img
                 src='/branding/02_principal_escuro.svg'
                 alt='Curadoria Raiz'
-                width={900}
-                height={400}
-                priority
                 className='w-[320px] md:w-[500px] h-auto'
               />
             </div>
 
             {/* HEADLINE */}
 
-            <h1 className='text-[#F4E8DF] text-[54px] md:text-[88px] leading-[0.92] tracking-[-0.05em] font-light mb-8'>
+            <h1 className='text-[#F4E8DF] text-[52px] md:text-[86px] leading-[0.92] tracking-[-0.05em] font-light mb-8'>
               Uma seleção artesanal para desacelerar a cidade.
             </h1>
 
@@ -102,20 +99,17 @@ export default function CuradoriaRaizLanding() {
 
             <div className='absolute w-[520px] h-[520px] bg-[#D97A55]/20 blur-[120px] rounded-full' />
 
-            {/* image */}
+            {/* IMAGE */}
 
-            <div className='relative translate-y-6 md:translate-y-10'>
+            <div className='relative'>
 
-              <Image
+              <img
                 src='/apagao-editorial.webp.webp'
                 alt='Apagão Rosé Natural'
-                width={900}
-                height={1200}
-                priority
-                className='relative z-10 w-full max-w-[420px] md:max-w-[560px] h-auto rounded-[32px] shadow-[0_40px_80px_rgba(0,0,0,0.32)]'
+                className='relative z-10 w-full max-w-[420px] md:max-w-[560px] h-auto rounded-[32px] shadow-[0_40px_80px_rgba(0,0,0,0.32)] object-cover'
               />
 
-              {/* floating card */}
+              {/* FLOATING CARD */}
 
               <div className='absolute -bottom-10 -left-6 md:-left-10 backdrop-blur-md bg-[#4B3328]/72 border border-white/10 rounded-[28px] p-5 max-w-[260px] hidden md:block shadow-2xl'>
 
@@ -141,7 +135,7 @@ export default function CuradoriaRaizLanding() {
 
         </div>
 
-        {/* fade */}
+        {/* fade bottom */}
 
         <div className='absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-b from-transparent to-[#F4EEE6]' />
 
