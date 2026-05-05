@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <main className="overflow-hidden bg-[#F3EEE8] text-[#3E241D]">
 
-     {/* HERO */}
+    {/* HERO */}
 <section className="relative min-h-screen overflow-hidden bg-[#1A0C06] text-[#F7F1EB]">
 
   {/* HERO IMAGE */}
@@ -17,28 +17,36 @@ export default function Home() {
       priority
       className="
         object-cover
-        object-center
-        lg:object-[center_top]
+        object-[72%_center]
+        sm:object-[68%_center]
+        lg:object-[72%_center]
+        xl:object-[78%_center]
       "
     />
 
     {/* cinematic overlay */}
-    <div className="absolute inset-0 bg-black/38" />
+    <div className="absolute inset-0 bg-black/30" />
 
-    {/* left readability */}
-    <div className="absolute inset-0 bg-gradient-to-r from-black/72 via-black/28 to-transparent" />
+    {/* readability overlay */}
+    <div
+      className="
+        absolute
+        inset-0
+        bg-[linear-gradient(to_right,rgba(16,8,6,0.88)_0%,rgba(16,8,6,0.72)_34%,rgba(16,8,6,0.28)_58%,transparent_78%)]
+      "
+    />
 
-    {/* warm vignette */}
-    <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(140,48,24,0.24),transparent_36%)]" />
+    {/* warm glow */}
+    <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(140,48,24,0.22),transparent_38%)]" />
 
-    {/* subtle texture */}
+    {/* texture */}
     <div className="absolute inset-0 opacity-[0.045] bg-[url('/images/noise.png')]" />
   </div>
 
   {/* CONTENT */}
   <div className="relative z-10 mx-auto flex min-h-screen max-w-[1440px] items-center px-6 py-12 sm:px-8 lg:px-12">
 
-    <div className="max-w-[640px]">
+    <div className="max-w-[680px]">
 
       {/* EYEBROW */}
       <div className="mb-10">
@@ -58,10 +66,10 @@ export default function Home() {
           priority
           className="
             h-auto
-            w-[260px]
-            sm:w-[340px]
-            lg:w-[520px]
-            xl:w-[620px]
+            w-[320px]
+            sm:w-[420px]
+            lg:w-[620px]
+            xl:w-[760px]
             object-contain
           "
         />
@@ -70,7 +78,7 @@ export default function Home() {
       {/* HEADLINE */}
       <h1
         className="
-          max-w-[620px]
+          max-w-[640px]
           font-serif
           text-[3.8rem]
           font-normal
