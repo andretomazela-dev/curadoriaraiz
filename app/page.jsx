@@ -15,25 +15,25 @@ export default function Home() {
       alt="Apagão Rosé Natural, Sourdough e Antepasto de Berinjela"
       fill
       priority
-      className="object-cover object-[30%_center]"
+      className="object-cover object-[15%_center]"
     />
 
-    {/* fade esquerdo — integra imagem ao fundo escuro */}
-    <div className="absolute inset-0 bg-[linear-gradient(to_right,#1A0C06_0%,rgba(26,12,6,0.55)_28%,rgba(26,12,6,0.10)_58%,transparent_80%)]" />
+    {/* fade esquerdo */}
+    <div className="absolute inset-0 bg-[linear-gradient(to_right,#1A0C06_0%,rgba(26,12,6,0.60)_22%,rgba(26,12,6,0.08)_55%,transparent_75%)]" />
 
-    {/* fade inferior — integra à transição da página */}
-    <div className="absolute inset-x-0 bottom-0 h-[40%] bg-gradient-to-t from-[#1A0C06] to-transparent" />
+    {/* fade inferior */}
+    <div className="absolute inset-x-0 bottom-0 h-[38%] bg-gradient-to-t from-[#1A0C06] to-transparent" />
 
-    {/* warm glow no topo direito */}
+    {/* warm glow */}
     <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(140,48,24,0.18),transparent_42%)]" />
   </div>
 
   {/* COLUNA ESQUERDA — conteúdo */}
   <div className="relative z-10 mx-auto flex min-h-screen max-w-[1440px] items-center px-6 py-20 sm:px-10 lg:px-16">
 
-    <div className="w-full max-w-[520px] lg:max-w-[580px] xl:max-w-[620px]">
+    <div className="w-full max-w-[520px] lg:max-w-[560px]">
 
-      {/* LOGO */}
+      {/* LOGO — maior e com presença */}
       <div className="mb-10">
         <Image
           src="/branding/transparentes/01_principal_claro.png"
@@ -43,10 +43,10 @@ export default function Home() {
           priority
           className="
             h-auto
-            w-[180px]
-            sm:w-[220px]
-            lg:w-[270px]
-            xl:w-[300px]
+            w-[260px]
+            sm:w-[320px]
+            lg:w-[380px]
+            xl:w-[420px]
             object-contain
           "
         />
@@ -63,7 +63,7 @@ export default function Home() {
           text-[#F8F3EE]
           sm:text-[4rem]
           lg:text-[5rem]
-          xl:text-[5.6rem]
+          xl:text-[5.4rem]
         "
       >
         Comida,
@@ -83,7 +83,7 @@ export default function Home() {
       <p
         className="
           mt-8
-          max-w-[420px]
+          max-w-[400px]
           text-[14px]
           leading-[1.95]
           text-[#C8B8AE]
@@ -97,7 +97,6 @@ export default function Home() {
 
       {/* BUTTONS */}
       <div className="mt-10 flex flex-wrap gap-4">
-
         <button
           className="
             rounded-full
