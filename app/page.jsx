@@ -34,11 +34,13 @@ export default function Home() {
 
             <div className='max-w-2xl'>
               <div className='mb-10'>
-                <img
-                  src='/branding/01_principal_claro.svg'
-                  alt='Curadoria Raiz'
-                  className='h-auto w-[340px] md:w-[460px]'
-                />
+                <Image
+  src="/branding/02_principal_escuro.svg"
+  alt="Curadoria Raiz"
+  width={520}
+  height={240}
+  priority
+/>
               </div>
 
               <div className='mb-8 text-[11px] uppercase tracking-[0.4em] text-[#C49A84]'>
