@@ -1,131 +1,127 @@
-import Image from 'next/image'
-
 export default function CuradoriaRaizLanding() {
+  const whatsappLink =
+    'https://wa.me/5511999999999?text=Olá! Quero reservar a edição atual da Curadoria Raiz.'
+
   return (
-    <main className='bg-[#F4EEE6] text-[#120E0B] overflow-hidden'>
-
-      {/* HEADER */}
-
-      <header className='absolute top-0 left-0 w-full z-50'>
-        <div className='max-w-7xl mx-auto px-6 md:px-10 py-6 flex items-center justify-between'>
-
-          <p className='text-[10px] md:text-xs tracking-[0.35em] uppercase text-[#F3E6DA]/85'>
-            Curadoria artesanal · São Paulo
-          </p>
-
-          <a
-            href='#checkout'
-            className='border border-[#F3E6DA]/25 hover:border-[#F3E6DA]/50 transition-all duration-300 text-[#F3E6DA] rounded-full px-5 py-2 text-[11px] md:text-xs tracking-[0.12em] uppercase'
-          >
-            Entrar para a curadoria
-          </a>
-
-        </div>
-      </header>
+    <main className='bg-[#F6F2EC] text-[#2B2623] overflow-hidden'>
 
       {/* HERO */}
 
-      <section className='relative overflow-hidden bg-[#6A4B3D]'>
+      <section className='relative overflow-hidden bg-gradient-to-br from-[#6E5A51] via-[#5C4A43] to-[#3D302C]'>
 
-        {/* background glow */}
+        {/* glow */}
+        <div className='absolute inset-0 opacity-30 bg-[radial-gradient(circle_at_top_left,rgba(255,255,255,0.14),transparent_40%)]' />
 
-        <div className='absolute right-[-180px] top-[10%] w-[720px] h-[720px] bg-[#A13F2D]/20 blur-[140px] rounded-full opacity-80' />
+        {/* grain */}
+        <div className="absolute inset-0 opacity-[0.04] mix-blend-soft-light bg-[url('https://grainy-gradients.vercel.app/noise.svg')]" />
 
-        {/* subtle texture */}
+        {/* wine glow */}
+        <div className='absolute right-[-180px] top-[10%] w-[720px] h-[720px] bg-[#A54A31]/18 blur-[140px] rounded-full' />
 
-        <div className='absolute inset-0 opacity-[0.04] bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:22px_22px]' />
+        <div className='relative max-w-7xl mx-auto px-6 md:px-10 pt-28 md:pt-36 pb-24 md:pb-28'>
 
-        <div className='relative z-10 max-w-7xl mx-auto px-6 md:px-10 pt-32 md:pt-40 pb-24 md:pb-28 grid lg:grid-cols-2 gap-16 items-center'>
+          <div className='grid lg:grid-cols-2 gap-14 items-center'>
 
-          {/* LEFT */}
+            {/* TEXTO */}
 
-          <div className='max-w-[620px]'>
+            <div className='relative z-10 max-w-xl'>
 
-            {/* LOGO */}
+              <p className='uppercase tracking-[0.35em] text-[10px] md:text-xs text-white/55 mb-8'>
+                Curadoria artesanal · São Paulo
+              </p>
 
-            <div className='mb-10'>
-              <img
-                src='/branding/02_principal_escuro.svg'
-                alt='Curadoria Raiz'
-                className='w-[320px] md:w-[500px] h-auto'
-              />
+              {/* LOGO */}
+
+              <div className='mb-10'>
+                <img
+                  src='/branding/02_principal_escuro.svg'
+                  alt='Curadoria Raiz'
+                  className='w-[320px] md:w-[500px] h-auto'
+                />
+              </div>
+
+              {/* HEADLINE */}
+
+              <h2 className='text-[42px] md:text-[60px] leading-[0.94] tracking-[-0.04em] text-[#F7F1EC] font-light max-w-lg'>
+                Alimento com história, entregue por quem escolhe.
+              </h2>
+
+              {/* SUB */}
+
+              <p className='mt-8 text-[15px] md:text-[18px] leading-[1.9] text-white/72 max-w-md'>
+                Uma seleção mensal de vinho natural, pão de fermentação natural e produtos artesanais escolhidos para desacelerar o ritmo da cidade por algumas horas.
+              </p>
+
+              {/* CTA */}
+
+              <div className='mt-10 flex flex-col sm:flex-row gap-4'>
+
+                <a
+                  href={whatsappLink}
+                  target='_blank'
+                  className='inline-flex items-center justify-center rounded-full bg-[#D66A42] hover:bg-[#BF5934] transition-all duration-300 px-7 py-4 text-[11px] tracking-[0.18em] uppercase text-white shadow-[0_10px_30px_rgba(0,0,0,0.18)] hover:scale-[1.02]'
+                >
+                  Reservar edição atual
+                </a>
+
+                <a
+                  href='#'
+                  className='inline-flex items-center justify-center rounded-full border border-white/15 hover:border-white/30 transition-all duration-300 px-7 py-4 text-[11px] tracking-[0.18em] uppercase text-white/90'
+                >
+                  Conhecer seleção
+                </a>
+
+              </div>
+
+              <p className='mt-4 text-[12px] text-white/50'>
+                Produção limitada · 30 unidades por edição
+              </p>
+
             </div>
 
-            {/* HEADLINE */}
+            {/* IMAGEM */}
 
-            <h1 className='text-[#F4E8DF] text-[52px] md:text-[86px] leading-[0.92] tracking-[-0.05em] font-light mb-8'>
-              Uma seleção artesanal para desacelerar a cidade.
-            </h1>
+            <div className='relative flex justify-center lg:justify-end'>
 
-            {/* SUBTITLE */}
+              {/* glow vinho */}
 
-            <p className='text-[#D8C1B4] text-[18px] md:text-[21px] leading-[1.9] max-w-[560px] mb-12 font-light'>
-              Vinhos naturais, pão de fermentação natural e pequenos produtores escolhidos para transformar uma noite comum em ritual.
-            </p>
+              <div className='absolute w-[520px] h-[520px] rounded-full bg-[#B24A2B]/18 blur-[120px]' />
 
-            {/* CTA */}
+              {/* composição */}
 
-            <div className='flex flex-col sm:flex-row gap-4'>
+              <div className='relative'>
 
-              <a
-                href='#checkout'
-                className='bg-[#F3E6DA] hover:bg-[#fff7f1] text-[#7E3428] px-8 py-4 rounded-full uppercase tracking-[0.18em] text-xs font-medium transition-all inline-flex items-center justify-center shadow-[0_10px_30px_rgba(0,0,0,0.12)]'
-              >
-                Garantir minha caixa
-              </a>
+                {/* frame */}
 
-              <a
-                href='#selecoes'
-                className='border border-[#F3E6DA]/25 hover:border-[#F3E6DA]/50 text-[#F3E6DA] px-8 py-4 rounded-full uppercase tracking-[0.18em] text-xs font-medium transition-all inline-flex items-center justify-center'
-              >
-                Conhecer a seleção
-              </a>
+                <div className='relative overflow-hidden rounded-[34px] shadow-[0_35px_90px_rgba(0,0,0,0.38)]'>
 
-            </div>
+                  <img
+                    src='/images/apagao-editorial.webp'
+                    alt='Vinho Apagão Curadoria Raiz'
+                    className='relative z-10 w-full max-w-[620px] object-cover scale-[1.02]'
+                  />
 
-            {/* INFO */}
+                </div>
 
-            <p className='mt-6 text-[#D8C1B4]/70 text-sm'>
-              Produção limitada · 30 unidades por edição
-            </p>
+                {/* card flutuante */}
 
-          </div>
+                <div className='hidden md:block absolute -bottom-10 -left-10 backdrop-blur-xl bg-[#3B2C27]/72 border border-white/10 rounded-[28px] px-6 py-5 max-w-[260px] shadow-2xl'>
 
-          {/* RIGHT */}
+                  <p className='uppercase tracking-[0.28em] text-[10px] text-[#D8C5B8] mb-3'>
+                    Destaque do mês
+                  </p>
 
-          <div className='relative flex justify-center lg:justify-end'>
+                  <h3 className='font-serif text-[#F8F3EE] text-[26px] leading-[1.02] mb-3'>
+                    Apagão
+                    <br />
+                    Rosé Natural
+                  </h3>
 
-            {/* image glow */}
+                  <p className='text-[#D8C5B8] text-[14px] leading-[1.7]'>
+                    Produção artesanal, vinificação natural e cultivo sustentável na Serra Gaúcha.
+                  </p>
 
-            <div className='absolute w-[520px] h-[520px] bg-[#D97A55]/20 blur-[120px] rounded-full' />
-
-            {/* IMAGE */}
-
-            <div className='relative'>
-
-              <img
-                src='/apagao-editorial.webp.webp'
-                alt='Apagão Rosé Natural'
-                className='relative z-10 w-full max-w-[420px] md:max-w-[560px] h-auto rounded-[32px] shadow-[0_40px_80px_rgba(0,0,0,0.32)] object-cover'
-              />
-
-              {/* FLOATING CARD */}
-
-              <div className='absolute -bottom-10 -left-6 md:-left-10 backdrop-blur-md bg-[#4B3328]/72 border border-white/10 rounded-[28px] p-5 max-w-[260px] hidden md:block shadow-2xl'>
-
-                <p className='text-[10px] uppercase tracking-[0.3em] text-[#D8C1B4] mb-3'>
-                  Destaque do mês
-                </p>
-
-                <h3 className='text-[#F4E8DF] text-[24px] leading-[1.05] mb-3 font-serif'>
-                  Apagão
-                  <br />
-                  Rosé Natural
-                </h3>
-
-                <p className='text-[#D8C1B4] text-[14px] leading-[1.7]'>
-                  Vinificação natural, cultivo sustentável e produção artesanal da Serra Gaúcha.
-                </p>
+                </div>
 
               </div>
 
@@ -137,7 +133,7 @@ export default function CuradoriaRaizLanding() {
 
         {/* fade bottom */}
 
-        <div className='absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-b from-transparent to-[#F4EEE6]' />
+        <div className='absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-b from-transparent to-[#F6F1EB]' />
 
       </section>
 
@@ -145,14 +141,12 @@ export default function CuradoriaRaizLanding() {
 
       <section className='py-24 md:py-36'>
         <div className='max-w-7xl mx-auto px-6 md:px-10 grid lg:grid-cols-2 gap-16 md:gap-28 items-start'>
-
           <div>
-
-            <p className='uppercase tracking-[0.28em] text-[10px] text-[#8C3B30] mb-8'>
+            <p className='uppercase tracking-[0.28em] text-[10px] text-[#B9ADA2] mb-8'>
               Manifesto
             </p>
 
-            <h2 className='font-serif text-[#BCA898] text-[56px] md:text-[96px] leading-[0.92] tracking-[-0.04em]'>
+            <h2 className='font-serif text-[#D5CBC1] text-[56px] md:text-[96px] leading-[0.92] tracking-[-0.04em]'>
               Menos
               <br />
               pressa,
@@ -161,32 +155,121 @@ export default function CuradoriaRaizLanding() {
               <br />
               repertório.
             </h2>
-
           </div>
 
           <div className='max-w-[620px]'>
-
-            <h3 className='text-[34px] md:text-[48px] leading-[1.08] tracking-[-0.03em] text-[#120E0B] mb-10'>
-              A Curadoria Raiz nasce do desejo de aproximar pequenos produtores do ritmo da cidade.
+            <h3 className='text-[34px] md:text-[48px] leading-[1.08] tracking-[-0.03em] text-[#2E2723] mb-10'>
+              A Curadoria Raiz nasce do desejo de aproximar pequenos produtores
+              do ritmo da cidade.
             </h3>
 
-            <div className='space-y-8 text-[#6B4E3D] text-[18px] leading-[2]'>
-
+            <div className='space-y-8 text-[#574F4A] text-[18px] leading-[2]'>
               <p>
-                Cada edição reúne vinho vivo, pão artesanal e conservas escolhidas manualmente. Não apenas pelo sabor, mas pela história, origem e modo de produção.
+                Cada edição reúne vinho vivo, pão artesanal e conservas
+                escolhidas manualmente. Não apenas pelo sabor, mas pela
+                história, origem e modo de produção.
               </p>
 
               <p>
-                Sem excesso. Sem pressa. Apenas alimento honesto, logística consciente e encontros que fazem sentido.
+                Sem excesso. Sem pressa. Apenas alimento honesto, logística
+                consciente e encontros que fazem sentido.
               </p>
-
             </div>
-
           </div>
-
         </div>
       </section>
 
+      {/* DROP */}
+
+      <section className='pb-24 md:pb-36'>
+        <div className='max-w-7xl mx-auto px-6 md:px-10'>
+          <div className='max-w-3xl mb-16'>
+            <p className='uppercase tracking-[0.28em] text-[10px] text-[#B9ADA2] mb-6'>
+              Drop #01
+            </p>
+
+            <h2 className='font-serif text-[#D0C4BA] text-[54px] md:text-[84px] leading-[0.95] tracking-[-0.04em] mb-8'>
+              O Trio da Vez
+            </h2>
+
+            <p className='text-[#5E5650] text-[18px] leading-[1.95] max-w-2xl'>
+              Uma combinação pensada para acompanhar o fim da tarde entre Santa
+              Cecília, Higienópolis, Barra Funda, Vila Buarque e Campos
+              Elíseos.
+            </p>
+          </div>
+
+          <div className='grid md:grid-cols-3 gap-8'>
+
+            <article className='group'>
+              <div className='rounded-[28px] overflow-hidden bg-white shadow-[0_12px_40px_rgba(0,0,0,0.05)]'>
+                <img
+                  src='/images/apagao-packshot.webp'
+                  alt='Apagão Rosé Natural'
+                  className='w-full aspect-[4/5] object-cover group-hover:scale-[1.02] transition-transform duration-500'
+                />
+              </div>
+
+              <div className='pt-6 min-h-[180px]'>
+                <h3 className='font-serif text-[#2F2926] text-[38px] leading-[0.96] tracking-[-0.04em] mb-4'>
+                  Apagão Rosé
+                  <br />
+                  Natural
+                </h3>
+
+                <p className='text-[#6A625C] text-[17px] leading-[1.85]'>
+                  Rosé de intervenção mínima da Família Faccin. Fresco, vivo e levemente frutado.
+                </p>
+              </div>
+            </article>
+
+            <article className='group'>
+              <div className='rounded-[28px] overflow-hidden bg-white shadow-[0_12px_40px_rgba(0,0,0,0.05)]'>
+                <img
+                  src='/images/pao-sourdough.webp'
+                  alt='Sourdough Natural'
+                  className='w-full aspect-[4/5] object-cover group-hover:scale-[1.02] transition-transform duration-500'
+                />
+              </div>
+
+              <div className='pt-6 min-h-[180px]'>
+                <h3 className='font-serif text-[#2F2926] text-[38px] leading-[0.96] tracking-[-0.04em] mb-4'>
+                  Sourdough
+                  <br />
+                  Natural
+                </h3>
+
+                <p className='text-[#6A625C] text-[17px] leading-[1.85]'>
+                  Fermentação lenta e forno artesanal. Assado poucas horas antes da entrega.
+                </p>
+              </div>
+            </article>
+
+            <article className='group'>
+              <div className='rounded-[28px] overflow-hidden bg-white shadow-[0_12px_40px_rgba(0,0,0,0.05)]'>
+                <img
+                  src='/images/antepasto.webp'
+                  alt='Antepasto de Berinjela'
+                  className='w-full aspect-[4/5] object-cover group-hover:scale-[1.02] transition-transform duration-500'
+                />
+              </div>
+
+              <div className='pt-6 min-h-[180px]'>
+                <h3 className='font-serif text-[#2F2926] text-[38px] leading-[0.96] tracking-[-0.04em] mb-4'>
+                  Antepasto de
+                  <br />
+                  Berinjela
+                </h3>
+
+                <p className='text-[#6A625C] text-[17px] leading-[1.85]'>
+                  Receita artesanal preparada em pequenos lotes, com ingredientes frescos e sabor intenso.
+                </p>
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </section>
     </main>
   )
 }
