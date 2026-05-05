@@ -30,7 +30,7 @@ export default function Home() {
             <div className="max-w-[560px]">
 
               {/* LOGO */}
-              <div className="mb-6">
+              <div className="mb-2">
                 <Image
   src="/branding/transparentes/07_vertical.png"
   alt="Curadoria Raiz"
