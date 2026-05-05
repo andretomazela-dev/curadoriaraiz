@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="100" viewBox="0 0 320 100">
+<text x="160" y="30" text-anchor="middle"
+  font-family="'Libre Baskerville','Georgia',serif"
+  font-size="7" font-weight="400" letter-spacing="0.18em"
+  fill="#6B4E3D">CURADORIA</text><g transform="translate(160,72) scale(0.58)">
+  <path d="M -99,-59 L -99,2 C -99,5 -96,7 -93,7 C -90,7 -87,5 -87,2
+           L -87,-15 L -76,-15 L -62,1 C -60,4 -57,6 -54,5 C -51,4 -50,0 -52,-3
+           L -66,-19 C -58,-24 -54,-33 -55,-43 C -56,-56 -65,-63 -78,-63
+           L -105,-63 C -102,-63 -99,-60 -99,-56 Z
+           M -87,-27 L -87,-51 L -76,-51 C -70,-51 -66,-48 -66,-43
+           C -66,-38 -70,-34 -76,-34 Z" fill="#8C3B30"/>
+  <path d="M -38,-41 C -27,-46 -13,-39 -11,-23 L -11,3
+           C -11,6 -14,8 -17,7 C -19,6 -20,4 -20,2
+           C -24,6 -30,9 -36,7 C -46,5 -51,-5 -49,-14
+           C -47,-23 -38,-27 -27,-26 L -20,-25
+           C -21,-33 -27,-40 -35,-39 C -39,-38 -42,-35 -44,-32
+           C -46,-29 -50,-30 -50,-34 C -50,-38 -44,-43 -38,-41 Z
+           M -29,-13 C -35,-14 -40,-11 -41,-6 C -42,-1 -38,3 -33,4
+           C -27,5 -20,0 -20,-6 L -20,-13 Z" fill="#8C3B30"/>
+  <rect x="8" y="-41" width="6.5" height="43" rx="3.2" fill="#8C3B30"/>
+  <ellipse cx="11" cy="-52" rx="4" ry="4" fill="#8C3B30" transform="rotate(-5,11,-52)"/>
+  <path d="M 23,-40 L 67,-40 C 70,-40 72,-37 70,-35
+           L 33,-6 L 69,-6 C 72,-6 74,-3 72,0 C 71,2 69,3 67,3
+           L 19,3 C 16,3 14,0 16,-3 L 53,-33 L 23,-33
+           C 20,-33 18,-36 20,-39 C 21,-40 22,-40 23,-40 Z
+           M 65,4 C 70,5 78,7 81,11 C 83,14 81,17 78,16
+           C 75,15 71,13 67,11 C 63,9 61,6 64,4 Z" fill="#8C3B30"/>
+</g><line x1="92" y1="82" x2="228" y2="82" stroke="#8C3B30" stroke-width="0.4" opacity="0.22"/><text x="160" y="94" text-anchor="middle"
+  font-family="Helvetica Neue,Helvetica,Arial,sans-serif"
+  font-size="5.5" letter-spacing="0.26em" fill="#9A8878">SÃO PAULO</text>
+</svg>
