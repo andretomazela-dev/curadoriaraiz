@@ -4,14 +4,15 @@ export default function Home() {
   return (
     <main className="overflow-hidden bg-[#F3EEE8] text-[#3E241D]">
 
-   {/* HERO */}
+  {/* HERO */}
 <section className="relative min-h-screen overflow-hidden bg-[#1A0C06] text-[#F7F1EB]">
 
-  {/* BACKGROUND IMAGE */}
+  {/* BACKGROUND */}
   <div className="absolute inset-0">
 
-    {/* DESKTOP */}
-    <div className="hidden md:block absolute inset-0">
+    {/* DESKTOP IMAGE */}
+    <div className="hidden md:block absolute inset-y-0 right-0 w-[56%] lg:w-[58%] xl:w-[60%]">
+
       <Image
         src="/images/curadoria-raiz-hero-composicao.png"
         alt="Curadoria Raiz"
@@ -22,10 +23,34 @@ export default function Home() {
           object-[72%_center]
         "
       />
+
+      {/* LEFT FADE */}
+      <div
+        className="
+          absolute
+          inset-0
+          bg-[linear-gradient(to_right,#1A0C06_0%,rgba(26,12,6,0.90)_16%,rgba(26,12,6,0.60)_36%,rgba(26,12,6,0.18)_58%,transparent_82%)]
+        "
+      />
+
+      {/* BOTTOM FADE */}
+      <div
+        className="
+          absolute
+          inset-x-0
+          bottom-0
+          h-[45%]
+          bg-gradient-to-t
+          from-[#1A0C06]/80
+          via-[#1A0C06]/18
+          to-transparent
+        "
+      />
     </div>
 
-    {/* MOBILE */}
+    {/* MOBILE IMAGE */}
     <div className="md:hidden absolute inset-0">
+
       <Image
         src="/images/curadoria-raiz-hero-composicao-vertical.png"
         alt="Curadoria Raiz"
@@ -36,32 +61,22 @@ export default function Home() {
           object-center
         "
       />
+
+      {/* MOBILE OVERLAY */}
+      <div
+        className="
+          absolute
+          inset-0
+          bg-[linear-gradient(to_bottom,rgba(16,8,6,0.92)_0%,rgba(16,8,6,0.55)_38%,rgba(16,8,6,0.84)_100%)]
+        "
+      />
     </div>
 
-    {/* OVERLAY LEFT */}
-    <div
-      className="
-        absolute
-        inset-0
-        bg-[linear-gradient(to_right,rgba(16,8,6,0.94)_0%,rgba(16,8,6,0.82)_28%,rgba(16,8,6,0.42)_54%,transparent_78%)]
-      "
-    />
+    {/* CINEMATIC GLOW */}
+    <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(140,48,24,0.16),transparent_42%)]" />
 
-    {/* MOBILE OVERLAY */}
-    <div
-      className="
-        absolute
-        inset-0
-        md:hidden
-        bg-[linear-gradient(to_bottom,rgba(16,8,6,0.88)_0%,rgba(16,8,6,0.60)_38%,rgba(16,8,6,0.82)_100%)]
-      "
-    />
-
-    {/* CINEMATIC SHADOW */}
-    <div className="absolute inset-0 bg-black/20" />
-
-    {/* WARM GLOW */}
-    <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(125,40,18,0.18),transparent_42%)]" />
+    {/* SHADOW */}
+    <div className="absolute inset-0 bg-black/18" />
 
     {/* NOISE */}
     <div className="absolute inset-0 opacity-[0.045] bg-[url('/images/noise.png')]" />
@@ -79,28 +94,29 @@ export default function Home() {
       items-center
       px-6
       py-16
-      sm:px-8
-      lg:px-14
+      sm:px-10
+      lg:px-16
     "
   >
 
     <div
       className="
         w-full
-        max-w-[560px]
-        pt-12
+        max-w-[520px]
+        lg:max-w-[620px]
+        pt-10
         md:pt-0
       "
     >
 
-      {/* EYEBROW */}
+      {/* TOP LABEL */}
       <div className="mb-10">
         <span
           className="
             text-[10px]
             uppercase
             tracking-[0.34em]
-            text-[#E3D4C8]/80
+            text-[#E2D3C8]/80
           "
         >
           Curadoria artesanal · São Paulo
@@ -113,48 +129,57 @@ export default function Home() {
         <Image
           src="/branding/transparentes/07_vertical.png"
           alt="Curadoria Raiz"
-          width={980}
-          height={980}
+          width={1200}
+          height={1200}
           priority
           className="
             h-auto
             w-[320px]
-            sm:w-[440px]
-            lg:w-[760px]
-            xl:w-[840px]
+            sm:w-[420px]
+            lg:w-[620px]
+            xl:w-[700px]
             max-w-none
             object-contain
           "
         />
       </div>
 
-      {/* HEADLINE */}
+      {/* TITLE */}
       <h1
         className="
-          max-w-[620px]
           font-serif
-          text-[3.3rem]
+          text-[3.2rem]
           font-normal
           leading-[0.92]
           tracking-[-0.03em]
           text-[#F8F3EE]
-          sm:text-[4.6rem]
-          lg:text-[5.8rem]
-          xl:text-[6.4rem]
+          sm:text-[4.2rem]
+          lg:text-[5.4rem]
+          xl:text-[6rem]
         "
       >
-        Comida, vinho e pequenos produtores em ritmo humano.
+        Comida,
+        <br />
+        vinho e
+        <br />
+        pequenos
+        <br />
+        produtores
+        <br />
+        em ritmo
+        <br />
+        humano.
       </h1>
 
       {/* SUBTEXT */}
       <p
         className="
           mt-8
-          max-w-[470px]
-          text-[15px]
+          max-w-[440px]
+          text-[14px]
           leading-[1.95]
-          text-[#D8C9BE]
-          sm:text-[16px]
+          text-[#D5C5BA]
+          sm:text-[15px]
         "
       >
         Uma seleção mensal de vinho natural, pão de fermentação lenta
@@ -168,7 +193,7 @@ export default function Home() {
         <button
           className="
             rounded-full
-            bg-[#C96039]
+            bg-[#C85F39]
             px-8
             py-4
             text-[10px]
@@ -177,7 +202,7 @@ export default function Home() {
             text-white
             transition-all
             duration-300
-            hover:bg-[#D56D46]
+            hover:bg-[#D46B45]
           "
         >
           Reservar edição atual
@@ -187,13 +212,13 @@ export default function Home() {
           className="
             rounded-full
             border
-            border-[#7A5648]
+            border-[#6B4438]
             px-8
             py-4
             text-[10px]
             uppercase
             tracking-[0.28em]
-            text-[#F0E5DE]
+            text-[#D8C8BE]
             transition-all
             duration-300
             hover:bg-white/5
@@ -210,7 +235,7 @@ export default function Home() {
           text-[9px]
           uppercase
           tracking-[0.32em]
-          text-[#B08879]
+          text-[#8F6D5D]
         "
       >
         Produção limitada · 30 unidades por edição
@@ -218,8 +243,8 @@ export default function Home() {
     </div>
   </div>
 
-  {/* TRANSITION */}
-  <div className="pointer-events-none absolute bottom-0 left-0 right-0 h-[260px]">
+  {/* TRANSIÇÃO HERO → CREME */}
+  <div className="pointer-events-none absolute bottom-0 left-0 right-0 h-[320px]">
 
     <div
       className="
