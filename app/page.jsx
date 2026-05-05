@@ -5,33 +5,53 @@ export default function Home() {
     <main className="bg-[#F3EEE8] text-[#3E241D] overflow-hidden">
 
       {/* HERO */}
-      <section className="relative min-h-screen bg-[#1A0C06] text-[#F7F1EB] overflow-hidden">
+      <section className="relative min-h-screen overflow-hidden bg-[#1A0C06] text-[#F7F1EB]">
 
-        {/* cinematic background */}
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(147,51,28,0.30),transparent_38%),radial-gradient(circle_at_bottom_left,rgba(110,33,16,0.18),transparent_34%)]" />
+        {/* BACKGROUND ATMOSPHERE */}
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(147,51,28,0.28),transparent_40%),radial-gradient(circle_at_bottom_left,rgba(110,33,16,0.16),transparent_36%)]" />
 
-        {/* noise */}
-        <div className="absolute inset-0 opacity-[0.035] bg-[url('/images/noise.png')]" />
+        {/* NOISE */}
+        <div className="absolute inset-0 opacity-[0.03] bg-[url('/images/noise.png')]" />
 
-        {/* glow */}
-        <div className="absolute right-[12%] top-[16%] h-[520px] w-[520px] rounded-full bg-[#8E3217]/20 blur-[160px]" />
+        {/* HERO IMAGE */}
+        <div className="absolute inset-0">
 
+          <Image
+            src="/images/curadoria-raiz-hero-composicao.png"
+            alt="Curadoria Raiz"
+            fill
+            priority
+            className="
+              object-cover
+              object-right-bottom
+              opacity-[0.92]
+            "
+          />
+
+          {/* cinematic overlay */}
+          <div className="absolute inset-0 bg-gradient-to-r from-[#1A0C06]/92 via-[#1A0C06]/58 to-black/42" />
+
+          {/* right darkening */}
+          <div className="absolute inset-0 bg-gradient-to-r from-black/10 via-transparent to-black/35" />
+        </div>
+
+        {/* CONTENT */}
         <div className="relative z-10 mx-auto max-w-[1400px] px-6 sm:px-8 pt-10 pb-28">
 
-          {/* top label */}
+          {/* TOP LABEL */}
           <div className="mb-14 sm:mb-20">
             <span className="text-[10px] sm:text-[11px] tracking-[0.34em] uppercase text-[#D9C8BC]/80">
               Curadoria artesanal · São Paulo
             </span>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-14 lg:gap-20 items-center">
+          <div className="grid lg:grid-cols-2 gap-14 lg:gap-20 items-center min-h-[78vh]">
 
             {/* LEFT */}
             <div className="max-w-[620px]">
 
               {/* LOGO */}
-              <div className="mb-8">
+              <div className="mb-8 -mt-4">
                 <Image
                   src="/branding/transparentes/07_vertical.png"
                   alt="Curadoria Raiz"
@@ -39,11 +59,11 @@ export default function Home() {
                   height={900}
                   priority
                   className="
-                    w-[260px]
-                    sm:w-[340px]
-                    md:w-[420px]
-                    lg:w-[500px]
-                    xl:w-[560px]
+                    w-[280px]
+                    sm:w-[360px]
+                    md:w-[440px]
+                    lg:w-[520px]
+                    xl:w-[590px]
                     h-auto
                     object-contain
                   "
@@ -60,9 +80,9 @@ export default function Home() {
                   leading-[0.92]
 
                   text-[3.3rem]
-                  sm:text-[4.4rem]
-                  md:text-[5.6rem]
-                  lg:text-[6rem]
+                  sm:text-[4.5rem]
+                  md:text-[5.7rem]
+                  lg:text-[6.2rem]
 
                   max-w-[620px]
                 "
@@ -78,7 +98,7 @@ export default function Home() {
                   text-[15px]
                   sm:text-[16px]
                   leading-[1.9]
-                  text-[#D8C8BE]
+                  text-[#E0D1C8]
                   max-w-[540px]
                 "
               >
@@ -134,44 +154,13 @@ export default function Home() {
                 </button>
               </div>
 
-              <div className="mt-9 text-[9px] sm:text-[10px] uppercase tracking-[0.34em] text-[#9D7D72]">
+              <div className="mt-9 text-[9px] sm:text-[10px] uppercase tracking-[0.34em] text-[#A9897C]">
                 Produção limitada · 30 unidades por edição
               </div>
             </div>
 
-            {/* RIGHT IMAGE */}
-            <div className="relative flex justify-center lg:justify-end">
-
-              <div
-                className="
-                  relative
-                  overflow-hidden
-                  rounded-[30px]
-                  border
-                  border-[#D5C5BB]/18
-                  bg-[#241411]
-                  p-2 sm:p-3
-                  shadow-[0_40px_120px_rgba(0,0,0,0.55)]
-                "
-              >
-                <Image
-                  src="/images/apagao-editorial.webp"
-                  alt="Apagão Rosé Natural"
-                  width={640}
-                  height={760}
-                  className="
-                    w-[320px]
-                    sm:w-[420px]
-                    md:w-[480px]
-                    lg:w-[520px]
-
-                    h-auto
-                    object-cover
-                    rounded-[24px]
-                  "
-                />
-              </div>
-            </div>
+            {/* EMPTY RIGHT SIDE */}
+            <div />
           </div>
         </div>
 
