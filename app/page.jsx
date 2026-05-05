@@ -4,172 +4,156 @@ export default function Home() {
   return (
     <main className="overflow-hidden bg-[#F3EEE8] text-[#3E241D]">
 
-      {/* HERO */}
-      <section className="relative overflow-hidden bg-[#1A0C06] text-[#F7F1EB]">
+     {/* HERO */}
+<section className="relative min-h-screen overflow-hidden bg-[#1A0C06] text-[#F7F1EB]">
 
-        {/* background atmosphere */}
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(140,48,24,0.30),transparent_34%),radial-gradient(circle_at_bottom_left,rgba(90,24,10,0.22),transparent_34%)]" />
+  {/* HERO IMAGE */}
+  <div className="absolute inset-0">
 
-        {/* subtle texture */}
-        <div className="absolute inset-0 opacity-[0.045] bg-[url('/images/noise.png')]" />
+    <Image
+      src="/images/curadoria-raiz-hero-composicao.png"
+      alt="Curadoria Raiz"
+      fill
+      priority
+      className="
+        object-cover
+        object-center
+        lg:object-[center_top]
+      "
+    />
 
-        {/* glow */}
-        <div className="absolute right-[10%] top-[16%] h-[520px] w-[520px] rounded-full bg-[#8B3118]/20 blur-[140px]" />
+    {/* cinematic overlay */}
+    <div className="absolute inset-0 bg-black/38" />
 
-        <div className="relative z-10 mx-auto max-w-[1400px] px-6 pt-8 pb-28 sm:px-8 lg:px-12 lg:pt-10 lg:pb-36">
+    {/* left readability */}
+    <div className="absolute inset-0 bg-gradient-to-r from-black/72 via-black/28 to-transparent" />
 
-          {/* top label */}
-          <div className="mb-10 lg:mb-16">
-            <span className="text-[10px] uppercase tracking-[0.34em] text-[#D7C6BA]/80">
-              Curadoria artesanal · São Paulo
-            </span>
-          </div>
+    {/* warm vignette */}
+    <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(140,48,24,0.24),transparent_36%)]" />
 
-          <div className="grid items-center gap-14 lg:grid-cols-[0.95fr_1.05fr] lg:gap-20">
+    {/* subtle texture */}
+    <div className="absolute inset-0 opacity-[0.045] bg-[url('/images/noise.png')]" />
+  </div>
 
-            {/* LEFT */}
-            <div className="relative z-20 max-w-[620px]">
+  {/* CONTENT */}
+  <div className="relative z-10 mx-auto flex min-h-screen max-w-[1440px] items-center px-6 py-12 sm:px-8 lg:px-12">
 
-              {/* LOGO */}
-              <div className="mb-8">
-                <Image
-                  src="/branding/transparentes/07_vertical.png"
-                  alt="Curadoria Raiz"
-                  width={620}
-                  height={620}
-                  priority
-                  className="
-                    h-auto
-                    w-[240px]
-                    sm:w-[300px]
-                    lg:w-[420px]
-                    xl:w-[500px]
-                    object-contain
-                  "
-                />
-              </div>
+    <div className="max-w-[640px]">
 
-              {/* TITLE */}
-              <h1
-                className="
-                  max-w-[620px]
-                  font-serif
-                  text-[3.7rem]
-                  font-normal
-                  leading-[0.90]
-                  tracking-[-0.03em]
-                  text-[#F7F1EB]
-                  sm:text-[4.5rem]
-                  lg:text-[5.6rem]
-                "
-              >
-                Comida, vinho e pequenos produtores em ritmo humano.
-              </h1>
+      {/* EYEBROW */}
+      <div className="mb-10">
+        <span className="text-[10px] uppercase tracking-[0.34em] text-[#E5D5CA]/85">
+          Curadoria artesanal · São Paulo
+        </span>
+      </div>
 
-              {/* SUBTEXT */}
-              <p
-                className="
-                  mt-8
-                  max-w-[520px]
-                  text-[15px]
-                  leading-[1.9]
-                  text-[#D9C8BE]
-                  sm:text-[16px]
-                "
-              >
-                Uma seleção mensal de vinho natural, pão de fermentação lenta
-                e produtos artesanais escolhidos para desacelerar a cidade
-                por algumas horas.
-              </p>
+      {/* LOGO */}
+      <div className="mb-10">
 
-              {/* BUTTONS */}
-              <div className="mt-10 flex flex-wrap gap-4">
+        <Image
+          src="/branding/transparentes/07_vertical.png"
+          alt="Curadoria Raiz"
+          width={760}
+          height={760}
+          priority
+          className="
+            h-auto
+            w-[260px]
+            sm:w-[340px]
+            lg:w-[520px]
+            xl:w-[620px]
+            object-contain
+          "
+        />
+      </div>
 
-                <button
-                  className="
-                    rounded-full
-                    bg-[#C85F39]
-                    px-7
-                    py-4
-                    text-[10px]
-                    uppercase
-                    tracking-[0.28em]
-                    text-white
-                    transition-all
-                    duration-300
-                    hover:bg-[#D36C45]
-                  "
-                >
-                  Reservar edição atual
-                </button>
+      {/* HEADLINE */}
+      <h1
+        className="
+          max-w-[620px]
+          font-serif
+          text-[3.8rem]
+          font-normal
+          leading-[0.92]
+          tracking-[-0.03em]
+          text-[#F8F3EE]
+          sm:text-[4.8rem]
+          lg:text-[6.2rem]
+        "
+      >
+        Comida, vinho e pequenos produtores em ritmo humano.
+      </h1>
 
-                <button
-                  className="
-                    rounded-full
-                    border
-                    border-[#7A5448]
-                    px-7
-                    py-4
-                    text-[10px]
-                    uppercase
-                    tracking-[0.28em]
-                    text-[#F1E6DF]
-                    transition-all
-                    duration-300
-                    hover:border-[#B97B63]
-                    hover:bg-white/5
-                  "
-                >
-                  Conheça o manifesto
-                </button>
-              </div>
+      {/* SUBTEXT */}
+      <p
+        className="
+          mt-8
+          max-w-[520px]
+          text-[15px]
+          leading-[1.95]
+          text-[#E2D2C8]
+          sm:text-[16px]
+        "
+      >
+        Uma seleção mensal de vinho natural, pão de fermentação lenta
+        e produtos artesanais escolhidos para desacelerar a cidade
+        por algumas horas.
+      </p>
 
-              <div className="mt-9 text-[9px] uppercase tracking-[0.34em] text-[#9D7D72]">
-                Produção limitada · 30 unidades por edição
-              </div>
-            </div>
+      {/* BUTTONS */}
+      <div className="mt-10 flex flex-wrap gap-4">
 
-            {/* RIGHT IMAGE */}
-            <div className="relative z-10 flex justify-center lg:justify-end">
+        <button
+          className="
+            rounded-full
+            bg-[#C85F39]
+            px-8
+            py-4
+            text-[10px]
+            uppercase
+            tracking-[0.28em]
+            text-white
+            transition-all
+            duration-300
+            hover:bg-[#D46B45]
+          "
+        >
+          Reservar edição atual
+        </button>
 
-              <div
-                className="
-                  relative
-                  overflow-hidden
-                  rounded-[28px]
-                  border
-                  border-white/10
-                  bg-[#241411]
-                  p-2
-                  shadow-[0_30px_80px_rgba(0,0,0,0.45)]
-                "
-              >
-                <Image
-                  src="/images/curadoria-raiz-hero-composicao.png"
-                  alt="Curadoria Raiz"
-                  width={980}
-                  height={760}
-                  priority
-                  className="
-                    h-auto
-                    w-full
-                    max-w-[760px]
-                    rounded-[22px]
-                    object-cover
-                    lg:w-[760px]
-                  "
-                />
-              </div>
-            </div>
-          </div>
-        </div>
+        <button
+          className="
+            rounded-full
+            border
+            border-[#8C6557]
+            px-8
+            py-4
+            text-[10px]
+            uppercase
+            tracking-[0.28em]
+            text-[#F3E7E0]
+            transition-all
+            duration-300
+            hover:bg-white/5
+          "
+        >
+          Conheça o manifesto
+        </button>
+      </div>
 
-        {/* smooth transition */}
-        <div className="pointer-events-none absolute bottom-0 left-0 right-0 h-[220px]">
-          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#6E2F1B]/18 to-[#F3EEE8]" />
-          <div className="absolute inset-0 backdrop-blur-[10px]" />
-        </div>
-      </section>
+      {/* FOOTNOTE */}
+      <div className="mt-10 text-[9px] uppercase tracking-[0.32em] text-[#C29B8D]">
+        Produção limitada · 30 unidades por edição
+      </div>
+    </div>
+  </div>
+
+  {/* SMOOTH TRANSITION */}
+  <div className="pointer-events-none absolute bottom-0 left-0 right-0 h-[260px]">
+    <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#6E2F1B]/18 to-[#F3EEE8]" />
+    <div className="absolute inset-0 backdrop-blur-[12px]" />
+  </div>
+</section>
 
       {/* MANIFESTO */}
       <section className="py-24 sm:py-28 lg:py-36">
