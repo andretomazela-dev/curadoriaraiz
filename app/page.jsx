@@ -250,7 +250,7 @@ export default function Home() {
             {/* CARD */}
             {[
               {
-                image: "/images/produtor-faccin.webp",
+                image: "/images/apagao-packshot.webp",
                 title: "Apagão Rosé Natural",
                 text: "Rosé de intervenção mínima da Família Faccin. Fresco, vivo e levemente frutado.",
               },
@@ -310,7 +310,7 @@ export default function Home() {
       <section className="relative h-[760px] overflow-hidden">
 
         <Image
-          src="/images/apagao-editorial.webp"
+          src="/images/produtor-faccin.webp"
           alt="Curadoria feita perto de quem produz"
           fill
           className="object-cover"
