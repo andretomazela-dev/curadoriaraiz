@@ -30,15 +30,21 @@ export default function Home() {
             <div className="max-w-[560px]">
 
               {/* LOGO */}
-              <div className="mb-14">
+              <div className="mb-6">
                 <Image
-                  src="/branding/transparentes/07_vertical.png"
-                  alt="Curadoria Raiz"
-                  width={290}
-                  height={290}
-                  priority
-                  className="w-[250px] lg:w-[290px] h-auto object-contain"
-                />
+  src="/branding/transparentes/07_vertical.png"
+  alt="Curadoria Raiz"
+  width={520}
+  height={520}
+  priority
+  className="
+    w-[320px]
+    lg:w-[460px]
+    xl:w-[520px]
+    h-auto
+    object-contain
+  "
+/>
               </div>
 
               {/* TITLE */}
