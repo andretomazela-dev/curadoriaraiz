@@ -293,21 +293,24 @@ export default function CuradoriaRaizLanding() {
 
       {/* FOOTER */}
 
-      <footer className='border-t border-[#E5DBD2] py-10'>
-        <div className='max-w-7xl mx-auto px-6 md:px-10 flex flex-col md:flex-row items-center justify-between gap-8'>
-          <Image
-            src='/branding/06_horizontal_escuro.svg'
-            alt='Curadoria Raiz'
-            width={240}
-            height={90}
-            className='w-[180px] h-auto opacity-90'
-          />
+<footer className='border-t border-[#E5DBD2] py-10 bg-[#F6F2EC]'>
+  <div className='max-w-7xl mx-auto px-6 md:px-10 flex flex-col md:flex-row items-center justify-between gap-8'>
+    
+    {/* LOGO */}
+    <Image
+      src='/branding/05_horizontal_claro.svg'
+      alt='Curadoria Raiz'
+      width={260}
+      height={90}
+      className='w-[190px] md:w-[220px] h-auto opacity-95'
+    />
 
-          <div className='flex items-center gap-5 text-[#9D9186] text-[12px] tracking-[0.08em] uppercase'>
-            <p>© 2026 Curadoria Raiz · São Paulo</p>
-          </div>
-        </div>
-      </footer>
+    {/* TEXTO */}
+    <div className='flex items-center gap-5 text-[#B0A296] text-[11px] md:text-[12px] tracking-[0.14em] uppercase'>
+      <p>© 2026 Curadoria Raiz · São Paulo</p>
+    </div>
+  </div>
+</footer>
     </main>
   )
 }
