@@ -3,107 +3,87 @@ export default function CuradoriaRaizLanding() {
     'https://wa.me/5511999999999?text=Olá! Quero reservar a edição atual da Curadoria Raiz.'
 
   return (
-    <main className='bg-[#F6F2EC] text-[#2B2623] overflow-hidden'>
+    <main className='bg-[#F4EEE6] text-[#120E0B] overflow-hidden'>
       {/* HERO */}
-<section className="relative overflow-hidden bg-gradient-to-br from-[#7A6A61] via-[#6B5B53] to-[#4B3D37]">
 
-  {/* glow */}
-  <div className="absolute inset-0 opacity-30 bg-[radial-gradient(circle_at_top_left,rgba(255,255,255,0.18),transparent_40%)]" />
+      <section className='relative overflow-hidden bg-[#120E0B]'>
+        {/* textura */}
 
-  {/* grain */}
-  <div className="absolute inset-0 opacity-[0.04] mix-blend-soft-light bg-[url('https://grainy-gradients.vercel.app/noise.svg')]" />
+        <div className="absolute inset-0 opacity-[0.03] mix-blend-soft-light bg-[url('https://grainy-gradients.vercel.app/noise.svg')]" />
 
-  <div className="relative max-w-7xl mx-auto px-6 md:px-10 py-20 md:py-28">
+        <div className='relative z-10 max-w-7xl mx-auto px-6 md:px-10 pt-8 md:pt-10 pb-20 md:pb-28'>
+          {/* HEADER */}
 
-    <div className="grid lg:grid-cols-2 gap-14 items-center">
-
-      {/* TEXTO */}
-      <div className="relative z-10 max-w-xl">
-
-        <p className="uppercase tracking-[0.35em] text-[10px] md:text-xs text-white/55 mb-8">
-          Curadoria artesanal · São Paulo
-        </p>
-
-        <h1 className="font-serif leading-[0.82] text-[#F8F3EE]">
-  <span className="block text-[58px] md:text-[92px] font-medium">
-    Curadoria
-  </span>
-
-  <span className="block text-[108px] md:text-[198px] -mt-1 md:-mt-3 ml-1 md:ml-2">
-    Raiz
-  </span>
-</h1>
-
-        <h2 className="mt-8 md:mt-10 text-[40px] md:text-[56px] leading-[0.96] tracking-[-0.04em] text-[#F7F1EC] font-light max-w-lg">
-          Alimento com história, entregue por quem escolhe.
-        </h2>
-
-        <p className="mt-8 text-[15px] md:text-[18px] leading-[1.9] text-white/72 max-w-md">
-          Uma seleção mensal de vinho natural, pão de fermentação natural e produtos artesanais escolhidos para desacelerar o ritmo da cidade por algumas horas.
-        </p>
-
-        <div className="mt-10">
-          <a
-            href={whatsappLink}
-            target="_blank"
-            className="inline-flex items-center justify-center rounded-full bg-[#D66A42] hover:bg-[#BF5934] transition-all duration-300 px-7 py-4 text-[11px] tracking-[0.18em] uppercase text-white shadow-[0_10px_30px_rgba(0,0,0,0.18)] hover:scale-[1.02]"
-          >
-            Reservar edição atual
-          </a>
-
-          <p className="mt-4 text-[12px] text-white/50">
-            Produção limitada · 30 unidades por edição
-          </p>
-        </div>
-      </div>
-
-      {/* IMAGEM */}
-      <div className="relative flex justify-center lg:justify-end">
-
-        {/* glow vinho */}
-        <div className="absolute w-[420px] h-[420px] rounded-full bg-[#B24A2B]/20 blur-3xl" />
-
-        {/* frame premium */}
-        <div className="relative backdrop-blur-md bg-[#F6F0EA]/10 border border-white/12 rounded-[34px] p-4 md:p-5 shadow-[0_30px_80px_rgba(0,0,0,0.35)]">
-
-          {/* brilho */}
-          <div className="absolute inset-0 rounded-[34px] bg-gradient-to-br from-white/18 to-transparent pointer-events-none" />
-
-          <div className="relative overflow-visible rounded-[26px]">
-
-            {/* selos */}
+          <header className='flex items-center justify-between mb-14 md:mb-20'>
             <img
-              src="/images/selos-apagao.webp"
-              alt=""
-              className="hidden md:block absolute -left-16 top-10 w-24 opacity-90 z-20"
+              src='/branding/05_horizontal_claro.svg'
+              alt='Curadoria Raiz'
+              className='w-[190px] md:w-[240px] h-auto'
             />
 
-            {/* imagem */}
-            <img
-              src="/images/apagao-editorial.webp"
-              alt="Vinho Apagão Curadoria Raiz"
-              className="relative z-10 w-full max-w-[560px] object-cover rounded-[22px] shadow-2xl scale-[1.04]"
-            />
+            <p className='hidden md:block text-[10px] tracking-[0.28em] uppercase text-white/45'>
+              São Paulo · Curadoria artesanal
+            </p>
+          </header>
+
+          <div className='grid lg:grid-cols-2 gap-14 lg:gap-24 items-center'>
+            {/* TEXTO */}
+
+            <div className='max-w-xl'>
+              <p className='uppercase tracking-[0.34em] text-[10px] text-[#BCA898] mb-8'>
+                Drop #01 · Produção limitada
+              </p>
+
+              <h1 className='font-serif text-[#F4EEE6] text-[46px] md:text-[72px] leading-[0.94] tracking-[-0.05em] mb-8'>
+                Alimento com história, entregue por quem escolhe.
+              </h1>
+
+              <p className='text-[#D7CCC2] text-[17px] md:text-[18px] leading-[1.95] max-w-lg mb-10'>
+                Uma seleção mensal de vinho natural, pão de fermentação natural
+                e produtos artesanais escolhidos para desacelerar o ritmo da
+                cidade por algumas horas.
+              </p>
+
+              <div className='flex flex-col items-start gap-4'>
+                <a
+                  href={whatsappLink}
+                  target='_blank'
+                  className='inline-flex items-center justify-center rounded-full bg-[#8C3B30] hover:bg-[#6B2E24] transition-all duration-300 px-8 py-4 text-[11px] tracking-[0.2em] uppercase text-[#F4EEE6]'
+                >
+                  Reservar edição atual
+                </a>
+
+                <p className='text-[#BCA898] text-[12px] tracking-[0.08em] uppercase'>
+                  30 unidades · Entregas sexta e sábado
+                </p>
+              </div>
+            </div>
+
+            {/* IMAGEM */}
+
+            <div className='relative flex justify-center lg:justify-end'>
+              <div className='relative rounded-[30px] overflow-hidden border border-white/8'>
+                <img
+                  src='/images/apagao-editorial.webp'
+                  alt='Curadoria Raiz'
+                  className='w-full max-w-[620px] aspect-[4/5] object-cover'
+                />
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-  </div>
-
-  {/* fade bottom */}
-  <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-b from-transparent to-[#F6F1EB]" />
-</section>
+      </section>
 
       {/* MANIFESTO */}
 
       <section className='py-24 md:py-36'>
         <div className='max-w-7xl mx-auto px-6 md:px-10 grid lg:grid-cols-2 gap-16 md:gap-28 items-start'>
           <div>
-            <p className='uppercase tracking-[0.28em] text-[10px] text-[#B9ADA2] mb-8'>
+            <p className='uppercase tracking-[0.28em] text-[10px] text-[#BCA898] mb-8'>
               Manifesto
             </p>
 
-            <h2 className='font-serif text-[#D5CBC1] text-[56px] md:text-[96px] leading-[0.92] tracking-[-0.04em]'>
+            <h2 className='font-serif text-[#BCA898] text-[56px] md:text-[96px] leading-[0.92] tracking-[-0.04em]'>
               Menos
               <br />
               pressa,
@@ -115,12 +95,12 @@ export default function CuradoriaRaizLanding() {
           </div>
 
           <div className='max-w-[620px]'>
-            <h3 className='text-[34px] md:text-[48px] leading-[1.08] tracking-[-0.03em] text-[#2E2723] mb-10'>
+            <h3 className='text-[34px] md:text-[48px] leading-[1.08] tracking-[-0.03em] text-[#120E0B] mb-10'>
               A Curadoria Raiz nasce do desejo de aproximar pequenos produtores
               do ritmo da cidade.
             </h3>
 
-            <div className='space-y-8 text-[#574F4A] text-[18px] leading-[2]'>
+            <div className='space-y-8 text-[#6B4E3D] text-[18px] leading-[2]'>
               <p>
                 Cada edição reúne vinho vivo, pão artesanal e conservas
                 escolhidas manualmente. Não apenas pelo sabor, mas pela
@@ -141,15 +121,15 @@ export default function CuradoriaRaizLanding() {
       <section className='pb-24 md:pb-36'>
         <div className='max-w-7xl mx-auto px-6 md:px-10'>
           <div className='max-w-3xl mb-16'>
-            <p className='uppercase tracking-[0.28em] text-[10px] text-[#B9ADA2] mb-6'>
+            <p className='uppercase tracking-[0.28em] text-[10px] text-[#BCA898] mb-6'>
               Drop #01
             </p>
 
-            <h2 className='font-serif text-[#D0C4BA] text-[54px] md:text-[84px] leading-[0.95] tracking-[-0.04em] mb-8'>
+            <h2 className='font-serif text-[#BCA898] text-[54px] md:text-[84px] leading-[0.95] tracking-[-0.04em] mb-8'>
               O Trio da Vez
             </h2>
 
-            <p className='text-[#5E5650] text-[18px] leading-[1.95] max-w-2xl'>
+            <p className='text-[#6B4E3D] text-[18px] leading-[1.95] max-w-2xl'>
               Uma combinação pensada para acompanhar o fim da tarde entre Santa
               Cecília, Higienópolis, Barra Funda, Vila Buarque e Campos
               Elíseos.
@@ -160,7 +140,7 @@ export default function CuradoriaRaizLanding() {
             {/* CARD 1 */}
 
             <article className='group'>
-              <div className='rounded-[28px] overflow-hidden bg-white shadow-[0_12px_40px_rgba(0,0,0,0.05)]'>
+              <div className='rounded-[28px] overflow-hidden bg-[#F8F3EC] shadow-[0_12px_40px_rgba(0,0,0,0.05)]'>
                 <img
                   src='/images/apagao-packshot.webp'
                   alt='Apagão Rosé Natural'
@@ -169,13 +149,13 @@ export default function CuradoriaRaizLanding() {
               </div>
 
               <div className='pt-6 min-h-[180px]'>
-                <h3 className='font-serif text-[#2F2926] text-[38px] leading-[0.96] tracking-[-0.04em] mb-4'>
+                <h3 className='font-serif text-[#120E0B] text-[38px] leading-[0.96] tracking-[-0.04em] mb-4'>
                   Apagão Rosé
                   <br />
                   Natural
                 </h3>
 
-                <p className='text-[#6A625C] text-[17px] leading-[1.85]'>
+                <p className='text-[#6B4E3D] text-[17px] leading-[1.85]'>
                   Rosé de intervenção mínima da Família Faccin. Fresco, vivo e
                   levemente frutado.
                 </p>
@@ -185,7 +165,7 @@ export default function CuradoriaRaizLanding() {
             {/* CARD 2 */}
 
             <article className='group'>
-              <div className='rounded-[28px] overflow-hidden bg-white shadow-[0_12px_40px_rgba(0,0,0,0.05)]'>
+              <div className='rounded-[28px] overflow-hidden bg-[#F8F3EC] shadow-[0_12px_40px_rgba(0,0,0,0.05)]'>
                 <img
                   src='/images/pao-sourdough.webp'
                   alt='Sourdough Natural'
@@ -194,13 +174,13 @@ export default function CuradoriaRaizLanding() {
               </div>
 
               <div className='pt-6 min-h-[180px]'>
-                <h3 className='font-serif text-[#2F2926] text-[38px] leading-[0.96] tracking-[-0.04em] mb-4'>
+                <h3 className='font-serif text-[#120E0B] text-[38px] leading-[0.96] tracking-[-0.04em] mb-4'>
                   Sourdough
                   <br />
                   Natural
                 </h3>
 
-                <p className='text-[#6A625C] text-[17px] leading-[1.85]'>
+                <p className='text-[#6B4E3D] text-[17px] leading-[1.85]'>
                   Fermentação lenta e forno artesanal. Assado poucas horas antes
                   da entrega.
                 </p>
@@ -210,7 +190,7 @@ export default function CuradoriaRaizLanding() {
             {/* CARD 3 */}
 
             <article className='group'>
-              <div className='rounded-[28px] overflow-hidden bg-white shadow-[0_12px_40px_rgba(0,0,0,0.05)]'>
+              <div className='rounded-[28px] overflow-hidden bg-[#F8F3EC] shadow-[0_12px_40px_rgba(0,0,0,0.05)]'>
                 <img
                   src='/images/antepasto.webp'
                   alt='Antepasto de Berinjela'
@@ -219,13 +199,13 @@ export default function CuradoriaRaizLanding() {
               </div>
 
               <div className='pt-6 min-h-[180px]'>
-                <h3 className='font-serif text-[#2F2926] text-[38px] leading-[0.96] tracking-[-0.04em] mb-4'>
+                <h3 className='font-serif text-[#120E0B] text-[38px] leading-[0.96] tracking-[-0.04em] mb-4'>
                   Antepasto de
                   <br />
                   Berinjela
                 </h3>
 
-                <p className='text-[#6A625C] text-[17px] leading-[1.85]'>
+                <p className='text-[#6B4E3D] text-[17px] leading-[1.85]'>
                   Receita artesanal preparada em pequenos lotes, com
                   ingredientes frescos e sabor intenso.
                 </p>
@@ -244,9 +224,9 @@ export default function CuradoriaRaizLanding() {
           className='absolute inset-0 w-full h-full object-cover'
         />
 
-        <div className='absolute inset-0 bg-black/52' />
+        <div className='absolute inset-0 bg-[#120E0B]/72' />
 
-        <div className='absolute inset-0 bg-gradient-to-r from-black/65 via-black/30 to-transparent z-10' />
+        <div className='absolute inset-0 bg-gradient-to-r from-[#120E0B]/80 via-black/30 to-transparent z-10' />
 
         <div className='relative z-20 max-w-7xl mx-auto px-6 md:px-10 py-28 md:py-40'>
           <div className='max-w-[760px]'>
@@ -254,7 +234,7 @@ export default function CuradoriaRaizLanding() {
               Pequenos produtores
             </p>
 
-            <h2 className='font-serif text-[#F8F3EE] text-[52px] md:text-[88px] leading-[0.9] tracking-[-0.05em] mb-10 max-w-[10ch]'>
+            <h2 className='font-serif text-[#F4EEE6] text-[52px] md:text-[88px] leading-[0.9] tracking-[-0.05em] mb-10 max-w-[10ch]'>
               Curadoria feita perto de quem produz.
             </h2>
 
@@ -270,49 +250,49 @@ export default function CuradoriaRaizLanding() {
 
       <section className='py-24 md:py-36'>
         <div className='max-w-7xl mx-auto px-6 md:px-10'>
-          <p className='uppercase tracking-[0.28em] text-[10px] text-[#B9ADA2] mb-6'>
+          <p className='uppercase tracking-[0.28em] text-[10px] text-[#BCA898] mb-6'>
             Como funciona
           </p>
 
-          <h2 className='font-serif text-[#D5CBC1] text-[54px] md:text-[86px] leading-[0.95] tracking-[-0.04em] mb-20'>
+          <h2 className='font-serif text-[#BCA898] text-[54px] md:text-[86px] leading-[0.95] tracking-[-0.04em] mb-20'>
             O Ritual do Drop
           </h2>
 
           <div className='grid md:grid-cols-3 gap-10'>
-            <div className='border-t border-[#DDD2C8] pt-8'>
-              <p className='text-[#D3C7BC] text-[28px] mb-5'>01</p>
+            <div className='border-t border-[#DED3C7] pt-8'>
+              <p className='text-[#BCA898] text-[28px] mb-5'>01</p>
 
-              <h3 className='font-serif text-[#2F2926] text-[34px] mb-4'>
+              <h3 className='font-serif text-[#120E0B] text-[34px] mb-4'>
                 Reserva
               </h3>
 
-              <p className='text-[#5F5752] text-[17px] leading-[1.9]'>
+              <p className='text-[#6B4E3D] text-[17px] leading-[1.9]'>
                 Abrimos apenas 30 unidades por edição para garantir frescor,
                 exclusividade e evitar desperdício.
               </p>
             </div>
 
-            <div className='border-t border-[#DDD2C8] pt-8'>
-              <p className='text-[#D3C7BC] text-[28px] mb-5'>02</p>
+            <div className='border-t border-[#DED3C7] pt-8'>
+              <p className='text-[#BCA898] text-[28px] mb-5'>02</p>
 
-              <h3 className='font-serif text-[#2F2926] text-[34px] mb-4'>
+              <h3 className='font-serif text-[#120E0B] text-[34px] mb-4'>
                 Preparação
               </h3>
 
-              <p className='text-[#5F5752] text-[17px] leading-[1.9]'>
+              <p className='text-[#6B4E3D] text-[17px] leading-[1.9]'>
                 Tudo é preparado sob ritmo artesanal e entregue no melhor
                 momento.
               </p>
             </div>
 
-            <div className='border-t border-[#DDD2C8] pt-8'>
-              <p className='text-[#D3C7BC] text-[28px] mb-5'>03</p>
+            <div className='border-t border-[#DED3C7] pt-8'>
+              <p className='text-[#BCA898] text-[28px] mb-5'>03</p>
 
-              <h3 className='font-serif text-[#2F2926] text-[34px] mb-4'>
+              <h3 className='font-serif text-[#120E0B] text-[34px] mb-4'>
                 Entrega
               </h3>
 
-              <p className='text-[#5F5752] text-[17px] leading-[1.9]'>
+              <p className='text-[#6B4E3D] text-[17px] leading-[1.9]'>
                 Entregas entre sexta e sábado em Santa Cecília,
                 Higienópolis, Vila Buarque, Barra Funda e Campos Elíseos.
               </p>
@@ -325,21 +305,19 @@ export default function CuradoriaRaizLanding() {
 
       <section className='pb-20 md:pb-28'>
         <div className='max-w-5xl mx-auto px-6 md:px-10'>
-          <div className='relative overflow-hidden rounded-[40px] bg-gradient-to-br from-[#241714] via-[#2B1915] to-[#6A3426] px-8 md:px-16 py-16 md:py-20 text-center shadow-[0_40px_100px_rgba(0,0,0,0.16)]'>
-            <div className='absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(255,255,255,0.08),transparent_28%)]' />
-
+          <div className='relative overflow-hidden rounded-[40px] bg-[#120E0B] px-8 md:px-16 py-16 md:py-20 text-center'>
             <div className='relative z-10 max-w-3xl mx-auto'>
               <p className='uppercase tracking-[0.32em] text-[10px] text-white/50 mb-8'>
                 Próxima edição
               </p>
 
-              <h2 className='font-serif text-[#F8F3EE] text-[46px] md:text-[78px] leading-[0.92] tracking-[-0.05em] mb-10'>
+              <h2 className='font-serif text-[#F4EEE6] text-[46px] md:text-[78px] leading-[0.92] tracking-[-0.05em] mb-10'>
                 Reservas abertas
                 <br />
                 para o Drop #01
               </h2>
 
-              <p className='text-[#E7D8D0] text-[18px] leading-[1.9] max-w-2xl mx-auto mb-12'>
+              <p className='text-[#D7C8BE] text-[18px] leading-[1.9] max-w-2xl mx-auto mb-12'>
                 Entregas entre sexta e sábado em Santa Cecília,
                 Higienópolis, Vila Buarque, Barra Funda e Campos Elíseos.
               </p>
@@ -347,12 +325,12 @@ export default function CuradoriaRaizLanding() {
               <a
                 href={whatsappLink}
                 target='_blank'
-                className='inline-flex items-center justify-center bg-[#D56A44] hover:bg-[#C45B36] transition-all duration-300 text-white px-10 py-5 rounded-full text-[13px] tracking-[0.2em] uppercase shadow-[0_12px_35px_rgba(0,0,0,0.2)]'
+                className='inline-flex items-center justify-center bg-[#8C3B30] hover:bg-[#6B2E24] transition-all duration-300 text-[#F4EEE6] px-10 py-5 rounded-full text-[13px] tracking-[0.2em] uppercase'
               >
                 Reservar meu Drop
               </a>
 
-              <p className='text-[#D7C8BE] text-[15px] mt-6'>
+              <p className='text-[#BCA898] text-[15px] mt-6'>
                 Pagamento em até 2x disponível via link.
               </p>
             </div>
@@ -362,14 +340,18 @@ export default function CuradoriaRaizLanding() {
 
       {/* FOOTER */}
 
-      <footer className='border-t border-[#E5DBD2] py-8'>
-        <div className='max-w-7xl mx-auto px-6 md:px-10 flex flex-col md:flex-row items-center justify-between gap-6 text-[#9D9186] text-[12px] tracking-[0.08em] uppercase'>
-          <p>Curadoria Raiz · São Paulo</p>
+      <footer className='border-t border-[#DED3C7] py-10 bg-[#F4EEE6]'>
+        <div className='max-w-7xl mx-auto px-6 md:px-10 flex flex-col md:flex-row items-center justify-between gap-8'>
+          <img
+            src='/branding/05_horizontal_claro.svg'
+            alt='Curadoria Raiz'
+            className='w-[170px] md:w-[210px] h-auto'
+          />
 
-          <div className='flex items-center gap-5'>
+          <div className='flex items-center gap-6 text-[#6B4E3D]'>
             <a
               href='#'
-              className='hover:text-[#D56A44] transition-colors'
+              className='hover:text-[#8C3B30] transition-colors'
               aria-label='Instagram'
             >
               <svg
@@ -386,7 +368,9 @@ export default function CuradoriaRaizLanding() {
               </svg>
             </a>
 
-            <p>Curadoria por André Tomazela</p>
+            <p className='text-[11px] tracking-[0.16em] uppercase'>
+              São Paulo · Curadoria artesanal
+            </p>
           </div>
         </div>
       </footer>
