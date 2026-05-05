@@ -13,19 +13,19 @@ export default function Home() {
         <div className='relative z-10 mx-auto max-w-7xl px-6 pb-24 pt-8 md:px-10 md:pb-32'>
           {/* HEADER */}
 
-          <header className='mb-16 flex items-center justify-between md:mb-24'>
-            <img
-              src='/branding/05_horizontal_claro.svg'
-              alt='Curadoria Raiz'
-              className='h-auto w-[230px] md:w-[290px]'
-            />
+         <header className='mb-20 flex items-center justify-between'>
+  <img
+    src='/branding/05_horizontal_claro.png'
+    alt='Curadoria Raiz'
+    className='w-[220px] h-auto object-contain'
+  />
 
-            <div className='hidden items-center gap-4 text-[10px] uppercase tracking-[0.34em] text-[#D6C6BA] md:flex'>
-              <span>São Paulo</span>
-              <span className='opacity-40'>•</span>
-              <span>Curadoria artesanal</span>
-            </div>
-          </header>
+  <div className='hidden md:flex items-center gap-4 text-[10px] uppercase tracking-[0.34em] text-[#D6C6BA]'>
+    <span>São Paulo</span>
+    <span className='opacity-40'>•</span>
+    <span>Curadoria artesanal</span>
+  </div>
+</header>
 
           {/* HERO CONTENT */}
 
