@@ -364,39 +364,48 @@ export default function Home() {
           className="object-cover"
         />
 
-        <div className="absolute inset-0 bg-black/42" />
+        <div className="absolute inset-0 bg-black/56" />
 
-        <div className="absolute inset-0 bg-gradient-to-r from-black/72 via-black/24 to-transparent" />
+<div className="absolute inset-0 bg-gradient-to-r from-black/82 via-black/38 to-transparent" />
 
-        <div className="relative z-10 flex h-full items-center">
-          <div className="mx-auto w-full max-w-[1320px] px-8">
+<div className="relative z-10 flex h-full items-center">
+  <div className="mx-auto w-full max-w-[1320px] px-8">
 
-            <div className="max-w-[560px] -mt-10">
+    <div className="max-w-[620px] -mt-10">
 
-              <span className="text-[10px] uppercase tracking-[0.38em] text-[#E9D9CF]/80">
-                Pequenos produtores
-              </span>
+      <span className="text-[10px] uppercase tracking-[0.38em] text-[#E9D9CF]/82">
+        Pequenos produtores
+      </span>
 
-              <h2
-                className="
-                  mt-8
-                  font-serif
-                  font-normal
-                  text-[5rem]
-                  leading-[0.92]
-                  tracking-[-0.04em]
-                  text-white
-                "
-              >
-                Curadoria feita perto de quem produz.
-              </h2>
+      <h2
+        className="
+          mt-8
+          font-serif
+          font-normal
+          text-[5rem]
+          leading-[0.92]
+          tracking-[-0.04em]
+          text-white
+        "
+      >
+        Curadoria feita perto de quem produz.
+      </h2>
 
-              <p className="mt-10 text-[17px] leading-[2] text-[#E9DCD5]">
-                Cada edição nasce da proximidade com produtores independentes, agricultura sustentável e processos artesanais reais.
-              </p>
-            </div>
-          </div>
-        </div>
+      <p
+        className="
+          mt-10
+          max-w-[540px]
+          text-[19px]
+          leading-[1.9]
+          text-[#F5EEE8]
+        "
+      >
+        Cada edição nasce da proximidade com produtores independentes,
+        agricultura sustentável e processos artesanais reais.
+      </p>
+    </div>
+  </div>
+</div>
       </section>
 
       {/* CTA */}
