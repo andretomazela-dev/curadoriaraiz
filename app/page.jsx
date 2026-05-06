@@ -29,186 +29,180 @@ export default function Home() {
     </div>
 
     {/* GRID */}
-    <div className="grid items-center gap-14 lg:grid-cols-[0.92fr_1.08fr]">
+<div className="grid items-center gap-10 lg:grid-cols-[0.9fr_1.1fr]">
 
-      {/* LEFT */}
-      <div className="relative z-20 max-w-[620px]">
+  {/* LEFT */}
+  <div className="relative z-20 max-w-[680px]">
 
-        {/* LOGO */}
-        <div className="mb-8">
-          <Image
-            src="/branding/transparentes/07_vertical.png"
-            alt="Curadoria Raiz"
-            width={900}
-            height={900}
-            priority
-            className="
-              w-[340px]
-              sm:w-[420px]
-              lg:w-[520px]
-              xl:w-[580px]
-              h-auto
-              object-contain
-            "
-          />
-        </div>
-
-        {/* TITLE */}
-        <h1
-          className="
-            max-w-[560px]
-            font-serif
-            font-normal
-            text-[#F5EEE8]
-            tracking-[-0.03em]
-            leading-[0.9]
-            text-[4.2rem]
-            sm:text-[5rem]
-            lg:text-[6.3rem]
-          "
-        >
-          Comida,
-          <br />
-          vinho e
-          <br />
-          pequenos
-          <br />
-          produtores
-          <br />
-          em ritmo
-          <br />
-          humano.
-        </h1>
-
-        {/* SUBTEXT */}
-        <p
-          className="
-            mt-10
-            max-w-[520px]
-            text-[15px]
-            leading-[2]
-            text-[#D8C8BE]
-          "
-        >
-          Uma seleção mensal de vinho natural, pão de fermentação lenta e
-          produtos artesanais escolhidos para desacelerar a cidade por algumas
-          horas.
-        </p>
-
-        {/* BUTTONS */}
-        <div className="mt-10 flex flex-wrap gap-4">
-
-          <button
-            className="
-              rounded-full
-              bg-[#D56A3D]
-              px-7
-              py-4
-              text-[10px]
-              uppercase
-              tracking-[0.28em]
-              text-white
-              transition-all
-              duration-300
-              hover:bg-[#E1784A]
-              hover:scale-[1.02]
-            "
-          >
-            Reservar edição atual
-          </button>
-
-          <button
-            className="
-              rounded-full
-              border
-              border-[#7A5448]
-              px-7
-              py-4
-              text-[10px]
-              uppercase
-              tracking-[0.28em]
-              text-[#F1E6DF]
-              transition-all
-              duration-300
-              hover:border-[#B97B63]
-              hover:bg-white/5
-            "
-          >
-            Conheça os produtos
-          </button>
-        </div>
-
-        {/* MICRO COPY */}
-        <div
-          className="
-            mt-8
-            text-[9px]
-            uppercase
-            tracking-[0.34em]
-            text-[#9D7D72]
-          "
-        >
-          Produção limitada · 30 unidades por edição
-        </div>
-      </div>
-
-      {/* RIGHT IMAGE */}
-      <div
+    {/* LOGO */}
+    <div className="mb-8">
+      <Image
+        src="/branding/transparentes/07_vertical.png"
+        alt="Curadoria Raiz"
+        width={900}
+        height={900}
+        priority
         className="
-          relative
-          flex
-          justify-center
-          lg:justify-end
-          lg:-mt-8
+          w-[360px]
+          sm:w-[460px]
+          lg:w-[620px]
+          xl:w-[700px]
+          h-auto
+          object-contain
+        "
+      />
+    </div>
+
+    {/* TITLE */}
+    <h1
+      className="
+        max-w-[680px]
+        font-serif
+        font-normal
+        text-[#F5EEE8]
+        tracking-[-0.035em]
+        leading-[0.9]
+        text-[4.4rem]
+        sm:text-[5.2rem]
+        lg:text-[5.6rem]
+      "
+    >
+      Comida, vinho e
+      <br />
+      pequenos produtores
+      <br />
+      em ritmo humano.
+    </h1>
+
+    {/* SUBTEXT */}
+    <p
+      className="
+        mt-10
+        max-w-[520px]
+        text-[15px]
+        leading-[2]
+        text-[#D8C8BE]
+      "
+    >
+      Uma seleção mensal de vinho natural, pão de fermentação lenta e
+      produtos artesanais escolhidos para desacelerar a cidade por algumas
+      horas.
+    </p>
+
+    {/* BUTTONS */}
+    <div className="mt-10 flex flex-wrap gap-4">
+
+      <button
+        className="
+          rounded-full
+          bg-[#D56A3D]
+          px-7
+          py-4
+          text-[10px]
+          uppercase
+          tracking-[0.28em]
+          text-white
+          transition-all
+          duration-300
+          hover:bg-[#E1784A]
+          hover:scale-[1.02]
         "
       >
-        <div
-          className="
-            group
-            relative
-            overflow-hidden
-            rounded-[34px]
-            border
-            border-white/10
-            bg-[#120806]
-            shadow-[0_40px_120px_rgba(0,0,0,0.55)]
-            transition-all
-            duration-700
-            hover:-translate-y-1
-            hover:shadow-[0_50px_140px_rgba(0,0,0,0.7)]
-          "
-        >
+        Reservar edição atual
+      </button>
 
-          {/* GLOW */}
-          <div
-            className="
-              absolute
-              inset-0
-              z-10
-              pointer-events-none
-              bg-[radial-gradient(circle_at_bottom_right,rgba(189,88,46,0.16),transparent_42%)]
-            "
-          />
-
-          <Image
-            src="/images/curadoria-raiz-hero-composicao-vertical.png"
-            alt="Curadoria Raiz"
-            width={760}
-            height={980}
-            priority
-            className="
-              w-[420px]
-              xl:w-[500px]
-              h-auto
-              object-cover
-              transition-transform
-              duration-[1600ms]
-              group-hover:scale-[1.02]
-            "
-          />
-        </div>
-      </div>
+      <button
+        className="
+          rounded-full
+          border
+          border-[#7A5448]
+          px-7
+          py-4
+          text-[10px]
+          uppercase
+          tracking-[0.28em]
+          text-[#F1E6DF]
+          transition-all
+          duration-300
+          hover:border-[#B97B63]
+          hover:bg-white/5
+        "
+      >
+        Conheça os produtos
+      </button>
     </div>
+
+    {/* MICRO COPY */}
+    <div
+      className="
+        mt-8
+        text-[9px]
+        uppercase
+        tracking-[0.34em]
+        text-[#9D7D72]
+      "
+    >
+      Produção limitada · 30 unidades por edição
+    </div>
+  </div>
+
+  {/* RIGHT IMAGE */}
+  <div
+    className="
+      relative
+      flex
+      justify-center
+      lg:justify-end
+      lg:-mt-24
+    "
+  >
+    <div
+      className="
+        group
+        relative
+        overflow-hidden
+        rounded-[36px]
+        border
+        border-white/10
+        bg-[#120806]
+        shadow-[0_40px_120px_rgba(0,0,0,0.55)]
+        transition-all
+        duration-700
+        hover:-translate-y-1
+        hover:shadow-[0_50px_140px_rgba(0,0,0,0.7)]
+      "
+    >
+
+      {/* GLOW */}
+      <div
+        className="
+          absolute
+          inset-0
+          z-10
+          pointer-events-none
+          bg-[radial-gradient(circle_at_bottom_right,rgba(189,88,46,0.18),transparent_42%)]
+        "
+      />
+
+      <Image
+        src="/images/curadoria-raiz-hero-composicao-vertical.png"
+        alt="Curadoria Raiz"
+        width={760}
+        height={980}
+        priority
+        className="
+          w-[480px]
+          xl:w-[620px]
+          h-auto
+          object-cover
+          transition-transform
+          duration-[1600ms]
+          group-hover:scale-[1.02]
+        "
+      />
+    </div>
+  </div>
+</div>
   </div>
 
   {/* LONG TRANSITION */}
