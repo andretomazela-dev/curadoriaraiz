@@ -37,20 +37,20 @@ export default function Home() {
 
               {/* LOGO */}
               <div className="mb-14">
-                <Image
-                  src="/branding/transparentes/07_vertical.png"
-                  alt="Curadoria Raiz"
-                  width={700}
-                  height={700}
-                  priority
-                  className="
-                    w-[240px]
-                    lg:w-[340px]
-                    xl:w-[380px]
-                    h-auto
-                    object-contain
-                  "
-                />
+               <Image
+  src="/branding/transparentes/07_vertical.png"
+  alt="Curadoria Raiz"
+  width={900}
+  height={900}
+  priority
+  className="
+    w-[340px]
+    lg:w-[520px]
+    xl:w-[620px]
+    h-auto
+    object-contain
+  "
+/>               
               </div>
 
               {/* HEADLINE */}
@@ -497,13 +497,13 @@ export default function Home() {
       <footer className="border-t border-[#E4D9D0] py-14">
         <div className="mx-auto flex max-w-[1320px] items-center justify-between px-8">
 
-          <Image
-            src="/branding/transparentes/05_horizontal_claro.svg"
-            alt="Curadoria Raiz"
-            width={300}
-            height={90}
-            className="h-auto w-[220px]"
-          />
+         <Image
+  src="/branding/transparentes/05_horizontal_claro.svg"
+  alt="Curadoria Raiz"
+  width={420}
+  height={120}
+  className="h-auto w-[350px]"
+/>
 
           <span className="text-[10px] uppercase tracking-[0.34em] text-[#B2A197]">
             Curadoria artesanal · São Paulo
