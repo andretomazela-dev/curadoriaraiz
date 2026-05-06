@@ -54,40 +54,39 @@ export default function Home() {
     </div>
 
     {/* TITLE */}
-    <h1
-      className="
-        max-w-[680px]
-        font-serif
-        font-normal
-        text-[#F5EEE8]
-        tracking-[-0.035em]
-        leading-[0.9]
-        text-[4.4rem]
-        sm:text-[5.2rem]
-        lg:text-[5.6rem]
-      "
-    >
-      Comida, vinho e
-      <br />
-      pequenos produtores
-      <br />
-      em ritmo humano.
-    </h1>
+<h1
+  className="
+    max-w-[760px]
+    font-serif
+    font-normal
+    text-[#F5EEE8]
+    tracking-[-0.035em]
+    leading-[0.92]
+    text-[4.2rem]
+    sm:text-[5rem]
+    lg:text-[5.8rem]
+  "
+>
+  Curadoria artesanal
+  <br />
+  em ritmo humano.
+</h1>
 
-    {/* SUBTEXT */}
-    <p
-      className="
-        mt-10
-        max-w-[520px]
-        text-[15px]
-        leading-[2]
-        text-[#D8C8BE]
-      "
-    >
-      Uma seleção mensal de vinho natural, pão de fermentação lenta e
-      produtos artesanais escolhidos para desacelerar a cidade por algumas
-      horas.
-    </p>
+{/* SUBTEXT */}
+<p
+  className="
+    mt-8
+    max-w-[560px]
+    text-[17px]
+    sm:text-[18px]
+    leading-[1.9]
+    text-[#E3D4CB]
+  "
+>
+  Uma seleção mensal de vinho natural, pão de fermentação lenta
+  e produtos artesanais escolhidos para desacelerar a cidade
+  por algumas horas.
+</p>
 
     {/* BUTTONS */}
     <div className="mt-10 flex flex-wrap gap-4">
