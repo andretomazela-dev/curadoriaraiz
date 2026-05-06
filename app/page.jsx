@@ -19,12 +19,37 @@ export default function Home() {
         <div className="relative z-10 mx-auto max-w-[1440px] px-6 sm:px-8 pt-6 sm:pt-8 pb-20 sm:pb-24">
 
           {/* topbar */}
-          <div className="flex items-center justify-between">
-            <span className="text-[10px] uppercase tracking-[0.34em] text-[#D8C6BC]/70">
+          <div className="flex items-start justify-between gap-6">
+
+            <span
+              className="
+                max-w-[170px]
+                text-[10px]
+                leading-[1.7]
+                uppercase
+                tracking-[0.34em]
+                text-[#D8C6BC]/70
+
+                sm:max-w-none
+                sm:whitespace-nowrap
+              "
+            >
               Curadoria artesanal · São Paulo
             </span>
 
-            <span className="text-[10px] uppercase tracking-[0.34em] text-[#D8C6BC]/50">
+            <span
+              className="
+                shrink-0
+                text-right
+                text-[10px]
+                leading-[1.7]
+                uppercase
+                tracking-[0.34em]
+                text-[#D8C6BC]/50
+
+                sm:whitespace-nowrap
+              "
+            >
               Drop #01
             </span>
           </div>
@@ -36,7 +61,7 @@ export default function Home() {
             <div className="max-w-[640px]">
 
               {/* LOGO */}
-              <div className="mb-14">
+              <div className="mb-10 sm:mb-14">
                 <Image
                   src="/branding/transparentes/07_vertical.png"
                   alt="Curadoria Raiz"
@@ -63,10 +88,10 @@ export default function Home() {
                   leading-[0.9]
                   text-[#F8F2EC]
 
-                  max-w-[8ch]
+                  max-w-[7.6ch]
                   sm:max-w-[640px]
 
-                  text-[4rem]
+                  text-[3.85rem]
                   sm:text-[4.8rem]
                   lg:text-[5.6rem]
                 "
@@ -108,10 +133,14 @@ export default function Home() {
               {/* BUTTONS */}
               <div className="mt-12 flex flex-col sm:flex-row sm:flex-wrap gap-4">
 
-                <button
+                <a
+                  href="#reserva"
                   className="
                     w-full
                     sm:w-auto
+                    inline-flex
+                    items-center
+                    justify-center
                     rounded-full
                     bg-[#D66A41]
                     px-8
@@ -127,7 +156,7 @@ export default function Home() {
                   "
                 >
                   Reservar edição atual
-                </button>
+                </a>
 
                 <a
                   href="#produtos"
@@ -279,9 +308,10 @@ export default function Home() {
             <h2
               className="
                 mt-5
+                max-w-[5ch]
                 font-serif
                 font-normal
-                text-[4rem]
+                text-[3.4rem]
                 sm:text-[5rem]
                 leading-[0.94]
                 tracking-[-0.04em]
@@ -378,14 +408,14 @@ export default function Home() {
           className="object-cover"
         />
 
-        <div className="absolute inset-0 bg-black/42" />
+        <div className="absolute inset-0 bg-black/55 sm:bg-black/42" />
 
         <div className="absolute inset-0 bg-gradient-to-r from-black/82 via-black/38 to-transparent" />
 
         <div className="relative z-10 flex h-full items-center">
           <div className="mx-auto w-full max-w-[1320px] px-8">
 
-            <div className="max-w-[620px] -mt-10">
+            <div className="max-w-[340px] sm:max-w-[620px] -mt-10">
 
               <span className="text-[10px] uppercase tracking-[0.38em] text-[#E9D9CF]/82">
                 Pequenos produtores
@@ -396,7 +426,7 @@ export default function Home() {
                   mt-8
                   font-serif
                   font-normal
-                  text-[4rem]
+                  text-[3.7rem]
                   sm:text-[5rem]
                   leading-[0.92]
                   tracking-[-0.04em]
@@ -425,7 +455,7 @@ export default function Home() {
       </section>
 
       {/* CTA */}
-      <section className="py-24 sm:py-40">
+      <section id="reserva" className="py-24 sm:py-40">
         <div className="mx-auto max-w-[1320px] px-8">
 
           <div
@@ -479,10 +509,14 @@ export default function Home() {
 
               <div className="mt-14 flex flex-col sm:flex-row flex-wrap items-center justify-center gap-4">
 
-                <button
+                <a
+                  href="#"
                   className="
                     w-full
                     sm:w-auto
+                    inline-flex
+                    items-center
+                    justify-center
                     rounded-full
                     bg-[#D96B41]
                     px-10
@@ -498,12 +532,16 @@ export default function Home() {
                   "
                 >
                   Reservar meu drop
-                </button>
+                </a>
 
-                <button
+                <a
+                  href="#"
                   className="
                     w-full
                     sm:w-auto
+                    inline-flex
+                    items-center
+                    justify-center
                     rounded-full
                     border
                     border-[#6B4A3F]
@@ -520,7 +558,7 @@ export default function Home() {
                   "
                 >
                   Tirar dúvidas no WhatsApp
-                </button>
+                </a>
               </div>
 
               <div className="mt-10 text-[10px] uppercase tracking-[0.32em] text-[#9D7B6F]">
