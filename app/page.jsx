@@ -279,7 +279,7 @@ export default function Home() {
             </h2>
 
             <p className="mt-6 max-w-[720px] text-[16px] leading-[2] text-[#7B655C]">
-              Uma combinação pensada para acompanhar o fim da tarde entre Santa Cecília, Higienópolis, Barra Funda e Vila Buarque.
+              Uma combinação pensada para acompanhar o fim da tarde em Santa Cecília, Vila Buarque, Higienópolis, Campos Elíseos e Barra Funda.
             </p>
           </div>
 
@@ -453,7 +453,7 @@ export default function Home() {
               </h2>
 
               <p className="mx-auto mt-10 max-w-[780px] text-[16px] leading-[2] text-[#D7C3B9]">
-                Entregas feitas de bicicleta às sextas-feiras e sábados em Santa Cecília, Higienópolis, Barra Funda e Vila Buarque.
+                Entregas feitas de bicicleta às sextas-feiras e sábados em Santa Cecília, Vila Buarque, Higienópolis, Campos Elíseos e Barra Funda.
               </p>
 
               <div className="mt-14 flex flex-wrap items-center justify-center gap-4">
