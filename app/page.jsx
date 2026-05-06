@@ -40,17 +40,17 @@ export default function Home() {
                <Image
   src="/branding/transparentes/07_vertical.png"
   alt="Curadoria Raiz"
-  width={900}
-  height={900}
+  width={1100}
+  height={1100}
   priority
   className="
-    w-[340px]
-    lg:w-[520px]
-    xl:w-[620px]
+    w-[400px]
+    lg:w-[620px]
+    xl:w-[740px]
     h-auto
     object-contain
   "
-/>               
+/>           
               </div>
 
               {/* HEADLINE */}
