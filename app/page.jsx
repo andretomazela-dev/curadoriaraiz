@@ -53,7 +53,7 @@ export default function Home() {
       />
     </div>
 
-   {/* TITLE */}
+  {/* TITLE */}
 <h1
   className="
     max-w-[760px]
@@ -70,15 +70,25 @@ export default function Home() {
   Curadoria
   <br />
 
-  <span className="text-[1.12em]">
+  <span
+    className="
+      block
+      text-[1.22em]
+      leading-[0.88]
+    "
+  >
     artesanal
   </span>
 
-  <br />
   em ritmo
-  <br />
 
-  <span className="text-[1.14em]">
+  <span
+    className="
+      block
+      text-[1.28em]
+      leading-[0.86]
+    "
+  >
     humano.
   </span>
 </h1>
