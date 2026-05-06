@@ -134,7 +134,9 @@ export default function Home() {
               <div className="mt-12 flex flex-col sm:flex-row sm:flex-wrap gap-4">
 
                 <a
-                  href="#reserva"
+                  href="https://tally.so/r/0Qo94N"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="
                     w-full
                     sm:w-auto
@@ -510,7 +512,9 @@ export default function Home() {
               <div className="mt-14 flex flex-col sm:flex-row flex-wrap items-center justify-center gap-4">
 
                 <a
-                  href="#"
+                  href="https://tally.so/r/0Qo94N"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="
                     w-full
                     sm:w-auto
@@ -535,7 +539,9 @@ export default function Home() {
                 </a>
 
                 <a
-                  href="#"
+                  href="https://wa.me/5511968468668"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="
                     w-full
                     sm:w-auto
