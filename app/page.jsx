@@ -53,7 +53,7 @@ export default function Home() {
       />
     </div>
 
-    {/* TITLE */}
+   {/* TITLE */}
 <h1
   className="
     max-w-[760px]
@@ -61,22 +61,33 @@ export default function Home() {
     font-normal
     text-[#F5EEE8]
     tracking-[-0.035em]
-    leading-[0.92]
-    text-[4.2rem]
-    sm:text-[5rem]
-    lg:text-[5.8rem]
+    leading-[0.9]
+    text-[4.1rem]
+    sm:text-[4.8rem]
+    lg:text-[5.5rem]
   "
 >
-  Curadoria artesanal
+  Curadoria
   <br />
-  em ritmo humano.
+
+  <span className="text-[1.12em]">
+    artesanal
+  </span>
+
+  <br />
+  em ritmo
+  <br />
+
+  <span className="text-[1.14em]">
+    humano.
+  </span>
 </h1>
 
 {/* SUBTEXT */}
 <p
   className="
     mt-8
-    max-w-[560px]
+    max-w-[620px]
     text-[17px]
     sm:text-[18px]
     leading-[1.9]
@@ -85,7 +96,7 @@ export default function Home() {
 >
   Uma seleção mensal de vinho natural, pão de fermentação lenta
   e produtos artesanais escolhidos para desacelerar a cidade
-  por algumas horas.
+  por algumas horas urbanas.
 </p>
 
     {/* BUTTONS */}
