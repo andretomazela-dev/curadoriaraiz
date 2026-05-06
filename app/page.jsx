@@ -120,25 +120,29 @@ export default function Home() {
                   Reservar edição atual
                 </button>
 
-                <button
-                  className="
-                    rounded-full
-                    border
-                    border-[#7A5448]
-                    px-8
-                    py-4
-                    text-[11px]
-                    uppercase
-                    tracking-[0.24em]
-                    text-[#F1E6DF]
-                    transition-all
-                    duration-500
-                    hover:border-[#B97B63]
-                    hover:bg-white/5
-                  "
-                >
-                  Conheça os produtos
-                </button>
+                <a
+  href="#produtos"
+  className="
+    inline-flex
+    items-center
+    justify-center
+    rounded-full
+    border
+    border-[#7A5448]
+    px-8
+    py-4
+    text-[11px]
+    uppercase
+    tracking-[0.24em]
+    text-[#F1E6DF]
+    transition-all
+    duration-500
+    hover:border-[#B97B63]
+    hover:bg-white/5
+  "
+>
+  Conheça os produtos
+</a>
               </div>
 
               <div className="mt-10 text-[10px] uppercase tracking-[0.34em] text-[#9D7D72]">
@@ -252,7 +256,7 @@ export default function Home() {
       </section>
 
       {/* PRODUCTS */}
-      <section className="pb-36">
+      <section id="produtos" className="pb-36">
         <div className="mx-auto max-w-[1320px] px-8">
 
           <div className="mb-16">
