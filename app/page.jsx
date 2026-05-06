@@ -2,160 +2,200 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="overflow-hidden bg-[#F3EEE8] text-[#3E241D]">
+    <main className="bg-[#F3EEE8] text-[#3E241D] overflow-hidden">
 
       {/* HERO */}
-      <section className="relative min-h-screen overflow-hidden bg-[#1A0C06] text-[#F7F1EB]">
+      <section className="relative min-h-screen bg-[#1A0C06] text-[#F7F1EB] overflow-hidden">
 
-        {/* DESKTOP IMAGE */}
-        <div
-          className="absolute inset-0 hidden md:block bg-cover bg-no-repeat"
-          style={{
-            backgroundImage:
-              "url('/images/curadoria-raiz-hero-composicao.png')",
-            backgroundPosition: "center center",
-          }}
-        />
+        {/* BACKGROUND IMAGE */}
+        <div className="absolute inset-0">
 
-        {/* MOBILE IMAGE */}
-        <div
-          className="absolute inset-0 md:hidden bg-cover bg-no-repeat"
-          style={{
-            backgroundImage:
-              "url('/images/curadoria-raiz-hero-composicao-vertical.png')",
-            backgroundPosition: "center center",
-          }}
-        />
+          <Image
+            src="/images/curadoria-raiz-hero-composicao-vertical.png"
+            alt="Curadoria Raiz"
+            fill
+            priority
+            className="
+              object-cover
+              object-right
+              lg:object-[68%_center]
+            "
+          />
 
-        {/* OVERLAY */}
-        <div
-          className="absolute inset-0"
-          style={{
-            background:
-              "linear-gradient(to right, rgba(16,8,5,0.96) 0%, rgba(16,8,5,0.88) 32%, rgba(16,8,5,0.48) 58%, rgba(16,8,5,0.12) 100%)",
-          }}
-        />
+          {/* LEFT OVERLAY */}
+          <div
+            className="
+              absolute
+              inset-0
+              bg-[linear-gradient(to_right,rgba(16,8,6,0.92)_0%,rgba(16,8,6,0.82)_30%,rgba(16,8,6,0.52)_52%,rgba(16,8,6,0.18)_70%,transparent_100%)]
+            "
+          />
 
-        {/* NOISE */}
-        <div className="absolute inset-0 opacity-[0.04] bg-[url('/images/noise.png')]" />
+          {/* NOISE */}
+          <div className="absolute inset-0 opacity-[0.05] bg-[url('/images/noise.png')]" />
+        </div>
 
         {/* CONTENT */}
-        <div className="relative z-10 mx-auto flex min-h-screen max-w-[1440px] items-center px-8 pb-28 pt-10 md:px-12 lg:px-16">
+        <div className="relative z-10 mx-auto max-w-[1440px] px-8">
 
-          <div className="max-w-[620px]">
+          {/* TOP BAR */}
+          <div className="flex items-center justify-between pt-8">
 
-            {/* LOGO */}
-            <div className="mb-14">
-              <Image
-                src="/branding/transparentes/07_vertical.png"
-                alt="Curadoria Raiz"
-                width={1400}
-                height={1400}
-                priority
+            <span className="text-[10px] uppercase tracking-[0.38em] text-[#D7C2B5]">
+              Curadoria artesanal · São Paulo
+            </span>
+
+            {/* MINI BRAND */}
+            <span className="hidden lg:block text-[10px] uppercase tracking-[0.34em] text-[#8B675B]">
+              Drop #01
+            </span>
+          </div>
+
+          {/* HERO GRID */}
+          <div className="grid lg:grid-cols-[560px_1fr] items-center min-h-[92vh]">
+
+            {/* LEFT */}
+            <div className="relative z-20 max-w-[560px] py-20 lg:py-0">
+
+              {/* LOGO */}
+              <div className="mb-14">
+
+                <Image
+                  src="/branding/transparentes/07_vertical.png"
+                  alt="Curadoria Raiz"
+                  width={900}
+                  height={900}
+                  priority
+                  className="
+                    w-[260px]
+                    md:w-[360px]
+                    lg:w-[460px]
+                    xl:w-[520px]
+                    h-auto
+                    object-contain
+                  "
+                />
+              </div>
+
+              {/* HEADLINE */}
+              <h1
                 className="
-                  h-auto
-                  w-[420px]
-                  md:w-[760px]
-                  xl:w-[860px]
-                  object-contain
-                  -ml-2
-                "
-              />
-            </div>
-
-            {/* HEADLINE */}
-            <h1
-              className="
-                max-w-[620px]
-                font-serif
-                text-[4.2rem]
-                leading-[0.9]
-                tracking-[-0.035em]
-                text-[#F7F2EC]
-                md:text-[6.3rem]
-                xl:text-[7rem]
-              "
-              style={{ fontWeight: 400 }}
-            >
-              Comida, vinho e pequenos produtores em ritmo humano.
-            </h1>
-
-            {/* SUBTEXT */}
-            <p className="mt-8 max-w-[500px] text-[15px] leading-[1.95] text-[#E0D0C5] md:text-[17px]">
-              Uma seleção mensal de vinho natural, pão de fermentação lenta e
-              produtos artesanais escolhidos para desacelerar a cidade por
-              algumas horas.
-            </p>
-
-            {/* BUTTONS */}
-            <div className="mt-10 flex flex-wrap gap-4">
-
-              <button
-                className="
-                  rounded-full
-                  bg-[#D56A3F]
-                  px-8
-                  py-4
-                  text-[11px]
-                  uppercase
-                  tracking-[0.24em]
-                  text-white
-                  transition-all
-                  duration-300
-                  hover:bg-[#E1784C]
+                  font-serif
+                  font-normal
+                  tracking-[-0.03em]
+                  text-[#F7F0EA]
+                  leading-[0.9]
+                  text-[4.2rem]
+                  md:text-[5.2rem]
+                  lg:text-[5.8rem]
+                  max-w-[560px]
                 "
               >
-                Reservar edição atual
-              </button>
+                Comida,
+                <br />
+                vinho e
+                <br />
+                pequenos
+                <br />
+                produtores
+                <br />
+                em ritmo
+                <br />
+                humano.
+              </h1>
 
-              <button
+              {/* SUBTEXT */}
+              <p
                 className="
-                  rounded-full
-                  border
-                  border-[#8B6458]
-                  px-8
-                  py-4
-                  text-[11px]
-                  uppercase
-                  tracking-[0.24em]
-                  text-[#F3E7E0]
-                  transition-all
-                  duration-300
-                  hover:bg-white/5
+                  mt-10
+                  max-w-[470px]
+                  text-[15px]
+                  leading-[2]
+                  text-[#E1D2C8]
                 "
               >
-                Conheça os produtos
-              </button>
+                Uma seleção mensal de vinho natural, pão de fermentação lenta
+                e produtos artesanais escolhidos para desacelerar a cidade
+                por algumas horas.
+              </p>
+
+              {/* BUTTONS */}
+              <div className="mt-12 flex flex-wrap gap-4">
+
+                <a
+                  href="#cta"
+                  className="
+                    rounded-full
+                    bg-[#D3673C]
+                    px-8
+                    py-4
+                    text-[11px]
+                    uppercase
+                    tracking-[0.28em]
+                    text-white
+                    transition-all
+                    duration-300
+                    hover:bg-[#E0794F]
+                  "
+                >
+                  Reservar edição atual
+                </a>
+
+                <a
+                  href="#produtos"
+                  className="
+                    rounded-full
+                    border
+                    border-[#7F5A4E]
+                    px-8
+                    py-4
+                    text-[11px]
+                    uppercase
+                    tracking-[0.28em]
+                    text-[#F2E7E0]
+                    transition-all
+                    duration-300
+                    hover:bg-white/5
+                  "
+                >
+                  Conheça os produtos
+                </a>
+              </div>
+
+              {/* INFO */}
+              <div className="mt-10 text-[10px] uppercase tracking-[0.34em] text-[#B08B7D]">
+                Produção limitada · 30 unidades por edição
+              </div>
             </div>
 
-            {/* META */}
-            <div className="mt-10 text-[10px] uppercase tracking-[0.32em] text-[#A6877B]">
-              Produção limitada · 30 unidades por edição
-            </div>
+            {/* RIGHT EMPTY SPACE */}
+            <div />
           </div>
         </div>
 
-        {/* TRANSITION */}
+        {/* SOFT TRANSITION */}
         <div
-          className="absolute bottom-0 left-0 right-0 h-[260px]"
-          style={{
-            background:
-              "linear-gradient(to bottom, rgba(26,12,6,0) 0%, rgba(92,38,20,0.14) 42%, rgba(243,238,232,0.94) 82%, #F3EEE8 100%)",
-          }}
+          className="
+            absolute
+            bottom-0
+            left-0
+            right-0
+            h-[260px]
+            bg-[linear-gradient(to_bottom,rgba(26,12,6,0)_0%,rgba(93,48,30,0.12)_40%,#F3EEE8_100%)]
+          "
         />
       </section>
 
       {/* MANIFESTO */}
-      <section className="py-24 md:py-40">
+      <section className="py-36">
+        <div className="mx-auto max-w-[1320px] px-8">
 
-        <div className="mx-auto max-w-[1380px] px-8 md:px-12 lg:px-16">
-
-          <div className="grid gap-24 lg:grid-cols-2">
+          <div className="grid lg:grid-cols-2 gap-28 items-start">
 
             {/* LEFT */}
             <div>
 
-              <span className="text-[10px] uppercase tracking-[0.34em] text-[#C2B1A6]">
+              <span className="text-[10px] uppercase tracking-[0.38em] text-[#B8A69C]">
                 Manifesto
               </span>
 
@@ -163,13 +203,13 @@ export default function Home() {
                 className="
                   mt-10
                   font-serif
-                  text-[4.8rem]
+                  font-normal
+                  tracking-[-0.02em]
                   leading-[0.92]
-                  tracking-[-0.03em]
-                  text-[#B8A398]
-                  md:text-[7.4rem]
+                  text-[4.8rem]
+                  md:text-[5.8rem]
+                  text-[#C7B3A7]
                 "
-                style={{ fontWeight: 400 }}
               >
                 Menos
                 <br />
@@ -182,24 +222,24 @@ export default function Home() {
             </div>
 
             {/* RIGHT */}
-            <div className="max-w-[640px]">
+            <div className="max-w-[560px]">
 
               <h3
                 className="
                   font-serif
+                  font-normal
+                  tracking-[-0.02em]
+                  leading-[0.95]
                   text-[3.2rem]
-                  leading-[0.97]
-                  tracking-[-0.03em]
-                  text-[#4B2B24]
-                  md:text-[5rem]
+                  md:text-[4rem]
+                  text-[#4A2A22]
                 "
-                style={{ fontWeight: 400 }}
               >
                 A Curadoria Raiz nasce do desejo de aproximar pequenos
                 produtores do ritmo da cidade.
               </h3>
 
-              <div className="mt-10 space-y-8 text-[16px] leading-[2] text-[#6E5B53]">
+              <div className="mt-12 space-y-8 text-[16px] leading-[2] text-[#735D54]">
 
                 <p>
                   Cada edição reúne vinho vivo, pão artesanal e conservas
@@ -218,13 +258,12 @@ export default function Home() {
       </section>
 
       {/* PRODUCTS */}
-      <section className="pb-28 md:pb-40">
-
-        <div className="mx-auto max-w-[1380px] px-8 md:px-12 lg:px-16">
+      <section id="produtos" className="pb-36">
+        <div className="mx-auto max-w-[1320px] px-8">
 
           <div className="mb-16">
 
-            <span className="text-[10px] uppercase tracking-[0.34em] text-[#BFAEA3]">
+            <span className="text-[10px] uppercase tracking-[0.38em] text-[#B8A69C]">
               Drop #01
             </span>
 
@@ -232,24 +271,24 @@ export default function Home() {
               className="
                 mt-5
                 font-serif
-                text-[3.8rem]
-                leading-[0.95]
-                tracking-[-0.03em]
-                text-[#B49F93]
-                md:text-[5.8rem]
+                font-normal
+                tracking-[-0.02em]
+                leading-[0.94]
+                text-[4rem]
+                md:text-[5rem]
+                text-[#BFAEA2]
               "
-              style={{ fontWeight: 400 }}
             >
               O Trio da Vez
             </h2>
 
-            <p className="mt-6 max-w-[760px] text-[16px] leading-[2] text-[#76645B]">
-              Uma combinação pensada para acompanhar o fim da tarde entre Santa
-              Cecília, Higienópolis, Barra Funda e Vila Buarque.
+            <p className="mt-6 max-w-[720px] text-[16px] leading-[2] text-[#7B655C]">
+              Uma combinação pensada para acompanhar o fim da tarde
+              entre Santa Cecília, Higienópolis, Barra Funda e Vila Buarque.
             </p>
           </div>
 
-          <div className="grid gap-10 md:grid-cols-3">
+          <div className="grid lg:grid-cols-3 gap-10">
 
             {[
               {
@@ -270,12 +309,13 @@ export default function Home() {
             ].map((item, index) => (
               <div key={index} className="group">
 
-                <div className="overflow-hidden rounded-[30px] bg-[#ECE4DD]">
+                <div className="overflow-hidden rounded-[28px] bg-[#ECE4DD]">
+
                   <Image
                     src={item.image}
                     alt={item.title}
-                    width={600}
-                    height={700}
+                    width={500}
+                    height={620}
                     className="
                       h-[430px]
                       w-full
@@ -291,17 +331,17 @@ export default function Home() {
                   className="
                     mt-7
                     font-serif
-                    text-[2rem]
-                    leading-[1]
+                    font-normal
                     tracking-[-0.02em]
-                    text-[#3F251F]
+                    leading-[1]
+                    text-[2rem]
+                    text-[#3C241E]
                   "
-                  style={{ fontWeight: 400 }}
                 >
                   {item.title}
                 </h3>
 
-                <p className="mt-4 text-[15px] leading-[1.9] text-[#76635A]">
+                <p className="mt-4 text-[15px] leading-[1.9] text-[#7B665E]">
                   {item.text}
                 </p>
               </div>
@@ -320,17 +360,17 @@ export default function Home() {
           className="object-cover"
         />
 
-        <div className="absolute inset-0 bg-black/42" />
+        <div className="absolute inset-0 bg-black/45" />
 
-        <div className="absolute inset-0 bg-gradient-to-r from-black/75 via-black/20 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/75 via-black/30 to-transparent" />
 
         <div className="relative z-10 flex h-full items-center">
 
-          <div className="mx-auto w-full max-w-[1380px] px-8 md:px-12 lg:px-16">
+          <div className="mx-auto w-full max-w-[1320px] px-8">
 
-            <div className="max-w-[620px]">
+            <div className="max-w-[560px]">
 
-              <span className="text-[10px] uppercase tracking-[0.34em] text-[#E7D7CD]/80">
+              <span className="text-[10px] uppercase tracking-[0.38em] text-[#E9D9CF]/80">
                 Pequenos produtores
               </span>
 
@@ -338,18 +378,18 @@ export default function Home() {
                 className="
                   mt-8
                   font-serif
-                  text-[4rem]
-                  leading-[0.92]
+                  font-normal
                   tracking-[-0.03em]
+                  leading-[0.92]
+                  text-[4.6rem]
+                  md:text-[5.4rem]
                   text-white
-                  md:text-[6.2rem]
                 "
-                style={{ fontWeight: 400 }}
               >
                 Curadoria feita perto de quem produz.
               </h2>
 
-              <p className="mt-10 text-[17px] leading-[2] text-[#E7DAD3]">
+              <p className="mt-10 text-[17px] leading-[2] text-[#E9DCD5]">
                 Cada edição nasce da proximidade com produtores independentes,
                 agricultura sustentável e processos artesanais reais.
               </p>
@@ -359,25 +399,23 @@ export default function Home() {
       </section>
 
       {/* CTA */}
-      <section className="py-24 md:py-40">
+      <section id="cta" className="py-40">
 
-        <div className="mx-auto max-w-[1380px] px-8 md:px-12 lg:px-16">
+        <div className="mx-auto max-w-[1320px] px-8">
 
           <div
             className="
               relative
               overflow-hidden
-              rounded-[44px]
-              bg-[#1A0C08]
-              px-8
-              py-24
+              rounded-[42px]
+              bg-[#1E0F0B]
+              px-10
+              py-28
               text-center
-              md:px-16
-              md:py-32
             "
           >
 
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_right,rgba(173,67,36,0.42),transparent_34%)]" />
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_right,rgba(173,67,36,0.45),transparent_34%)]" />
 
             <div className="relative z-10">
 
@@ -385,7 +423,7 @@ export default function Home() {
                 R
               </div>
 
-              <span className="text-[10px] uppercase tracking-[0.34em] text-[#D1B3A7]">
+              <span className="text-[10px] uppercase tracking-[0.38em] text-[#C8A99C]">
                 Próxima edição
               </span>
 
@@ -393,27 +431,28 @@ export default function Home() {
                 className="
                   mx-auto
                   mt-8
-                  max-w-[860px]
+                  max-w-[760px]
                   font-serif
-                  text-[3.8rem]
-                  leading-[0.92]
+                  font-normal
                   tracking-[-0.03em]
-                  text-[#F7F2EC]
-                  md:text-[6rem]
+                  leading-[0.94]
+                  text-[4.4rem]
+                  md:text-[5rem]
+                  text-[#F8F2EC]
                 "
-                style={{ fontWeight: 400 }}
               >
                 Reservas abertas para o Drop #01
               </h2>
 
-              <p className="mx-auto mt-10 max-w-[760px] text-[16px] leading-[2] text-[#DCC9BF]">
-                Entregas feitas de bicicleta às sextas-feiras e sábados em
-                Santa Cecília, Higienópolis, Vila Buarque e Barra Funda.
+              <p className="mx-auto mt-10 max-w-[720px] text-[16px] leading-[2] text-[#D7C3B9]">
+                Entregas feitas de bicicleta às sextas-feiras e sábados
+                em Santa Cecília, Higienópolis, Barra Funda e Vila Buarque.
               </p>
 
               <div className="mt-14 flex flex-wrap items-center justify-center gap-4">
 
-                <button
+                <a
+                  href="#"
                   className="
                     rounded-full
                     bg-[#D96B41]
@@ -421,23 +460,20 @@ export default function Home() {
                     py-5
                     text-[11px]
                     uppercase
-                    tracking-[0.28em]
+                    tracking-[0.3em]
                     text-white
                     transition-all
                     duration-300
-                    hover:bg-[#E27B4F]
+                    hover:bg-[#E27A51]
                   "
                 >
                   Reservar meu drop
-                </button>
+                </a>
 
-                <button
-                  onClick={() =>
-                    window.open(
-                      "https://wa.me/5511999999999",
-                      "_blank"
-                    )
-                  }
+                <a
+                  href="https://wa.me/5511999999999"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="
                     rounded-full
                     border
@@ -451,14 +487,17 @@ export default function Home() {
                     transition-all
                     duration-300
                     hover:bg-white/5
+                    inline-flex
+                    items-center
+                    justify-center
                   "
                 >
                   Tirar dúvidas no WhatsApp
-                </button>
+                </a>
               </div>
 
-              <div className="mt-10 text-[10px] uppercase tracking-[0.3em] text-[#A98A7E]">
-                Parcelamento em 2x · disponível via link
+              <div className="mt-10 text-[10px] uppercase tracking-[0.32em] text-[#9D7B6F]">
+                Parcelamento em até 2x · disponível via link
               </div>
             </div>
           </div>
@@ -466,23 +505,23 @@ export default function Home() {
       </section>
 
       {/* FOOTER */}
-      <footer className="border-t border-[#E5DAD2] py-14">
+      <footer className="border-t border-[#E4D9D0] py-14">
 
-        <div className="mx-auto flex max-w-[1380px] flex-col items-center justify-between gap-10 px-8 text-center md:flex-row md:px-12 lg:px-16">
+        <div className="mx-auto flex max-w-[1320px] items-center justify-between px-8">
 
           <Image
             src="/branding/transparentes/05_horizontal_claro.svg"
             alt="Curadoria Raiz"
-            width={520}
-            height={160}
-            className="h-auto w-[320px]"
+            width={320}
+            height={90}
+            className="h-auto w-[230px]"
           />
 
-          <span className="text-[10px] uppercase tracking-[0.32em] text-[#B19F94]">
+          <span className="hidden md:block text-[10px] uppercase tracking-[0.34em] text-[#B2A197]">
             Curadoria artesanal · São Paulo
           </span>
 
-          <span className="text-[10px] uppercase tracking-[0.28em] text-[#B7A79C]">
+          <span className="text-[10px] uppercase tracking-[0.28em] text-[#B7A69C]">
             © 2026 Curadoria Raiz
           </span>
         </div>
