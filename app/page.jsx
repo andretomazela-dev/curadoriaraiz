@@ -146,7 +146,7 @@ export default function Home() {
               </div>
 
               <div className="mt-10 text-[10px] uppercase tracking-[0.34em] text-[#9D7D72]">
-                Produção limitada · 24 unidades por edição
+                Produção limitada · 30 unidades por edição
               </div>
             </div>
 
