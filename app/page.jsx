@@ -158,49 +158,39 @@ export default function Home() {
     </div>
 
     {/* RIGHT IMAGE */}
-    <div
+<div
+  className="
+    relative
+    flex
+    justify-center
+    lg:justify-end
+    lg:-mt-24
+  "
+>
+  <div
+    className="
+      relative
+      w-full
+      max-w-[980px]
+      h-[760px]
+      lg:h-[920px]
+    "
+  >
+    <Image
+      src="/images/curadoria-raiz-hero-composicao-vertical.png"
+      alt="Curadoria Raiz"
+      fill
+      priority
       className="
-        relative
-        flex
-        items-end
-        justify-center
-        lg:justify-end
+        object-cover
+        object-center
+        mix-blend-lighten
+        select-none
+        pointer-events-none
       "
-    >
-
-      <div
-        className="
-          relative
-          w-full
-          max-w-[760px]
-        "
-      >
-
-        <Image
-          src="/images/curadoria-raiz-hero-composicao-vertical.png"
-          alt="Curadoria Raiz"
-          width={1200}
-          height={1600}
-          priority
-          className="
-            h-auto
-            w-full
-            object-contain
-            select-none
-            pointer-events-none
-          "
-        />
-
-        {/* CINEMATIC SHADOW */}
-        <div
-          className="
-            absolute
-            inset-0
-            bg-[radial-gradient(circle_at_center,transparent_48%,rgba(0,0,0,0.14)_100%)]
-          "
-        />
-      </div>
-    </div>
+    />
+  </div>
+</div>
   </div>
 
   {/* LONG FADE */}
