@@ -574,7 +574,27 @@ export default function Home() {
           </div>
         </div>
       </section>
-
+      
+{/* BACK TO TOP */}
+<div className="flex justify-center pb-10">
+  <a
+    href="#top"
+    className="
+      inline-flex
+      items-center
+      gap-3
+      text-[11px]
+      uppercase
+      tracking-[0.28em]
+      text-[#9D7D72]
+      transition-all
+      duration-300
+      hover:text-[#D66A41]
+    "
+  >
+    ↑ Voltar ao topo
+  </a>
+</div>
       {/* FOOTER */}
       <footer className="border-t border-[#E4D9D0] py-14">
         <div className="mx-auto flex max-w-[1320px] flex-col gap-8 text-center lg:flex-row lg:items-center lg:justify-between px-6 sm:px-8">
@@ -595,35 +615,7 @@ export default function Home() {
             © 2026 Curadoria Raiz
           </span>
         </div>
-      </footer>
-           
-      {/* BACK TO TOP */}
-      <a
-        href="#top"
-        className="
-          fixed
-          bottom-6
-          right-6
-          z-50
-          flex
-          h-12
-          w-12
-          items-center
-          justify-center
-          rounded-full
-          bg-[#D66A41]
-          text-white
-          text-xl
-          shadow-[0_10px_30px_rgba(0,0,0,0.22)]
-          transition-all
-          duration-300
-          hover:scale-110
-          hover:bg-[#E27A51]
-        "
-        aria-label="Voltar ao topo"
-      >
-        ↑
-      </a>
+      </footer>        
      </main>
   );
 }
