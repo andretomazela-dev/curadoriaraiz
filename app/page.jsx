@@ -521,8 +521,7 @@ export default function Home() {
       </p>
     </div>
 
-  </div>
-</section>
+ </section>
 
       {/* CTA */}
       <section id="reserva" className="py-24 sm:py-40">
