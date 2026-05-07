@@ -61,23 +61,21 @@ export default function Home() {
             <div className="max-w-[640px]">
 
               {/* LOGO */}
-              <div className="mb-10 sm:mb-14">
-                <Image
-                  src="/branding/transparentes/07_vertical.png"
-                  alt="Curadoria Raiz"
-                  width={1100}
-                  height={1100}
-                  priority
-                  className="
-                    w-[280px]
-                    sm:w-[420px]
-                    lg:w-[760px]
-                    xl:w-[860px]
-                    h-auto
-                    object-contain
-                  "
-                />
-              </div>
+<div className="flex justify-center lg:justify-start mb-12 md:mb-10">
+  <img
+    src="/logo-raiz.png"
+    alt="Curadoria Raiz"
+    className="
+      w-[360px]
+      sm:w-[420px]
+      md:w-[340px]
+      lg:w-[320px]
+      h-auto
+      opacity-95
+      max-w-none
+    "
+  />
+</div>
 
               {/* HEADLINE */}
               <h1
