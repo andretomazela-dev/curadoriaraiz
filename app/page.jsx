@@ -457,7 +457,7 @@ export default function Home() {
       </section>
 
       {/* COMO FUNCIONA */}
-<section className="bg-[#F5F1EB] px-6 py-24 md:px-16 md:py-32">
+<section className="bg-[#F5F1EB] px-6 pt-24 pb-12 md:px-16 md:pt-32 md:pb-20">
   <div className="mx-auto max-w-[1180px]">
 
     <div className="mb-16">
@@ -510,9 +510,8 @@ export default function Home() {
         </h3>
 
         <p className="max-w-[320px] text-[1rem] leading-[1.9] text-[#7A6258]">
-          As entregas acontecem de bicicleta em Santa Cecília, Vila Buarque, Higienópolis, Campos Elíseos e Barra Funda.
-        </p>
-      </div>
+  Entregas e retiradas organizadas em bairros centrais de São Paulo.
+</p>
 
     </div>
 
