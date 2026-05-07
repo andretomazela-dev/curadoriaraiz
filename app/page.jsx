@@ -63,7 +63,7 @@ export default function Home() {
               {/* LOGO */}
 <div className="flex justify-center lg:justify-start mb-12 md:mb-10">
   <img
-    src="/logo-raiz.png"
+    src="/branding/transparentes/05_horizontal_claro.svg"
     alt="Curadoria Raiz"
     className="
       w-[360px]
