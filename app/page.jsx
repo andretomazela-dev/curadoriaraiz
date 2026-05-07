@@ -510,8 +510,9 @@ export default function Home() {
         </h3>
 
         <p className="max-w-[320px] text-[1rem] leading-[1.9] text-[#7A6258]">
-  Entregas e retiradas organizadas em bairros centrais de São Paulo.
-</p>
+          Entregas e retiradas organizadas em bairros centrais de São Paulo.
+        </p>
+      </div>
 
     </div>
 
@@ -521,7 +522,8 @@ export default function Home() {
       </p>
     </div>
 
- </section>
+  </div>
+</section>
 
       {/* CTA */}
       <section id="reserva" className="py-24 sm:py-40">
