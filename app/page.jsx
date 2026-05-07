@@ -69,7 +69,7 @@ export default function Home() {
                   height={1100}
                   priority
                   className="
-                    w-[280px]
+                    w-[448px]
                     sm:w-[420px]
                     lg:w-[760px]
                     xl:w-[860px]
@@ -584,7 +584,7 @@ export default function Home() {
             alt="Curadoria Raiz"
             width={420}
             height={120}
-            className="h-auto w-[280px] sm:w-[320px]"
+            className="h-auto w-[448px] sm:w-[320px]"
           />
 
           <span className="text-[10px] uppercase tracking-[0.34em] text-[#B2A197]">
