@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="bg-[#F3EEE8] text-[#3E241D] overflow-x-hidden">
+    <main   id="top"   className="bg-[#F3EEE8] text-[#3E241D] overflow-x-hidden" >
 
       {/* HERO */}
       <section className="relative overflow-hidden bg-[#1A0C06] text-[#F7F1EB]">
@@ -596,6 +596,34 @@ export default function Home() {
           </span>
         </div>
       </footer>
-    </main>
+           
+      {/* BACK TO TOP */}
+      <a
+        href="#top"
+        className="
+          fixed
+          bottom-6
+          right-6
+          z-50
+          flex
+          h-12
+          w-12
+          items-center
+          justify-center
+          rounded-full
+          bg-[#D66A41]
+          text-white
+          text-xl
+          shadow-[0_10px_30px_rgba(0,0,0,0.22)]
+          transition-all
+          duration-300
+          hover:scale-110
+          hover:bg-[#E27A51]
+        "
+        aria-label="Voltar ao topo"
+      >
+        ↑
+      </a>
+     </main>
   );
 }
