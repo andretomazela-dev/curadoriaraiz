@@ -456,6 +456,75 @@ export default function Home() {
         </div>
       </section>
 
+      {/* COMO FUNCIONA */}
+<section className="bg-[#F5F1EB] px-6 py-24 md:px-16 md:py-32">
+  <div className="mx-auto max-w-[1180px]">
+
+    <div className="mb-16">
+      <p className="mb-4 text-[0.62rem] uppercase tracking-[0.45em] text-[#B8A79D]">
+        Como funciona
+      </p>
+
+      <h2 className="max-w-[720px] font-serif text-[3rem] leading-[0.95] tracking-[-0.04em] text-[#4A1F1A] md:text-[5.5rem]">
+        Reserva simples, entrega humana.
+      </h2>
+    </div>
+
+    <div className="grid gap-14 border-t border-[#D8CCC3] pt-14 md:grid-cols-3 md:gap-12">
+
+      <div>
+        <p className="mb-5 font-serif text-[2.8rem] leading-none text-[#D66A41]">
+          01
+        </p>
+
+        <h3 className="mb-3 font-serif text-[1.7rem] text-[#4A1F1A]">
+          Reserva
+        </h3>
+
+        <p className="max-w-[280px] text-[1rem] leading-[1.9] text-[#7A6258]">
+          Você reserva sua edição pelo formulário da Curadoria Raiz.
+        </p>
+      </div>
+
+      <div>
+        <p className="mb-5 font-serif text-[2.8rem] leading-none text-[#D66A41]">
+          02
+        </p>
+
+        <h3 className="mb-3 font-serif text-[1.7rem] text-[#4A1F1A]">
+          Confirmação
+        </h3>
+
+        <p className="max-w-[280px] text-[1rem] leading-[1.9] text-[#7A6258]">
+          Entramos em contato pelo WhatsApp para confirmar entrega e envio do link de pagamento ou PIX.
+        </p>
+      </div>
+
+      <div>
+        <p className="mb-5 font-serif text-[2.8rem] leading-none text-[#D66A41]">
+          03
+        </p>
+
+        <h3 className="mb-3 font-serif text-[1.7rem] text-[#4A1F1A]">
+          Entrega
+        </h3>
+
+        <p className="max-w-[320px] text-[1rem] leading-[1.9] text-[#7A6258]">
+          As entregas acontecem de bicicleta em Santa Cecília, Vila Buarque, Higienópolis, Campos Elíseos e Barra Funda.
+        </p>
+      </div>
+
+    </div>
+
+    <div className="mt-16 border-t border-[#E2D8D1] pt-8">
+      <p className="text-[0.7rem] uppercase tracking-[0.35em] text-[#9D7D72]">
+        Produção limitada · apenas 30 edições disponíveis neste drop.
+      </p>
+    </div>
+
+  </div>
+</section>
+
       {/* CTA */}
       <section id="reserva" className="py-24 sm:py-40">
         <div className="mx-auto max-w-[1320px] px-8">
