@@ -313,8 +313,8 @@ export default function Home() {
                 max-w-[5ch]
                 font-serif
                 font-normal
-                text-[3.4rem]
-                sm:text-[5rem]
+                text-[4rem]
+                sm:text-[5.8rem]
                 leading-[0.94]
                 tracking-[-0.04em]
                 text-[#B89E91]
@@ -441,7 +441,7 @@ export default function Home() {
               <p
                 className="
                   mt-10
-                  max-w-[540px]
+                  max-w-[460px]
                   text-[17px]
                   sm:text-[19px]
                   leading-[1.85]
@@ -586,7 +586,8 @@ export default function Home() {
       text-[11px]
       uppercase
       tracking-[0.28em]
-      text-[#9D7D72]
+      text-[#9D7D72]/75
+      hover:text-[#D66A41]
       transition-all
       duration-300
       hover:text-[#D66A41]
@@ -596,7 +597,7 @@ export default function Home() {
   </a>
 </div>
       {/* FOOTER */}
-      <footer className="border-t border-[#E4D9D0] py-14">
+      <footer className="border-t border-[#E4D9D0] py-20">
         <div className="mx-auto flex max-w-[1320px] flex-col gap-8 text-center lg:flex-row lg:items-center lg:justify-between px-6 sm:px-8">
 
           <Image
