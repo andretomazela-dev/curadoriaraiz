@@ -1,4 +1,5 @@
 import './globals.css'
+import Script from 'next/script'
 import { Playfair_Display, Inter } from 'next/font/google'
 
 const playfair = Playfair_Display({
@@ -41,6 +42,21 @@ export default function RootLayout({ children }) {
         className={`${playfair.variable} ${inter.variable} bg-[#F4EEE6] text-[#120E0B] antialiased`}
       >
         {children}
+
+        <Script
+          src='https://www.googletagmanager.com/gtag/js?id=G-LXCB5YEXK2'
+          strategy='afterInteractive'
+        />
+
+        <Script id='google-analytics' strategy='afterInteractive'>
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-LXCB5YEXK2');
+          `}
+        </Script>
       </body>
     </html>
   )
