@@ -666,42 +666,83 @@ export default function Home() {
   </a>
 </div>
       {/* FOOTER */}
-      <footer className="border-t border-[#E4D9D0] py-20">
-        <div className="mx-auto flex max-w-[1320px] flex-col gap-8 text-center lg:flex-row lg:items-center lg:justify-between px-6 sm:px-8">
+<footer className="border-t border-[#E5DDD5] py-16 sm:py-20">
+  <div className="mx-auto flex max-w-[1320px] flex-col items-center justify-between gap-10 px-6 text-center sm:px-8 lg:flex-row lg:text-left">
 
-          <Image
-            src="/branding/transparentes/05_horizontal_claro.svg"
-            alt="Curadoria Raiz"
-            width={420}
-            height={120}
-            className="h-auto w-[448px] sm:w-[320px]"
-          />
+    {/* LOGO */}
+    <div className="flex items-center gap-5">
+      <Image
+        src="/branding/transparentes/03_logo_claro.png"
+        alt="Curadoria Raiz"
+        width={110}
+        height={42}
+        className="h-auto w-[110px]"
+      />
 
-          <span className="text-[10px] uppercase tracking-[0.34em] text-[#B2A197]">
-            Curadoria artesanal · São Paulo
-          </span>
+      <div className="hidden h-10 w-px bg-[#DDD2C8] sm:block" />
 
-          <span className="text-[10px] uppercase tracking-[0.28em] text-[#B7A69C]">
-            © 2026 Curadoria Raiz
-          </span>
-        </div>
-        <a
-  href="https://instagram.com/curadoriaraiz"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="
-    text-[10px]
-    uppercase
-    tracking-[0.28em]
-    text-[#B7A69C]
-    transition-colors
-    duration-300
-    hover:text-[#D66A41]
-  "
->
-  Instagram
-</a>
-      </footer>        
+      <span className="hidden text-[9px] uppercase tracking-[0.34em] text-[#B8A79C] sm:block">
+        Curadoria artesanal · São Paulo
+      </span>
+    </div>
+
+    {/* CENTER */}
+    <div className="flex items-center gap-6">
+
+      {/* INSTAGRAM */}
+      <a
+        href="https://instagram.com/curadoriaraiz"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Instagram Curadoria Raiz"
+        className="
+          text-[#B8A79C]
+          transition-all
+          duration-300
+          hover:text-[#D66A41]
+          hover:scale-105
+        "
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="1.7"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          className="h-[17px] w-[17px]"
+        >
+          <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+          <path d="M16 11.37a4 4 0 1 1-2.63-2.63A4 4 0 0 1 16 11.37z" />
+          <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+        </svg>
+      </a>
+
+      <a
+        href="#top"
+        className="
+          text-[10px]
+          uppercase
+          tracking-[0.34em]
+          text-[#B8A79C]
+          transition-colors
+          duration-300
+          hover:text-[#120E0B]
+        "
+      >
+        ↑ Voltar ao topo
+      </a>
+
+    </div>
+
+    {/* COPYRIGHT */}
+    <span className="text-[10px] uppercase tracking-[0.28em] text-[#B8A79C]">
+      © 2026 Curadoria Raiz
+    </span>
+
+  </div>
+</footer>   
      </main>
   );
 }
