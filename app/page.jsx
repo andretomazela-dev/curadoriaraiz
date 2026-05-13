@@ -11,17 +11,19 @@ export default function Home() {
   <div className="absolute inset-0">
 
     <Image
-      src="/images/curadoria-raiz-hero-composicao_01.png"
-      alt="Curadoria Raiz"
-      fill
-      priority
-      className="
-        object-cover
-        object-[72%_center]
-        sm:object-[78%_center]
-        lg:object-center
-      "
-    />
+  src="/images/curadoria-raiz-hero-composicao_01.png"
+  alt="Curadoria Raiz"
+  fill
+  priority
+  className="
+    object-cover
+    scale-[0.90]
+
+    object-[72%_center]
+    sm:object-[78%_center]
+    lg:object-center
+  "
+/>
 
     {/* cinematic overlay */}
     <div className="absolute inset-0 bg-black/52 sm:bg-black/44" />
