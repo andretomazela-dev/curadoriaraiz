@@ -672,13 +672,13 @@ export default function Home() {
     {/* LOGO */}
     <div className="flex items-center">
       <Image
-        src="/branding/transparentes/05_horizontal_claro.svg"
-        alt="Curadoria Raiz"
-        width={420}
-        height={120}
-        className="h-auto w-[150px]"
-      />
-    </div>
+            src="/branding/transparentes/05_horizontal_claro.svg"
+            alt="Curadoria Raiz"
+            width={420}
+            height={120}
+            className="h-auto w-[448px] sm:w-[320px]"
+          />
+    </div>   
 
     {/* CENTRO */}
     <div className="flex items-center justify-center gap-5">
