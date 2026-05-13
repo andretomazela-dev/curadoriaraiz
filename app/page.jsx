@@ -4,234 +4,216 @@ export default function Home() {
   return (
     <main   id="top"   className="bg-[#F3EEE8] text-[#3E241D] overflow-x-hidden" >
 
-      {/* HERO */}
-      <section className="relative overflow-hidden bg-[#1A0C06] text-[#F7F1EB]">
+     {/* HERO */}
+<section className="relative overflow-hidden bg-[#1A0C06] text-[#F7F1EB] min-h-[100svh]">
 
-        {/* cinematic gradients */}
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(130,38,18,0.35),transparent_36%),radial-gradient(circle_at_bottom_left,rgba(110,33,16,0.22),transparent_32%)]" />
+  {/* BACKGROUND IMAGE */}
+  <div className="absolute inset-0">
 
-        {/* subtle texture */}
-        <div className="absolute inset-0 opacity-[0.045] bg-[url('/images/noise.png')]" />
+    <Image
+      src="/images/curadoria-raiz-hero-composicao_01.png"
+      alt="Curadoria Raiz"
+      fill
+      priority
+      className="
+        object-cover
+        object-[72%_center]
+        sm:object-[78%_center]
+        lg:object-center
+      "
+    />
 
-        {/* warm glow */}
-        <div className="absolute right-[10%] top-[12%] h-[520px] w-[520px] rounded-full bg-[#A43D1F]/12 blur-[150px]" />
+    {/* cinematic overlay */}
+    <div className="absolute inset-0 bg-black/52 sm:bg-black/44" />
 
-        <div className="relative z-10 mx-auto max-w-[1440px] px-6 sm:px-8 pt-6 sm:pt-8 pb-20 sm:pb-24">
+    {/* left gradient for text readability */}
+    <div className="absolute inset-0 bg-gradient-to-r from-[#120905]/95 via-[#120905]/58 to-transparent" />
 
-          {/* topbar */}
-          <div className="flex items-start justify-between gap-6">
+    {/* warm glow */}
+    <div className="absolute left-[10%] top-[14%] h-[520px] w-[520px] rounded-full bg-[#A43D1F]/12 blur-[150px]" />
+  </div>
 
-            <span
-              className="
-                max-w-[170px]
-                text-[10px]
-                leading-[1.7]
-                uppercase
-                tracking-[0.34em]
-                text-[#D8C6BC]/70
+  <div className="relative z-10 mx-auto max-w-[1440px] px-6 sm:px-8 pt-6 sm:pt-8 pb-20 sm:pb-24">
 
-                sm:max-w-none
-                sm:whitespace-nowrap
-              "
-            >
-              Curadoria artesanal · São Paulo
-            </span>
+    {/* TOPBAR */}
+    <div className="flex items-start justify-between gap-6">
 
-            <span
-              className="
-                shrink-0
-                text-right
-                text-[10px]
-                leading-[1.7]
-                uppercase
-                tracking-[0.34em]
-                text-[#D8C6BC]/50
+      <span
+        className="
+          max-w-[170px]
+          text-[10px]
+          leading-[1.7]
+          uppercase
+          tracking-[0.34em]
+          text-[#D8C6BC]/70
 
-                sm:whitespace-nowrap
-              "
-            >
-              Drop #01
-            </span>
-          </div>
+          sm:max-w-none
+          sm:whitespace-nowrap
+        "
+      >
+        Curadoria artesanal · São Paulo
+      </span>
 
-          {/* hero grid */}
-          <div className="mt-10 sm:mt-14 grid items-center gap-12 lg:gap-14 lg:grid-cols-[0.92fr_1.08fr]">
+      <span
+        className="
+          shrink-0
+          text-right
+          text-[10px]
+          leading-[1.7]
+          uppercase
+          tracking-[0.34em]
+          text-[#D8C6BC]/50
 
-            {/* LEFT */}
-            <div className="max-w-[640px]">
+          sm:whitespace-nowrap
+        "
+      >
+        Drop #01
+      </span>
+    </div>
 
-              {/* LOGO */}
-              <div className="mb-10 sm:mb-14">
-                <Image
-                  src="/branding/transparentes/07_vertical.png"
-                  alt="Curadoria Raiz"
-                  width={1100}
-                  height={1100}
-                  priority
-                  className="
-                    w-[448px]
-                    sm:w-[420px]
-                    lg:w-[760px]
-                    xl:w-[860px]
-                    h-auto
-                    object-contain
-                  "
-                />
-              </div>
+    {/* HERO CONTENT */}
+    <div className="min-h-[calc(100svh-80px)] flex items-center">
 
-              {/* HEADLINE */}
-              <h1
-                className="
-                  font-serif
-                  font-normal
-                  tracking-[-0.045em]
-                  leading-[0.9]
-                  text-[#F8F2EC]
+      {/* LEFT */}
+      <div className="max-w-[640px]">
 
-                  max-w-[7.6ch]
-                  sm:max-w-[640px]
-
-                  text-[3.85rem]
-                  sm:text-[4.8rem]
-                  lg:text-[5.6rem]
-                "
-              >
-                Curadoria
-                <br />
-
-                <span className="text-[1.14em]">
-                  artesanal
-                </span>
-
-                <br />
-                em ritmo
-                <br />
-
-                <span className="text-[1.14em]">
-                  humano.
-                </span>
-              </h1>
-
-              {/* SUBTEXT */}
-              <p
-                className="
-                  mt-10
-                  max-w-[520px]
-                  text-[16px]
-                  sm:text-[17px]
-                  leading-[1.85]
-                  sm:leading-[1.95]
-                  text-[#E3D7D0]/92
-                "
-              >
-                Uma seleção mensal de vinho natural,
-                pão de fermentação lenta e produtos artesanais
-                escolhidos para desacelerar a cidade
-                por algumas horas urbanas.
-              </p>
-
-              {/* BUTTONS */}
-              <div className="mt-12 flex flex-col sm:flex-row sm:flex-wrap gap-4">
-
-                <a
-                  href="https://tally.so/r/0Qo94N"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="
-                    w-full
-                    sm:w-auto
-                    inline-flex
-                    items-center
-                    justify-center
-                    rounded-full
-                    bg-[#D66A41]
-                    px-8
-                    py-4
-                    text-[11px]
-                    uppercase
-                    tracking-[0.26em]
-                    text-white
-                    transition-all
-                    duration-500
-                    hover:bg-[#E0784F]
-                    hover:scale-[1.02]
-                  "
-                >
-                  Reservar edição atual
-                </a>
-
-                <a
-                  href="#produtos"
-                  className="
-                    w-full
-                    sm:w-auto
-                    inline-flex
-                    items-center
-                    justify-center
-                    rounded-full
-                    border
-                    border-[#7A5448]
-                    px-8
-                    py-4
-                    text-[11px]
-                    uppercase
-                    tracking-[0.24em]
-                    text-[#F1E6DF]
-                    transition-all
-                    duration-500
-                    hover:border-[#B97B63]
-                    hover:bg-white/5
-                  "
-                >
-                  Conheça os produtos
-                </a>
-              </div>
-
-              <div className="mt-10 text-[10px] uppercase tracking-[0.34em] text-[#9D7D72]">
-                Produção limitada · 30 unidades por edição
-              </div>
-            </div>
-
-            {/* RIGHT IMAGE */}
-            <div className="relative flex justify-center lg:justify-end">
-
-              <div
-                className="
-                  relative
-                  overflow-hidden
-                  rounded-[30px]
-                  shadow-[0_40px_120px_rgba(0,0,0,0.38)]
-                "
-              >
-
-                <Image
-                  src="/images/curadoria-raiz-hero-composicao-vertical.png"
-                  alt="Curadoria Raiz"
-                  width={900}
-                  height={1200}
-                  priority
-                  className="
-                    w-full
-                    max-w-[520px]
-                    lg:w-[620px]
-                    xl:w-[700px]
-                    h-auto
-                    object-cover
-                    scale-[1.04]
-                    transition-transform
-                    duration-[1400ms]
-                    hover:scale-[1.07]
-                  "
-                />
-
-                <div className="absolute inset-0 bg-[linear-gradient(to_top,rgba(0,0,0,0.16),transparent_35%)]" />
-              </div>
-            </div>
-          </div>
+        {/* LOGO */}
+        <div className="mb-10 sm:mb-14">
+          <Image
+            src="/branding/transparentes/07_vertical.png"
+            alt="Curadoria Raiz"
+            width={1100}
+            height={1100}
+            priority
+            className="
+              w-[448px]
+              sm:w-[420px]
+              lg:w-[760px]
+              xl:w-[860px]
+              h-auto
+              object-contain
+            "
+          />
         </div>
 
-        <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-b from-transparent via-[#4A1E12]/35 to-[#F3EEE8]" />
-      </section>
+        {/* HEADLINE */}
+        <h1
+          className="
+            font-serif
+            font-normal
+            tracking-[-0.045em]
+            leading-[0.9]
+            text-[#F8F2EC]
+
+            max-w-[7.6ch]
+            sm:max-w-[640px]
+
+            text-[3.85rem]
+            sm:text-[4.8rem]
+            lg:text-[5.6rem]
+          "
+        >
+          Curadoria
+          <br />
+
+          <span className="text-[1.14em]">
+            artesanal
+          </span>
+
+          <br />
+          em ritmo
+          <br />
+
+          <span className="text-[1.14em]">
+            humano.
+          </span>
+        </h1>
+
+        {/* SUBTEXT */}
+        <p
+          className="
+            mt-10
+            max-w-[520px]
+            text-[16px]
+            sm:text-[17px]
+            leading-[1.85]
+            sm:leading-[1.95]
+            text-[#E3D7D0]/92
+          "
+        >
+          Uma seleção mensal de vinho natural,
+          pão de fermentação lenta e produtos artesanais
+          escolhidos para desacelerar a cidade
+          por algumas horas urbanas.
+        </p>
+
+        {/* BUTTONS */}
+        <div className="mt-12 flex flex-col sm:flex-row sm:flex-wrap gap-4">
+
+          <a
+            href="https://tally.so/r/0Qo94N"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="
+              w-full
+              sm:w-auto
+              inline-flex
+              items-center
+              justify-center
+              rounded-full
+              bg-[#D66A41]
+              px-8
+              py-4
+              text-[11px]
+              uppercase
+              tracking-[0.26em]
+              text-white
+              transition-all
+              duration-500
+              hover:bg-[#E0784F]
+              hover:scale-[1.02]
+            "
+          >
+            Reservar edição atual
+          </a>
+
+          <a
+            href="#produtos"
+            className="
+              w-full
+              sm:w-auto
+              inline-flex
+              items-center
+              justify-center
+              rounded-full
+              border
+              border-[#7A5448]
+              px-8
+              py-4
+              text-[11px]
+              uppercase
+              tracking-[0.24em]
+              text-[#F1E6DF]
+              transition-all
+              duration-500
+              hover:border-[#B97B63]
+              hover:bg-white/5
+            "
+          >
+            Conheça os produtos
+          </a>
+        </div>
+
+        <div className="mt-10 text-[10px] uppercase tracking-[0.34em] text-[#9D7D72]">
+          Produção limitada · 30 unidades por edição
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-b from-transparent via-[#4A1E12]/35 to-[#F3EEE8]" />
+</section>
 
       {/* MANIFESTO */}
       <section className="py-24 sm:py-36">
