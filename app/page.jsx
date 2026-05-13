@@ -10,7 +10,7 @@ export default function Home() {
   {/* BACKGROUND IMAGE */}
   <div className="absolute inset-0">
 
-    <Image
+  <Image
   src="/images/curadoria-raiz-hero-composicao_01.png"
   alt="Curadoria Raiz"
   fill
@@ -18,6 +18,7 @@ export default function Home() {
   className="
     object-contain
     object-right
+    object-bottom
   "
 />
 
