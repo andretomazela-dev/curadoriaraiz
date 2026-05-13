@@ -665,23 +665,23 @@ export default function Home() {
     ↑ Voltar ao topo
   </a>
 </div>
-      {/* FOOTER */}
+     {/* FOOTER */}
 <footer className="pb-16 pt-10">
   <div className="mx-auto flex max-w-[1320px] flex-col items-center justify-between gap-10 px-6 text-center sm:px-8 lg:flex-row lg:text-left">
 
     {/* LOGO */}
     <div className="flex items-center">
       <Image
-            src="/branding/transparentes/05_horizontal_claro.svg"
-            alt="Curadoria Raiz"
-            width={420}
-            height={120}
-            className="h-auto w-[448px] sm:w-[320px]"
-          />
-    </div>   
+        src="/branding/transparentes/05_horizontal_claro.svg"
+        alt="Curadoria Raiz"
+        width={420}
+        height={120}
+        className="h-auto w-[220px] sm:w-[260px]"
+      />
+    </div>
 
     {/* CENTRO */}
-    <div className="flex items-center justify-center gap-5">
+    <div className="flex items-center justify-center gap-6">
 
       {/* INSTAGRAM */}
       <a
@@ -690,7 +690,7 @@ export default function Home() {
         rel="noopener noreferrer"
         aria-label="Instagram Curadoria Raiz"
         className="
-          text-[#B8A79C]
+          text-[#9F8778]
           transition-all
           duration-300
           hover:text-[#D66A41]
@@ -702,10 +702,10 @@ export default function Home() {
           viewBox="0 0 24 24"
           fill="none"
           stroke="currentColor"
-          strokeWidth="1.7"
+          strokeWidth="1.8"
           strokeLinecap="round"
           strokeLinejoin="round"
-          className="h-[16px] w-[16px]"
+          className="h-[19px] w-[19px]"
         >
           <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
           <path d="M16 11.37a4 4 0 1 1-2.63-2.63A4 4 0 0 1 16 11.37z" />
@@ -713,14 +713,14 @@ export default function Home() {
         </svg>
       </a>
 
-      <span className="text-[10px] uppercase tracking-[0.34em] text-[#B8A79C]">
+      <span className="text-[11px] uppercase tracking-[0.28em] text-[#9F8778]">
         Curadoria artesanal · São Paulo
       </span>
 
     </div>
 
     {/* COPYRIGHT */}
-    <span className="text-[10px] uppercase tracking-[0.28em] text-[#B8A79C]">
+    <span className="text-[11px] uppercase tracking-[0.24em] text-[#9F8778]">
       © 2026 Curadoria Raiz
     </span>
 
