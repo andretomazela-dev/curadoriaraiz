@@ -19,7 +19,7 @@ export default function Home() {
         object-cover
         object-[68%_center]
         sm:object-[78%_center]
-        lg:object-[55%_center]
+        lg:object-[50%_center]
       "
     />
 
