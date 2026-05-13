@@ -666,26 +666,70 @@ export default function Home() {
   </a>
 </div>
       {/* FOOTER */}
-      <footer className="border-t border-[#E4D9D0] py-20">
-        <div className="mx-auto flex max-w-[1320px] flex-col gap-8 text-center lg:flex-row lg:items-center lg:justify-between px-6 sm:px-8">
+<footer className="border-t border-[#E4D9D0] py-20">
+  <div className="mx-auto flex max-w-[1320px] flex-col gap-10 px-6 text-center sm:px-8 lg:flex-row lg:items-center lg:justify-between">
 
-          <Image
-            src="/branding/transparentes/05_horizontal_claro.svg"
-            alt="Curadoria Raiz"
-            width={420}
-            height={120}
-            className="h-auto w-[448px] sm:w-[320px]"
-          />
+    {/* LOGO */}
+    <Image
+      src="/branding/transparentes/05_horizontal_claro.svg"
+      alt="Curadoria Raiz"
+      width={420}
+      height={120}
+      className="h-auto w-[448px] sm:w-[320px]"
+    />
 
-          <span className="text-[10px] uppercase tracking-[0.34em] text-[#B2A197]">
-            Curadoria artesanal · São Paulo
-          </span>
+    {/* CENTER */}
+    <div className="flex flex-col items-center gap-5">
 
-          <span className="text-[10px] uppercase tracking-[0.28em] text-[#B7A69C]">
-            © 2026 Curadoria Raiz
-          </span>
-        </div>
-      </footer>        
-     </main>
-  );
-}
+      <span className="text-[10px] uppercase tracking-[0.34em] text-[#B2A197]">
+        Curadoria artesanal · São Paulo
+      </span>
+
+      {/* INSTAGRAM */}
+      <a
+        href="https://instagram.com/curadoriaraiz"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Instagram Curadoria Raiz"
+        className="
+          group
+          inline-flex
+          items-center
+          justify-center
+          transition-all
+          duration-300
+        "
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="1.7"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          className="
+            h-[18px]
+            w-[18px]
+            text-[#B7A69C]
+            transition-all
+            duration-300
+            group-hover:text-[#D66A41]
+            group-hover:scale-[1.08]
+          "
+        >
+          <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+          <path d="M16 11.37a4 4 0 1 1-2.63-2.63A4 4 0 0 1 16 11.37z" />
+          <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+        </svg>
+      </a>
+
+    </div>
+
+    {/* COPYRIGHT */}
+    <span className="text-[10px] uppercase tracking-[0.28em] text-[#B7A69C]">
+      © 2026 Curadoria Raiz
+    </span>
+
+  </div>
+</footer>
