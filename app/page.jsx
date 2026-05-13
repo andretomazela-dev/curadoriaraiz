@@ -666,28 +666,22 @@ export default function Home() {
   </a>
 </div>
       {/* FOOTER */}
-<footer className="border-t border-[#E5DDD5] py-16 sm:py-20">
+<footer className="pb-16 pt-10">
   <div className="mx-auto flex max-w-[1320px] flex-col items-center justify-between gap-10 px-6 text-center sm:px-8 lg:flex-row lg:text-left">
 
     {/* LOGO */}
-    <div className="flex items-center gap-5">
+    <div className="flex items-center">
       <Image
-        src="/branding/transparentes/03_logo_claro.png"
+        src="/branding/transparentes/05_horizontal_claro.svg"
         alt="Curadoria Raiz"
-        width={110}
-        height={42}
-        className="h-auto w-[110px]"
+        width={420}
+        height={120}
+        className="h-auto w-[150px]"
       />
-
-      <div className="hidden h-10 w-px bg-[#DDD2C8] sm:block" />
-
-      <span className="hidden text-[9px] uppercase tracking-[0.34em] text-[#B8A79C] sm:block">
-        Curadoria artesanal · São Paulo
-      </span>
     </div>
 
-    {/* CENTER */}
-    <div className="flex items-center gap-6">
+    {/* CENTRO */}
+    <div className="flex items-center justify-center gap-5">
 
       {/* INSTAGRAM */}
       <a
@@ -711,7 +705,7 @@ export default function Home() {
           strokeWidth="1.7"
           strokeLinecap="round"
           strokeLinejoin="round"
-          className="h-[17px] w-[17px]"
+          className="h-[16px] w-[16px]"
         >
           <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
           <path d="M16 11.37a4 4 0 1 1-2.63-2.63A4 4 0 0 1 16 11.37z" />
@@ -719,20 +713,9 @@ export default function Home() {
         </svg>
       </a>
 
-      <a
-        href="#top"
-        className="
-          text-[10px]
-          uppercase
-          tracking-[0.34em]
-          text-[#B8A79C]
-          transition-colors
-          duration-300
-          hover:text-[#120E0B]
-        "
-      >
-        ↑ Voltar ao topo
-      </a>
+      <span className="text-[10px] uppercase tracking-[0.34em] text-[#B8A79C]">
+        Curadoria artesanal · São Paulo
+      </span>
 
     </div>
 
@@ -742,7 +725,7 @@ export default function Home() {
     </span>
 
   </div>
-</footer>   
+</footer>
      </main>
   );
 }
