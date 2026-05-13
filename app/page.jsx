@@ -17,7 +17,7 @@ export default function Home() {
       priority
       className="
         object-cover
-        object-[72%_center]
+        object-[52%_center]
         sm:object-[78%_center]
         lg:object-center
       "
