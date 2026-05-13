@@ -676,7 +676,7 @@ export default function Home() {
         alt="Curadoria Raiz"
         width={420}
         height={120}
-       className="h-auto w-[308px] sm:w-[364px]"
+       className="h-auto w-[370px] sm:w-[437px]"
       />
     </div>
 
