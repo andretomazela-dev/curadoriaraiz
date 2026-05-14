@@ -81,7 +81,7 @@ export default function Home() {
           {/* LOGO */}
           <div className="mb-10 sm:mb-14">
             <Image
-              src="/branding/transparentes/07_vertical.png"
+              src="/branding/transparentes/09_vertical_escuro.png"
               alt="Curadoria Raiz"
               width={1100}
               height={1100}
