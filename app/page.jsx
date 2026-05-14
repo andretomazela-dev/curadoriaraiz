@@ -221,14 +221,19 @@ export default function Home() {
   </div>
 
   {/* ========================= */}
-  {/* MOBILE HERO */}
-  {/* ========================= */}
-  <div className="relative block px-6 pt-24 md:hidden">
+{/* MOBILE HERO */}
+{/* ========================= */}
+<div className="relative block md:hidden">
 
+  {/* BACKGROUND */}
+  <div className="absolute inset-0 bg-[#1A0C06]" />
+
+  <div className="relative z-10 px-6 pt-24">
+
+    {/* TOP */}
     <p
       className="
         mb-6
-        text-center
         text-[10px]
         uppercase
         tracking-[0.32em]
@@ -239,7 +244,7 @@ export default function Home() {
     </p>
 
     {/* LOGO */}
-    <div className="mb-10 flex justify-center">
+    <div className="mb-12">
       <Image
         src="/branding/transparentes/07_vertical.png"
         alt="Curadoria Raiz"
@@ -257,16 +262,13 @@ export default function Home() {
     {/* HEADLINE */}
     <h1
       className="
-        mx-auto
         max-w-[320px]
-        text-center
         font-serif
         font-normal
         tracking-[-0.045em]
         leading-[0.92]
         text-[#F8F2EC]
-
-        text-[3.4rem]
+        text-[4.2rem]
       "
     >
       Curadoria
@@ -285,14 +287,12 @@ export default function Home() {
       </span>
     </h1>
 
-    {/* SUBTEXT */}
+    {/* TEXT */}
     <p
       className="
-        mx-auto
         mt-8
-        max-w-[320px]
-        text-center
-        text-[15px]
+        max-w-[340px]
+        text-[16px]
         leading-[1.9]
         text-[#E3D7D0]/92
       "
@@ -304,15 +304,15 @@ export default function Home() {
     </p>
 
     {/* BUTTONS */}
-    <div className="mt-10 flex flex-col gap-3">
+    <div className="mt-10 flex flex-col gap-4">
 
       <a
         href="https://tally.so/r/0Qo94N"
         target="_blank"
         rel="noopener noreferrer"
         className="
-          w-full
           inline-flex
+          w-full
           items-center
           justify-center
           rounded-full
@@ -331,8 +331,8 @@ export default function Home() {
       <a
         href="#produtos"
         className="
-          w-full
           inline-flex
+          w-full
           items-center
           justify-center
           rounded-full
@@ -350,25 +350,29 @@ export default function Home() {
       </a>
 
     </div>
+  </div>
 
-    {/* MOBILE IMAGE */}
-    <div className="mt-14 overflow-hidden rounded-[28px]">
+  {/* IMAGE */}
+  <div className="relative mt-14">
 
-      <Image
-        src="/images/curadoria-raiz-hero-mobile.png"
-        alt="Curadoria Raiz"
-        width={1600}
-        height={2000}
-        priority
-        className="h-auto w-full object-cover"
-      />
+    <Image
+      src="/images/curadoria-raiz-hero-mobile.png"
+      alt="Curadoria Raiz"
+      width={1200}
+      height={1600}
+      priority
+      className="
+        h-auto
+        w-full
+        object-cover
+      "
+    />
 
-    </div>
-
-    {/* MOBILE FADE */}
-    <div className="h-24 bg-gradient-to-b from-transparent via-[#4A1E12]/35 to-[#F3EEE8]" />
+    {/* SINGLE FADE */}
+    <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-b from-transparent to-[#F3EEE8]" />
 
   </div>
+</div>
 
 </section>
 
