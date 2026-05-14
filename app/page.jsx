@@ -376,70 +376,70 @@ export default function Home() {
 
 </section>
 
-      {/* MANIFESTO */}
-      <section className="py-24 sm:py-36">
-        <div className="mx-auto max-w-[1320px] px-8">
+     {/* MANIFESTO */}
+<section className="py-24 sm:py-36">
+  <div className="mx-auto max-w-[1320px] px-8">
 
-          <div className="grid gap-20 lg:grid-cols-2 lg:gap-28 items-start">
+    <div className="grid gap-20 lg:grid-cols-2 lg:gap-28 items-start">
 
-            {/* LEFT */}
-            <div>
-              <span className="text-[11px] sm:text-[12px] uppercase tracking-[0.32em] text-[#CBBCAF]">
-                Manifesto
-              </span>
+      {/* LEFT */}
+      <div>
+        <span className="text-[11px] sm:text-[12px] uppercase tracking-[0.32em] text-[#CBBCAF]">
+          Manifesto
+        </span>
 
-              <h2
-                className="
-                  mt-10
-                  font-serif
-                  font-normal
-                  text-[4.4rem]
-                  sm:text-[6rem]
-                  leading-[0.92]
-                  tracking-[-0.04em]
-                  text-[#C7B2A5]
-                "
-              >
-                Menos
-                <br />
-                pressa,
-                <br />
-                mais
-                <br />
-                repertório.
-              </h2>
-            </div>
+        <h2
+          className="
+            mt-10
+            font-serif
+            font-normal
+            text-[4.8rem]
+            sm:text-[6.8rem]
+            leading-[0.9]
+            tracking-[-0.05em]
+            text-[#C7B2A5]
+          "
+        >
+          Menos
+          <br />
+          pressa,
+          <br />
+          mais
+          <br />
+          repertório.
+        </h2>
+      </div>
 
-            {/* RIGHT */}
-            <div className="max-w-[560px]">
+      {/* RIGHT */}
+      <div className="max-w-[560px]">
 
-              <h3
-                className="
-                  font-serif
-                  font-normal
-                  text-[3.3rem]
-                  sm:text-[4rem]
-                  leading-[0.96]
-                  tracking-[-0.03em]
-                  text-[#4A2A22]
-                "
-              >
-                A Curadoria Raiz nasce do desejo de aproximar pequenos produtores do ritmo da cidade.
-              </h3>
+        <h3
+          className="
+            font-serif
+            font-normal
+            text-[3.5rem]
+            sm:text-[4.8rem]
+            leading-[0.94]
+            tracking-[-0.04em]
+            text-[#4A2A22]
+          "
+        >
+          A Curadoria Raiz nasce do desejo de aproximar pequenos produtores do ritmo da cidade.
+        </h3>
 
-              <div className="mt-12 space-y-8 text-[16px] leading-[2.1] text-[#735D54]">
-                <p>
-                  Cada edição reúne vinho vivo, pão artesanal e conservas escolhidas manualmente. Não apenas pelo sabor, mas pela história, origem e modo de produção.
-                </p>
+        <div className="mt-12 space-y-8 text-[16px] leading-[2.1] text-[#735D54]">
+          <p>
+            Cada edição reúne vinho vivo, pão artesanal e conservas escolhidas manualmente. Não apenas pelo sabor, mas pela história, origem e modo de produção.
+          </p>
 
-                <p>
-                  Sem excesso. Sem pressa. Apenas alimento honesto, logística consciente e encontros que fazem sentido.
-                </p>
-              </div>
-            </div>
-          </div>
+          <p>
+            Sem excesso. Sem pressa. Apenas alimento honesto, logística consciente e encontros que fazem sentido.
+          </p>
         </div>
-      </section>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* PRODUCTS */}
       <section id="produtos" className="pb-24 sm:pb-36">
