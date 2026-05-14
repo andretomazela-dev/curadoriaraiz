@@ -605,14 +605,14 @@ export default function Home() {
   <div className="mx-auto max-w-[1180px]">
 
     <div className="mb-16">
-      <p className="mb-4 text-[0.62rem] uppercase tracking-[0.45em] text-[#B8A79D]">
-        Como funciona
-      </p>
+  <p className="mb-4 text-[11px] sm:text-[12px] uppercase tracking-[0.32em] text-[#B8A79D]">
+    Como funciona
+  </p>
 
-      <h2 className="max-w-[720px] font-serif text-[3rem] leading-[0.95] tracking-[-0.04em] text-[#4A1F1A] md:text-[5.5rem]">
-        Reserva simples, entrega humana.
-      </h2>
-    </div>
+  <h2 className="max-w-[760px] font-serif text-[3.5rem] leading-[0.92] tracking-[-0.05em] text-[#4A1F1A] md:text-[6.2rem]">
+    Reserva simples, entrega humana.
+  </h2>
+</div>
 
     <div className="grid gap-14 border-t border-[#D8CCC3] pt-14 md:grid-cols-3 md:gap-12">
 
