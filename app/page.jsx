@@ -789,18 +789,18 @@ export default function Home() {
       </section>
       
 {/* BACK TO TOP */}
-<div className="flex justify-center pb-10">
+<div className="flex justify-center pb-6 sm:pb-8 -mt-2">
   <a
     href="#top"
     className="
       inline-flex
       items-center
       gap-3
-      text-[11px]
+      text-[12px]
+      sm:text-[13px]
       uppercase
-      tracking-[0.28em]
-      text-[#9D7D72]/75
-      hover:text-[#D66A41]
+      tracking-[0.32em]
+      text-[#A88A80]
       transition-all
       duration-300
       hover:text-[#D66A41]
@@ -809,6 +809,7 @@ export default function Home() {
     ↑ Voltar ao topo
   </a>
 </div>
+      
      {/* FOOTER */}
 <footer className="bg-[#F3EEE8] pb-16 pt-6 sm:pb-24 sm:pt-10">
 
