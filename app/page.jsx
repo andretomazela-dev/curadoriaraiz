@@ -891,42 +891,42 @@ export default function Home() {
   </div>
 
   {/* CENTRO */}
-  <div className="flex flex-col items-center gap-5">
+<div className="flex items-center gap-4">
 
-    {/* INSTAGRAM */}
-    <a
-      href="https://instagram.com/curadoriaraiz"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="
-        text-[#A9968C]
-        transition-opacity
-        duration-300
-        hover:opacity-70
-      "
-      aria-label="Instagram Curadoria Raiz"
+  {/* INSTAGRAM */}
+  <a
+    href="https://instagram.com/curadoriaraiz"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="
+      text-[#A9968C]
+      transition-opacity
+      duration-300
+      hover:opacity-70
+    "
+    aria-label="Instagram Curadoria Raiz"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="22"
+      height="22"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.7"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     >
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="1.7"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      >
-        <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
-        <path d="M16 11.37a4 4 0 1 1-7.75 1.24 4 4 0 0 1 7.75-1.24z" />
-        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
-      </svg>
-    </a>
+      <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+      <path d="M16 11.37a4 4 0 1 1-7.75 1.24 4 4 0 0 1 7.75-1.24z" />
+      <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+    </svg>
+  </a>
 
-    <p className="text-[11px] uppercase tracking-[0.32em] text-[#B8A79D]">
-      São Paulo — Brasil
-    </p>
-  </div>
+  <p className="text-[11px] uppercase tracking-[0.32em] text-[#B8A79D]">
+    São Paulo — Brasil
+  </p>
+</div>
 
         {/* COPYRIGHT */}
       <div className="shrink-0 text-right">
