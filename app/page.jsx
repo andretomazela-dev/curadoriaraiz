@@ -355,23 +355,29 @@ export default function Home() {
   {/* IMAGE */}
   <div className="relative mt-14">
 
-    <Image
-      src="/images/curadoria-raiz-hero-mobile.png"
-      alt="Curadoria Raiz"
-      width={1200}
-      height={1600}
-      priority
-      className="
-        h-auto
-        w-full
-        object-cover
-      "
-    />
+    {/* IMAGE */}
+<div className="relative mt-14">
 
-    {/* SINGLE FADE */}
-    <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-b from-transparent to-[#F3EEE8]" />
+  <Image
+    src="/images/curadoria-raiz-hero-mobile.png"
+    alt="Curadoria Raiz"
+    width={1200}
+    height={1600}
+    priority
+    className="
+      h-auto
+      w-full
+      object-cover
+    "
+  />
 
-  </div>
+  {/* TOP BLEND */}
+  <div className="absolute top-0 left-0 right-0 h-20 bg-gradient-to-b from-[#1A0C06] to-transparent" />
+
+  {/* BOTTOM FADE */}
+  <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-b from-transparent to-[#F3EEE8]" />
+
+</div>
 </div>
 
 </section>
