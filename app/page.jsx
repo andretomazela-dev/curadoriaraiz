@@ -442,106 +442,106 @@ export default function Home() {
 </section>
 
       {/* PRODUCTS */}
-      <section id="produtos" className="pb-24 sm:pb-36">
-        <div className="mx-auto max-w-[1320px] px-8">
+<section id="produtos" className="pb-24 sm:pb-36">
+  <div className="mx-auto max-w-[1320px] px-8">
 
-          <div className="mb-16">
-            <span className="text-[11px] sm:text-[12px] uppercase tracking-[0.32em] text-[#CBBCAF]">
-              Drop #01
-            </span>
+    <div className="mb-16">
+      <span className="text-[11px] sm:text-[12px] uppercase tracking-[0.32em] text-[#CBBCAF]">
+        Drop #01
+      </span>
 
-            <h2
+      <h2
+        className="
+          mt-5
+          max-w-[5ch]
+          font-serif
+          font-normal
+          text-[4.5rem]
+          sm:text-[6.5rem]
+          leading-[0.9]
+          tracking-[-0.05em]
+          text-[#B89E91]
+        "
+      >
+        O Trio da Vez
+      </h2>
+
+      <p className="mt-6 max-w-[720px] text-[16px] leading-[2] text-[#7B655C]">
+        Uma combinação pensada para acompanhar o fim da tarde em Santa Cecília, Vila Buarque, Higienópolis, Campos Elíseos e Barra Funda.
+      </p>
+    </div>
+
+    <div className="grid gap-12 lg:grid-cols-3 lg:gap-10">
+
+      {[
+        {
+          image: "/images/apagao-packshot.webp",
+          title: "Apagão Rosé Natural",
+          text: "Rosé de intervenção mínima da Família Faccin. Fresco, vivo e levemente frutado.",
+        },
+        {
+          image: "/images/pao-sourdough.webp",
+          title: "Sourdough Natural",
+          text: "Fermentação lenta e forno artesanal. Assado poucas horas antes da entrega.",
+        },
+        {
+          image: "/images/antepasto.webp",
+          title: "Antepasto de Berinjela",
+          text: "Receita artesanal preparada em pequenos lotes, com ingredientes frescos e sabor intenso.",
+        },
+      ].map((item, index) => (
+        <div key={index} className="group">
+
+          <div
+            className="
+              overflow-hidden
+              rounded-[28px]
+              bg-[#ECE4DD]
+              shadow-[0_12px_40px_rgba(0,0,0,0.04)]
+              transition-all
+              duration-700
+              group-hover:shadow-[0_22px_60px_rgba(0,0,0,0.08)]
+            "
+          >
+            <Image
+              src={item.image}
+              alt={item.title}
+              width={500}
+              height={620}
               className="
-                mt-5
-                max-w-[5ch]
-                font-serif
-                font-normal
-                text-[4rem]
-                sm:text-[5.8rem]
-                leading-[0.94]
-                tracking-[-0.04em]
-                text-[#B89E91]
+                h-auto
+                sm:h-[430px]
+                w-full
+                object-cover
+                transition-transform
+                duration-[1400ms]
+                group-hover:scale-[1.035]
               "
-            >
-              O Trio da Vez
-            </h2>
-
-            <p className="mt-6 max-w-[720px] text-[16px] leading-[2] text-[#7B655C]">
-              Uma combinação pensada para acompanhar o fim da tarde em Santa Cecília, Vila Buarque, Higienópolis, Campos Elíseos e Barra Funda.
-            </p>
+            />
           </div>
 
-          <div className="grid gap-12 lg:grid-cols-3 lg:gap-10">
+          <h3
+            className="
+              mt-7
+              font-serif
+              font-normal
+              text-[2.5rem]
+              leading-[1]
+              tracking-[-0.03em]
+              text-[#3C241E]
+            "
+          >
+            {item.title}
+          </h3>
 
-            {[
-              {
-                image: "/images/apagao-packshot.webp",
-                title: "Apagão Rosé Natural",
-                text: "Rosé de intervenção mínima da Família Faccin. Fresco, vivo e levemente frutado.",
-              },
-              {
-                image: "/images/pao-sourdough.webp",
-                title: "Sourdough Natural",
-                text: "Fermentação lenta e forno artesanal. Assado poucas horas antes da entrega.",
-              },
-              {
-                image: "/images/antepasto.webp",
-                title: "Antepasto de Berinjela",
-                text: "Receita artesanal preparada em pequenos lotes, com ingredientes frescos e sabor intenso.",
-              },
-            ].map((item, index) => (
-              <div key={index} className="group">
-
-                <div
-                  className="
-                    overflow-hidden
-                    rounded-[28px]
-                    bg-[#ECE4DD]
-                    shadow-[0_12px_40px_rgba(0,0,0,0.04)]
-                    transition-all
-                    duration-700
-                    group-hover:shadow-[0_22px_60px_rgba(0,0,0,0.08)]
-                  "
-                >
-                  <Image
-                    src={item.image}
-                    alt={item.title}
-                    width={500}
-                    height={620}
-                    className="
-                      h-auto
-                      sm:h-[430px]
-                      w-full
-                      object-cover
-                      transition-transform
-                      duration-[1400ms]
-                      group-hover:scale-[1.035]
-                    "
-                  />
-                </div>
-
-                <h3
-                  className="
-                    mt-7
-                    font-serif
-                    font-normal
-                    text-[2.5rem]
-                    leading-[1]
-                    tracking-[-0.03em]
-                    text-[#3C241E]
-                  "
-                >
-                  {item.title}
-                </h3>
-
-                <p className="mt-4 text-[15px] leading-[1.9] text-[#7B665E]">
-                  {item.text}
-                </p>
-              </div>
-            ))}
-          </div>
+          <p className="mt-4 text-[15px] leading-[1.9] text-[#7B665E]">
+            {item.text}
+          </p>
         </div>
-      </section>
+      ))}
+    </div>
+  </div>
+</section>
 
       {/* PRODUCER */}
       <section className="relative min-h-[720px] sm:h-[760px] overflow-hidden">
