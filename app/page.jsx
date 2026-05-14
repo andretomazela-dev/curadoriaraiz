@@ -557,8 +557,8 @@ export default function Home() {
 
   <div className="absolute inset-0 bg-gradient-to-r from-black/88 via-black/52 to-transparent" />
 
-  <div className="relative z-10 flex h-full items-center">
-    <div className="mx-auto w-full max-w-[1320px] px-8">
+  <div className="relative z-10 flex min-h-[720px] items-end sm:items-center">
+    <div className="mx-auto w-full max-w-[1320px] px-8 pb-16 sm:pb-0">
 
       <div className="max-w-[320px] sm:max-w-[760px]">
 
