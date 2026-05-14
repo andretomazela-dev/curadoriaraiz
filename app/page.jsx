@@ -42,7 +42,7 @@ export default function Home() {
         <span
           className="
             max-w-[170px]
-            text-[10px]
+            text-[11px] sm:text-[12px]
             leading-[1.7]
             uppercase
             tracking-[0.34em]
@@ -59,7 +59,7 @@ export default function Home() {
           className="
             shrink-0
             text-right
-            text-[10px]
+            text-[11px] sm:text-[12px]
             leading-[1.7]
             uppercase
             tracking-[0.34em]
@@ -205,7 +205,7 @@ export default function Home() {
             </a>
           </div>
 
-          <div className="mt-10 text-[10px] uppercase tracking-[0.34em] text-[#9D7D72]">
+          <div className="mt-10 text-[11px] sm:text-[12px] uppercase tracking-[0.34em] text-[#9D7D72]">
             Produção limitada · 30 unidades por edição
           </div>
 
@@ -231,7 +231,7 @@ export default function Home() {
     <p
       className="
         mb-6
-        text-[10px]
+        text-[11px] sm:text-[12px]
         uppercase
         tracking-[0.32em]
         text-[#D8C2B6]
@@ -384,7 +384,7 @@ export default function Home() {
 
             {/* LEFT */}
             <div>
-              <span className="text-[10px] uppercase tracking-[0.38em] text-[#CBBCAF]">
+              <span className="text-[11px] sm:text-[12px] uppercase tracking-[0.32em] text-[#CBBCAF]">
                 Manifesto
               </span>
 
@@ -446,7 +446,7 @@ export default function Home() {
         <div className="mx-auto max-w-[1320px] px-8">
 
           <div className="mb-16">
-            <span className="text-[10px] uppercase tracking-[0.38em] text-[#CBBCAF]">
+            <span className="text-[11px] sm:text-[12px] uppercase tracking-[0.32em] text-[#CBBCAF]">
               Drop #01
             </span>
 
@@ -525,7 +525,7 @@ export default function Home() {
                     mt-7
                     font-serif
                     font-normal
-                    text-[2.15rem]
+                    text-[2.5rem]
                     leading-[1]
                     tracking-[-0.03em]
                     text-[#3C241E]
@@ -553,16 +553,16 @@ export default function Home() {
           className="object-cover"
         />
 
-        <div className="absolute inset-0 bg-black/55 sm:bg-black/42" />
+        <div className="absolute inset-0 bg-black/62 sm:bg-black/50" />
 
-        <div className="absolute inset-0 bg-gradient-to-r from-black/82 via-black/38 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/88 via-black/52 to-transparent" />
 
         <div className="relative z-10 flex h-full items-center">
           <div className="mx-auto w-full max-w-[1320px] px-8">
 
             <div className="max-w-[340px] sm:max-w-[620px] -mt-10">
 
-              <span className="text-[10px] uppercase tracking-[0.38em] text-[#E9D9CF]/82">
+              <span className="text-[11px] sm:text-[12px] uppercase tracking-[0.32em] text-[#E9D9CF]/82">
                 Pequenos produtores
               </span>
 
@@ -571,8 +571,8 @@ export default function Home() {
                   mt-8
                   font-serif
                   font-normal
-                  text-[3.7rem]
-                  sm:text-[5rem]
+                  text-[4.4rem]
+                  sm:text-[6rem]
                   leading-[0.92]
                   tracking-[-0.04em]
                   text-white
@@ -695,7 +695,7 @@ export default function Home() {
                 R
               </div>
 
-              <span className="text-[10px] uppercase tracking-[0.38em] text-[#C8A99C]">
+              <span className="text-[11px] sm:text-[12px] uppercase tracking-[0.32em] text-[#C8A99C]">
                 Próxima edição
               </span>
 
@@ -779,7 +779,7 @@ export default function Home() {
                 </a>
               </div>
 
-              <div className="mt-10 text-[10px] uppercase tracking-[0.32em] text-[#9D7B6F]">
+              <div className="mt-10 text-[11px] sm:text-[12px] uppercase tracking-[0.32em] text-[#9D7B6F]">
                 Parcelamento em até 2x · disponível via link
               </div>
             </div>
