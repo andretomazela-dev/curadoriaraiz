@@ -4,214 +4,256 @@ export default function Home() {
   return (
     <main   id="top"   className="bg-[#F3EEE8] text-[#3E241D] overflow-x-hidden" >
 
-     {/* HERO */}
-<section className="relative overflow-hidden bg-[#1A0C06] text-[#F7F1EB] min-h-[100svh]">
+{/* HERO */}
+<section className="relative overflow-hidden bg-[#120E0B]">
 
-  {/* BACKGROUND IMAGE */}
-  <div className="absolute inset-0">
+  {/* ========================= */}
+  {/* DESKTOP HERO */}
+  {/* ========================= */}
+  <div className="relative hidden min-h-screen md:block">
 
-  <Image
-  src="/images/curadoria-raiz-hero-composicao_01.png"
-  alt="Curadoria Raiz"
-  fill
-  priority
-  className="
-    object-contain
-    object-right
-    object-bottom
-  "
-/>
-
-    {/* cinematic overlay */}
-    <div className="absolute inset-0 bg-black/52 sm:bg-black/44" />
-
-    {/* left gradient for text readability */}
-    <div className="absolute inset-0 bg-gradient-to-r from-[#120905]/95 via-[#120905]/58 to-transparent" />
-
-    {/* warm glow */}
-    <div className="absolute left-[10%] top-[14%] h-[520px] w-[520px] rounded-full bg-[#A43D1F]/12 blur-[150px]" />
-  </div>
-
-  <div className="relative z-10 mx-auto max-w-[1440px] px-6 sm:px-8 pt-6 sm:pt-8 pb-20 sm:pb-24">
-
-    {/* TOPBAR */}
-    <div className="flex items-start justify-between gap-6">
-
-      <span
+    {/* Background Image */}
+    <div className="absolute inset-0">
+      <Image
+        src="/images/curadoria-raiz-hero-composicao_02.jpg"
+        alt="Curadoria Raiz"
+        fill
+        priority
         className="
-          max-w-[170px]
-          text-[10px]
-          leading-[1.7]
-          uppercase
-          tracking-[0.34em]
-          text-[#D8C6BC]/70
-
-          sm:max-w-none
-          sm:whitespace-nowrap
+          object-cover
+          object-[70%_center]
+          sm:object-[72%_center]
+          lg:object-center
         "
-      >
-        Curadoria artesanal · São Paulo
-      </span>
+      />
 
-      <span
-        className="
-          shrink-0
-          text-right
-          text-[10px]
-          leading-[1.7]
-          uppercase
-          tracking-[0.34em]
-          text-[#D8C6BC]/50
+      {/* Dark overlay */}
+      <div className="absolute inset-0 bg-black/30" />
 
-          sm:whitespace-nowrap
-        "
-      >
-        Drop #01
-      </span>
+      {/* Bottom fade */}
+      <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-b from-transparent via-[#4A1E12]/35 to-[#F4EEE6]" />
     </div>
 
-    {/* HERO CONTENT */}
-    <div className="min-h-[calc(100svh-80px)] flex items-center">
+    {/* Content */}
+    <div className="relative z-10 mx-auto flex min-h-screen max-w-[1440px] items-center px-10 pb-24 pt-32">
 
-      {/* LEFT */}
-      <div className="max-w-[640px]">
+      <div className="max-w-[520px]">
 
-        {/* LOGO */}
-        <div className="mb-10 sm:mb-14">
+        <p className="mb-8 text-[11px] uppercase tracking-[0.32em] text-[#D8C2B6]">
+          Curadoria artesanal · São Paulo
+        </p>
+
+        {/* Logo */}
+        <div className="mb-12">
           <Image
-            src="/branding/transparentes/07_vertical.png"
+            src="/branding/transparentes/05_horizontal_escuro.svg"
             alt="Curadoria Raiz"
-            width={1100}
-            height={1100}
-            priority
-            className="
-              w-[448px]
-              sm:w-[420px]
-              lg:w-[760px]
-              xl:w-[860px]
-              h-auto
-              object-contain
-            "
+            width={520}
+            height={150}
+            className="h-auto w-[320px]"
           />
         </div>
 
-        {/* HEADLINE */}
         <h1
           className="
+            max-w-[480px]
             font-serif
-            font-normal
-            tracking-[-0.045em]
-            leading-[0.9]
-            text-[#F8F2EC]
-
-            max-w-[7.6ch]
-            sm:max-w-[640px]
-
-            text-[3.85rem]
-            sm:text-[4.8rem]
-            lg:text-[5.6rem]
+            text-[72px]
+            leading-[0.92]
+            tracking-[-0.04em]
+            text-[#F7F1EB]
           "
         >
-          Curadoria
-          <br />
-
-          <span className="text-[1.14em]">
-            artesanal
-          </span>
-
-          <br />
-          em ritmo
-          <br />
-
-          <span className="text-[1.14em]">
-            humano.
-          </span>
+          Curadoria artesanal em ritmo humano.
         </h1>
 
-        {/* SUBTEXT */}
         <p
           className="
-            mt-10
-            max-w-[520px]
-            text-[16px]
-            sm:text-[17px]
-            leading-[1.85]
-            sm:leading-[1.95]
-            text-[#E3D7D0]/92
+            mt-8
+            max-w-[420px]
+            text-[15px]
+            leading-[1.8]
+            text-[#D8C2B6]
           "
         >
-          Uma seleção mensal de vinho natural,
-          pão de fermentação lenta e produtos artesanais
-          escolhidos para desacelerar a cidade
-          por algumas horas urbanas.
+          Uma seleção mensal de vinho natural, pão de fermentação lenta e
+          produtos artesanais escolhidos para desacelerar a cidade por algumas horas raras.
         </p>
 
-        {/* BUTTONS */}
-        <div className="mt-12 flex flex-col sm:flex-row sm:flex-wrap gap-4">
+        {/* CTA */}
+        <div className="mt-12 flex gap-4">
 
           <a
-            href="https://tally.so/r/0Qo94N"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="#reserva"
             className="
-              w-full
-              sm:w-auto
-              inline-flex
-              items-center
-              justify-center
               rounded-full
-              bg-[#D66A41]
+              bg-[#D46D47]
               px-8
               py-4
               text-[11px]
               uppercase
-              tracking-[0.26em]
+              tracking-[0.24em]
               text-white
               transition-all
-              duration-500
-              hover:bg-[#E0784F]
-              hover:scale-[1.02]
+              duration-300
+              hover:bg-[#E07B56]
             "
           >
             Reservar edição atual
           </a>
 
           <a
-            href="#produtos"
+            href="#trio"
             className="
-              w-full
-              sm:w-auto
-              inline-flex
-              items-center
-              justify-center
               rounded-full
               border
-              border-[#7A5448]
+              border-[#6D4B3F]
               px-8
               py-4
               text-[11px]
               uppercase
               tracking-[0.24em]
-              text-[#F1E6DF]
+              text-[#F7F1EB]
               transition-all
-              duration-500
-              hover:border-[#B97B63]
-              hover:bg-white/5
+              duration-300
+              hover:border-[#D8C2B6]
             "
           >
             Conheça os produtos
           </a>
-        </div>
 
-        <div className="mt-10 text-[10px] uppercase tracking-[0.34em] text-[#9D7D72]">
-          Produção limitada · 30 unidades por edição
         </div>
 
       </div>
     </div>
   </div>
 
-  <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-b from-transparent via-[#4A1E12]/35 to-[#F3EEE8]" />
+  {/* ========================= */}
+  {/* MOBILE HERO */}
+  {/* ========================= */}
+  <div className="relative block px-6 pb-0 pt-24 md:hidden">
+
+    <p
+      className="
+        mb-6
+        text-center
+        text-[10px]
+        uppercase
+        tracking-[0.32em]
+        text-[#D8C2B6]
+      "
+    >
+      Curadoria artesanal · São Paulo
+    </p>
+
+    {/* Logo */}
+    <div className="mb-10 flex justify-center">
+      <Image
+        src="/branding/transparentes/05_horizontal_escuro.svg"
+        alt="Curadoria Raiz"
+        width={520}
+        height={150}
+        className="h-auto w-[280px]"
+      />
+    </div>
+
+    <h1
+      className="
+        mx-auto
+        max-w-[320px]
+        text-center
+        font-serif
+        text-[52px]
+        leading-[0.94]
+        tracking-[-0.04em]
+        text-[#F7F1EB]
+      "
+    >
+      Curadoria artesanal em ritmo humano.
+    </h1>
+
+    <p
+      className="
+        mx-auto
+        mt-6
+        max-w-[320px]
+        text-center
+        text-[14px]
+        leading-[1.8]
+        text-[#D8C2B6]
+      "
+    >
+      Uma seleção mensal de vinho natural, pão de fermentação lenta e produtos artesanais escolhidos para desacelerar a cidade por algumas horas raras.
+    </p>
+
+    {/* CTA */}
+    <div className="mt-10 flex flex-col gap-3">
+
+      <a
+        href="#reserva"
+        className="
+          rounded-full
+          bg-[#D46D47]
+          px-8
+          py-4
+          text-center
+          text-[11px]
+          uppercase
+          tracking-[0.24em]
+          text-white
+        "
+      >
+        Reservar edição atual
+      </a>
+
+      <a
+        href="#trio"
+        className="
+          rounded-full
+          border
+          border-[#6D4B3F]
+          px-8
+          py-4
+          text-center
+          text-[11px]
+          uppercase
+          tracking-[0.24em]
+          text-[#F7F1EB]
+        "
+      >
+        Conheça os produtos
+      </a>
+
+    </div>
+
+    {/* Mobile Editorial Image */}
+    <div className="mt-14 overflow-hidden rounded-[28px]">
+
+      <Image
+        src="/images/curadoria-raiz-hero-mobile.jpg"
+        alt="Curadoria Raiz"
+        width={1600}
+        height={2000}
+        priority
+        className="h-auto w-full object-cover"
+      />
+
+    </div>
+
+    {/* Bottom fade mobile */}
+    <div
+      className="
+        -mt-12
+        h-24
+        bg-gradient-to-b
+        from-transparent
+        via-[#4A1E12]/40
+        to-[#F4EEE6]
+      "
+    />
+
+  </div>
+
 </section>
 
       {/* MANIFESTO */}
