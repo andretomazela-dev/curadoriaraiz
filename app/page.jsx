@@ -52,7 +52,7 @@ export default function Home() {
             sm:whitespace-nowrap
           "
         >
-          Curadoria artesanal · São Paulo
+          SÃO PAULO — BRASIL
         </span>
 
         <span
