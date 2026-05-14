@@ -823,7 +823,7 @@ export default function Home() {
         alt="Curadoria Raiz"
         width={420}
         height={120}
-        className="h-auto w-[260px]"
+        className="h-auto w-[416px]"
       />
 
       {/* INSTAGRAM */}
@@ -886,7 +886,7 @@ export default function Home() {
           alt="Curadoria Raiz"
           width={420}
           height={120}
-          className="h-auto w-[320px]"
+          className="h-auto w-[512px]"
         />
       </div>
 
