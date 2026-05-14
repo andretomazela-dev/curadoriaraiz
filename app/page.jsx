@@ -810,64 +810,121 @@ export default function Home() {
   </a>
 </div>
      {/* FOOTER */}
-<footer className="pb-16 pt-10">
-  <div className="mx-auto flex max-w-[1320px] flex-col items-center justify-between gap-10 px-6 text-center sm:px-8 lg:flex-row lg:text-left">
+<footer className="bg-[#F3EEE8] pb-16 pt-6 sm:pb-24 sm:pt-10">
 
-    {/* LOGO */}
-    <div className="flex items-center">
+  <div className="mx-auto max-w-[1320px] px-8">
+
+    {/* MOBILE */}
+    <div className="flex flex-col items-center text-center sm:hidden">
+
+      {/* LOGO */}
       <Image
         src="/branding/transparentes/05_horizontal_claro.svg"
         alt="Curadoria Raiz"
         width={420}
         height={120}
-       className="h-auto w-[370px] sm:w-[437px]"
+        className="h-auto w-[260px]"
       />
-    </div>
-
-    {/* CENTRO */}
-    <div className="flex items-center justify-center gap-6">
 
       {/* INSTAGRAM */}
       <a
         href="https://instagram.com/curadoriaraiz"
         target="_blank"
         rel="noopener noreferrer"
-        aria-label="Instagram Curadoria Raiz"
         className="
-          text-[#9F8778]
-          transition-all
+          mt-14
+          inline-flex
+          items-center
+          gap-3
+          text-[#A9968C]
+          transition-opacity
           duration-300
-          hover:text-[#D66A41]
-          hover:scale-105
+          hover:opacity-70
         "
+        aria-label="Instagram Curadoria Raiz"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
           viewBox="0 0 24 24"
           fill="none"
           stroke="currentColor"
-          strokeWidth="1.8"
+          strokeWidth="1.7"
           strokeLinecap="round"
           strokeLinejoin="round"
-          className="h-[19px] w-[19px]"
         >
           <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
-          <path d="M16 11.37a4 4 0 1 1-2.63-2.63A4 4 0 0 1 16 11.37z" />
+          <path d="M16 11.37a4 4 0 1 1-7.75 1.24 4 4 0 0 1 7.75-1.24z" />
+          <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+        </svg>
+
+        <span className="text-[12px] uppercase tracking-[0.32em]">
+          @curadoriaraiz
+        </span>
+      </a>
+
+      {/* COPYRIGHT */}
+      <div className="mt-14 space-y-3 text-center">
+        <p className="text-[11px] uppercase tracking-[0.32em] text-[#B8A79D]">
+          © 2026 Curadoria Raiz
+        </p>
+
+        <p className="text-[11px] uppercase tracking-[0.28em] text-[#C4B5AB]">
+          São Paulo — Brasil
+        </p>
+      </div>
+    </div>
+
+    {/* DESKTOP */}
+    <div className="hidden items-end justify-between sm:flex">
+
+      {/* LOGO */}
+      <div className="flex items-center">
+        <Image
+          src="/branding/transparentes/05_horizontal_claro.svg"
+          alt="Curadoria Raiz"
+          width={420}
+          height={120}
+          className="h-auto w-[320px]"
+        />
+      </div>
+
+      {/* INSTAGRAM */}
+      <a
+        href="https://instagram.com/curadoriaraiz"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="
+          text-[#A9968C]
+          transition-opacity
+          duration-300
+          hover:opacity-70
+        "
+        aria-label="Instagram Curadoria Raiz"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="22"
+          height="22"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="1.7"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        >
+          <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+          <path d="M16 11.37a4 4 0 1 1-7.75 1.24 4 4 0 0 1 7.75-1.24z" />
           <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
         </svg>
       </a>
 
-      <span className="text-[11px] uppercase tracking-[0.28em] text-[#9F8778]">
-        Curadoria artesanal · São Paulo
-      </span>
-
+      {/* COPYRIGHT */}
+      <p className="text-[11px] uppercase tracking-[0.32em] text-[#B8A79D]">
+        © 2026 Curadoria Raiz
+      </p>
     </div>
-
-    {/* COPYRIGHT */}
-    <span className="text-[11px] uppercase tracking-[0.24em] text-[#9F8778]">
-      © 2026 Curadoria Raiz
-    </span>
-
   </div>
 </footer>
      </main>
