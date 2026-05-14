@@ -15,7 +15,7 @@ export default function Home() {
     {/* Background Image */}
     <div className="absolute inset-0">
       <Image
-        src="/images/curadoria-raiz-hero-composicao_02.jpg"
+        src="/images/curadoria-raiz-hero-composicao_02.png"
         alt="Curadoria Raiz"
         fill
         priority
@@ -230,7 +230,7 @@ export default function Home() {
     <div className="mt-14 overflow-hidden rounded-[28px]">
 
       <Image
-        src="/images/curadoria-raiz-hero-mobile.jpg"
+        src="/images/curadoria-raiz-hero-mobile.png"
         alt="Curadoria Raiz"
         width={1600}
         height={2000}
