@@ -697,25 +697,25 @@ export default function Home() {
               </div>
 
               <span className="text-[11px] sm:text-[12px] uppercase tracking-[0.32em] text-[#C8A99C]">
-                Próxima edição
-              </span>
+  Próxima edição
+</span>
 
-              <h2
-                className="
-                  mx-auto
-                  mt-8
-                  max-w-[900px]
-                  font-serif
-                  font-normal
-                  text-[4rem]
-                  sm:text-[5.2rem]
-                  leading-[0.96]
-                  tracking-[-0.04em]
-                  text-[#F8F2EC]
-                "
-              >
-                Reservas abertas para o Drop #01
-              </h2>
+<h2
+  className="
+    mx-auto
+    mt-8
+    max-w-[980px]
+    font-serif
+    font-normal
+    text-[4.4rem]
+    sm:text-[6.2rem]
+    leading-[0.92]
+    tracking-[-0.05em]
+    text-[#F8F2EC]
+  "
+>
+  Reservas abertas para o Drop #01
+</h2>
 
               <p className="mx-auto mt-10 max-w-[760px] text-[17px] sm:text-[20px] leading-[1.9] text-[#F2E7DF]">
                 Entregas de bicicleta às sextas e sábados em Santa Cecília,
