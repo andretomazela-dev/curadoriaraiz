@@ -76,11 +76,11 @@ export default function Home() {
       </div>
 
       {/* HERO CONTENT */}
-      <div className="min-h-[calc(100svh-80px)] flex items-center">
+      <div className="min-h-[calc(100svh-80px)] grid grid-cols-[0.9fr_1.1fr] items-center gap-0">
 
-        {/* LEFT */}
-        <div className="max-w-[560px]">
-
+  {/* LEFT */}
+  <div className="relative z-20 max-w-[540px]">
+    
           {/* LOGO */}
           <div className="mb-10 sm:mb-14">
             <Image
