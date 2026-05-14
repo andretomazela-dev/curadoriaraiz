@@ -43,14 +43,22 @@ export default function Home() {
           Curadoria artesanal · São Paulo
         </p>
 
-        {/* Logo */}
-        <div className="mb-12">
+        {/* LOGO */}
+        <div className="mb-10 sm:mb-14">
           <Image
-            src="/branding/transparentes/05_horizontal_escuro.svg"
+            src="/branding/transparentes/07_vertical.png"
             alt="Curadoria Raiz"
-            width={520}
-            height={150}
-            className="h-auto w-[320px]"
+            width={1100}
+            height={1100}
+            priority
+            className="
+              w-[448px]
+              sm:w-[420px]
+              lg:w-[760px]
+              xl:w-[860px]
+              h-auto
+              object-contain
+            "
           />
         </div>
 
