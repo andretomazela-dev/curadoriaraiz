@@ -934,7 +934,6 @@ export default function Home() {
       © 2026 Curadoria Raiz
     </p>
   </div>
-</div>
 </footer>
      </main>
   );
