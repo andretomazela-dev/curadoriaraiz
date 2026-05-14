@@ -22,7 +22,7 @@ export default function Home() {
         priority
        className="
        object-cover
-       object-[72%_bottom]
+       object-[63%_bottom]
        scale-[1.03]
        "
       />
@@ -37,7 +37,7 @@ export default function Home() {
       <div className="absolute left-[10%] top-[14%] h-[520px] w-[520px] rounded-full bg-[#A43D1F]/12 blur-[150px]" />
     </div>
 
-    <div className="relative z-10 mx-auto max-w-[1440px] px-6 sm:px-8 pt-6 sm:pt-8 pb-20 sm:pb-24">
+    <div className="relative z-10 mx-auto max-w-[1680px] px-6 sm:px-8 pt-6 sm:pt-8 pb-20 sm:pb-24">
 
       {/* TOPBAR */}
       <div className="flex items-start justify-between gap-6">
@@ -92,8 +92,8 @@ export default function Home() {
               className="
                 w-[448px]
                 sm:w-[420px]
-                lg:w-[760px]
-                xl:w-[860px]
+                lg:w-[640px]
+                xl:w-[720px]
                 h-auto
                 object-contain
               "
