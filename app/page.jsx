@@ -883,7 +883,7 @@ export default function Home() {
   {/* LOGO */}
   <div className="shrink-0">
     <Image
-      src="/branding/transparentes/05_horizontal_claro.svg"
+      src="/branding/transparentes/05_horizontal_claro.png"
       alt="Curadoria Raiz"
       width={420}
       height={120}
