@@ -20,11 +20,11 @@ export default function Home() {
         alt="Curadoria Raiz"
         fill
         priority
-        className="
-          object-contain
-          object-right
-          object-bottom
-        "
+       className="
+       object-cover
+       object-[72%_bottom]
+       scale-[1.03]
+       "
       />
 
       {/* cinematic overlay */}
