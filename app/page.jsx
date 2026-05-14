@@ -45,7 +45,7 @@ export default function Home() {
             text-[11px] sm:text-[12px]
             leading-[1.7]
             uppercase
-            tracking-[0.34em]
+            tracking-[0.32em]
             text-[#D8C6BC]/70
 
             sm:max-w-none
@@ -62,7 +62,7 @@ export default function Home() {
             text-[11px] sm:text-[12px]
             leading-[1.7]
             uppercase
-            tracking-[0.34em]
+            tracking-[0.32em]
             text-[#D8C6BC]/50
 
             sm:whitespace-nowrap
@@ -205,7 +205,7 @@ export default function Home() {
             </a>
           </div>
 
-          <div className="mt-10 text-[11px] sm:text-[12px] uppercase tracking-[0.34em] text-[#9D7D72]">
+          <div className="mt-10 text-[11px] sm:text-[12px] uppercase tracking-[0.32em] text-[#9D7D72]">
             Produção limitada · 30 unidades por edição
           </div>
 
