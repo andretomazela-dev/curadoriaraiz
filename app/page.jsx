@@ -544,60 +544,61 @@ export default function Home() {
 </section>
 
       {/* PRODUCER */}
-      <section className="relative min-h-[720px] sm:h-[760px] overflow-hidden">
+<section className="relative min-h-[720px] sm:h-[760px] overflow-hidden">
 
-        <Image
-          src="/images/produtor-faccin.webp"
-          alt="Curadoria feita perto de quem produz"
-          fill
-          className="object-cover"
-        />
+  <Image
+    src="/images/produtor-faccin.webp"
+    alt="Curadoria feita perto de quem produz"
+    fill
+    className="object-cover"
+  />
 
-        <div className="absolute inset-0 bg-black/62 sm:bg-black/50" />
+  <div className="absolute inset-0 bg-black/62 sm:bg-black/50" />
 
-        <div className="absolute inset-0 bg-gradient-to-r from-black/88 via-black/52 to-transparent" />
+  <div className="absolute inset-0 bg-gradient-to-r from-black/88 via-black/52 to-transparent" />
 
-        <div className="relative z-10 flex h-full items-center">
-          <div className="mx-auto w-full max-w-[1320px] px-8">
+  <div className="relative z-10 flex h-full items-center">
+    <div className="mx-auto w-full max-w-[1320px] px-8">
 
-            <div className="max-w-[340px] sm:max-w-[620px] -mt-10">
+      <div className="max-w-[320px] sm:max-w-[760px]">
 
-              <span className="text-[11px] sm:text-[12px] uppercase tracking-[0.32em] text-[#E9D9CF]/82">
-                Pequenos produtores
-              </span>
+        <span className="text-[11px] sm:text-[12px] uppercase tracking-[0.32em] text-[#E9D9CF]/82">
+          Pequenos produtores
+        </span>
 
-              <h2
-                className="
-                  mt-8
-                  font-serif
-                  font-normal
-                  text-[4.4rem]
-                  sm:text-[6rem]
-                  leading-[0.92]
-                  tracking-[-0.04em]
-                  text-white
-                "
-              >
-                Curadoria feita perto de quem produz.
-              </h2>
+        <h2
+          className="
+            mt-6
+            sm:mt-8
+            font-serif
+            font-normal
+            text-[3.7rem]
+            sm:text-[6.4rem]
+            leading-[0.9]
+            tracking-[-0.05em]
+            text-white
+          "
+        >
+          Curadoria feita perto de quem produz.
+        </h2>
 
-              <p
-                className="
-                  mt-10
-                  max-w-[460px]
-                  text-[17px]
-                  sm:text-[19px]
-                  leading-[1.85]
-                  text-[#F5EEE8]
-                "
-              >
-                Cada edição nasce da proximidade com produtores independentes,
-                agricultura sustentável e processos artesanais feitos em pequena escala.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+        <p
+          className="
+            mt-8
+            max-w-[520px]
+            text-[17px]
+            sm:text-[20px]
+            leading-[1.9]
+            text-[#F5EEE8]
+          "
+        >
+          Cada edição nasce da proximidade com produtores independentes,
+          agricultura sustentável e processos artesanais feitos em pequena escala.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* COMO FUNCIONA */}
 <section className="bg-[#F5F1EB] px-6 pt-24 pb-12 md:px-16 md:pt-32 md:pb-20">
