@@ -928,13 +928,17 @@ export default function Home() {
     </p>
   </div>
 
-  {/* COPYRIGHT */}
-  <div className="shrink-0 text-right">
-    <p className="text-[11px] uppercase tracking-[0.32em] text-[#B8A79D]">
-      © 2026 Curadoria Raiz
-    </p>
+        {/* COPYRIGHT */}
+      <div className="shrink-0 text-right">
+        <p className="text-[11px] uppercase tracking-[0.32em] text-[#B8A79D]">
+          © 2026 Curadoria Raiz
+        </p>
+      </div>
+
+    </div>
   </div>
 </footer>
-     </main>
+
+</main>
   );
 }
