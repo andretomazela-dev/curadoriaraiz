@@ -352,9 +352,6 @@ export default function Home() {
     </div>
   </div>
 
-  {/* IMAGE */}
-  <div className="relative mt-14">
-
     {/* IMAGE */}
 <div className="relative mt-14">
 
