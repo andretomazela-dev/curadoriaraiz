@@ -752,7 +752,7 @@ export default function Home() {
                 </a>
 
                 <a
-                  href="https://wa.me/5511968468668"
+                  href="https://wa.me/5511994718477"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="
