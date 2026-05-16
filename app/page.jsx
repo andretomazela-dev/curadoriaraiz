@@ -924,7 +924,7 @@ export default function Home() {
   </a>
 
   <p className="text-[11px] uppercase tracking-[0.32em] text-[#B8A79D]">
-    São Paulo — Brasil
+    Região central, São Paulo - Brasil
   </p>
 </div>
 
