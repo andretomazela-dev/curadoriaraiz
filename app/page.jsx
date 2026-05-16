@@ -52,7 +52,7 @@ export default function Home() {
             sm:whitespace-nowrap
           "
         >
-          Região central, São Paulo - Brasil
+          Região central, São Paulo, Brasil
         </span>
 
         <span
@@ -924,7 +924,7 @@ export default function Home() {
   </a>
 
   <p className="text-[11px] uppercase tracking-[0.32em] text-[#B8A79D]">
-    Região central, São Paulo - Brasil
+    Região central, São Paulo, Brasil
   </p>
 </div>
 
