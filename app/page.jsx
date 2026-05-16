@@ -52,7 +52,7 @@ export default function Home() {
             sm:whitespace-nowrap
           "
         >
-          SÃO PAULO — BRASIL
+          Região central, São Paulo - Brasil
         </span>
 
         <span
