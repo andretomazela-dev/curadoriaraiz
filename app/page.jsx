@@ -562,10 +562,9 @@ export default function Home() {
 
       <div className="max-w-[320px] sm:max-w-[760px]">
 
-        <span className="text-[11px] sm:text-[12px] uppercase tracking-[0.32em] text-[#E9D9CF]/82">
-          Pequenos produtores
-        </span>
-
+        <span className="text-[12px] sm:text-[13px] uppercase tracking-[0.38em] text-[#F5EFE7]">
+  Pequenos produtores
+</span>
         <h2
           className="
             mt-6
